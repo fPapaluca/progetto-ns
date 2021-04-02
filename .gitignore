@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# Omnet++ specific
+.settings
+.cproject
+.oppbuildspec
+.project
+.qtenvrc
+out
+results
+Makefile
