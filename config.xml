@@ -1,0 +1,8 @@
+<movement>
+    <repeat>
+        <set speed="uniform(0,20)"/>
+        <turn angle="uniform(-30,30)"/>
+        <forward t="uniform(0.1,1)"/>
+        <wait t="30"/>
+    </repeat>
+</movement>
