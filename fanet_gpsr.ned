@@ -18,18 +18,18 @@ import inet.*.*.IntegratedMultiVisualizer;
 import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
 import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;
 import inet.*.*.UnitDiskRadioMedium;
+import inet.*.*.StandardHost;
 
 network FanetGpsr
 {
     parameters:
         int numHosts;
-        @display("bgb=1500,300");
     submodules:
         host[numHosts]: GpsrRouter {
             @display("i=misc/drone;p=0,0");
         }
         visualizer: IntegratedMultiVisualizer {
-            @display("p=50,50");
+            @display("p=48.88,176.72");
         }
         radioMedium: UnitDiskRadioMedium {
             @display("p=100,100");
