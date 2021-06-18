@@ -27,7 +27,7 @@
 #include <iostream>
 #include <sstream>
 #include <memory>
-#include "Sybil_m.h"
+#include "../gpsrbase/GpsrBase_m.h"
 
 namespace omnetpp {
 

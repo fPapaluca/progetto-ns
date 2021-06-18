@@ -45,7 +45,7 @@ class GpsrOption;
 #include "inet/networklayer/common/L3Address_m.h" // import inet.networklayer.common.L3Address
 
 // cplusplus {{
-#include "SybilDefs.h"
+#include "../gpsrbase/GpsrDefs.h"
 // }}
 
 

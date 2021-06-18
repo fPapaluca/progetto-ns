@@ -3,7 +3,7 @@
 //
 
 import inet.node.inet.AdhocHost;
-import sybil.*;
+import gpsrbase.*;
 
 module SybilRouter extends AdhocHost
 {

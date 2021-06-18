@@ -17,6 +17,8 @@
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //
 
+#include "../gpsrbase/GpsrBase.h"
+
 #include <algorithm>
 
 #include "inet/common/INETUtils.h"
@@ -31,7 +33,6 @@
 #include "inet/networklayer/common/L3Tools.h"
 #include "inet/networklayer/common/NextHopAddressTag_m.h"
 #include "inet/networklayer/contract/IInterfaceTable.h"
-#include "Sybil.h"
 
 #ifdef WITH_IPv4
 #include "inet/networklayer/ipv4/Ipv4Header_m.h"
@@ -49,18 +50,18 @@
 //namespace inet {
 using namespace inet;
 
-Define_Module(Sybil);
+Define_Module(GpsrBase);
 
 static inline double determinant(double a1, double a2, double b1, double b2)
 {
     return a1 * b2 - a2 * b1;
 }
 
-Sybil::Sybil()
+GpsrBase::GpsrBase()
 {
 }
 
-Sybil::~Sybil()
+GpsrBase::~GpsrBase()
 {
     cancelAndDelete(beaconTimer);
     cancelAndDelete(purgeNeighborsTimer);
@@ -70,9 +71,8 @@ Sybil::~Sybil()
 // module interface
 //
 
-void Sybil::initialize(int stage)
+void GpsrBase::initialize(int stage)
 {
-    std::cout << "subaru baracca" << std::endl;
     if (stage == INITSTAGE_ROUTING_PROTOCOLS)
         addressType = getSelfAddress().getAddressType();
 
@@ -118,7 +118,7 @@ void Sybil::initialize(int stage)
     }
 }
 
-void Sybil::handleMessageWhenUp(cMessage *message)
+void GpsrBase::handleMessageWhenUp(cMessage *message)
 {
     if (message->isSelfMessage())
         processSelfMessage(message);
@@ -130,7 +130,7 @@ void Sybil::handleMessageWhenUp(cMessage *message)
 // handling messages
 //
 
-void Sybil::processSelfMessage(cMessage *message)
+void GpsrBase::processSelfMessage(cMessage *message)
 {
     if (message == beaconTimer)
         processBeaconTimer();
@@ -140,7 +140,7 @@ void Sybil::processSelfMessage(cMessage *message)
         throw cRuntimeError("Unknown self message");
 }
 
-void Sybil::processMessage(cMessage *message)
+void GpsrBase::processMessage(cMessage *message)
 {
     if (auto pk = dynamic_cast<Packet *>(message))
         processUdpPacket(pk);
@@ -152,13 +152,13 @@ void Sybil::processMessage(cMessage *message)
 // beacon timers
 //
 
-void Sybil::scheduleBeaconTimer()
+void GpsrBase::scheduleBeaconTimer()
 {
     EV_DEBUG << "Scheduling beacon timer" << endl;
     scheduleAt(simTime() + beaconInterval + uniform(-1, 1) * maxJitter, beaconTimer);
 }
 
-void Sybil::processBeaconTimer()
+void GpsrBase::processBeaconTimer()
 {
     EV_DEBUG << "Processing beacon timer" << endl;
     const L3Address selfAddress = getSelfAddress();
@@ -174,7 +174,7 @@ void Sybil::processBeaconTimer()
 // handling purge neighbors timers
 //
 
-void Sybil::schedulePurgeNeighborsTimer()
+void GpsrBase::schedulePurgeNeighborsTimer()
 {
     EV_DEBUG << "Scheduling purge neighbors timer" << endl;
     simtime_t nextExpiration = getNextNeighborExpiration();
@@ -194,7 +194,7 @@ void Sybil::schedulePurgeNeighborsTimer()
     }
 }
 
-void Sybil::processPurgeNeighborsTimer()
+void GpsrBase::processPurgeNeighborsTimer()
 {
     EV_DEBUG << "Processing purge neighbors timer" << endl;
     purgeNeighbors();
@@ -205,12 +205,12 @@ void Sybil::processPurgeNeighborsTimer()
 // handling UDP packets
 //
 
-void Sybil::sendUdpPacket(Packet *packet)
+void GpsrBase::sendUdpPacket(Packet *packet)
 {
     send(packet, "ipOut");
 }
 
-void Sybil::processUdpPacket(Packet *packet)
+void GpsrBase::processUdpPacket(Packet *packet)
 {
     packet->popAtFront<UdpHeader>();
     processBeacon(packet);
@@ -221,7 +221,7 @@ void Sybil::processUdpPacket(Packet *packet)
 // handling beacons
 //
 
-const Ptr<GpsrBeacon> Sybil::createBeacon()
+const Ptr<GpsrBeacon> GpsrBase::createBeacon()
 {
     const auto& beacon = makeShared<GpsrBeacon>();
     beacon->setAddress(getSelfAddress());
@@ -230,7 +230,7 @@ const Ptr<GpsrBeacon> Sybil::createBeacon()
     return beacon;
 }
 
-void Sybil::sendBeacon(const Ptr<GpsrBeacon>& beacon)
+void GpsrBase::sendBeacon(const Ptr<GpsrBeacon>& beacon)
 {
     EV_INFO << "Sending beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
     Packet *udpPacket = new Packet("GPSRBeacon");
@@ -249,7 +249,7 @@ void Sybil::sendBeacon(const Ptr<GpsrBeacon>& beacon)
     sendUdpPacket(udpPacket);
 }
 
-void Sybil::processBeacon(Packet *packet)
+void GpsrBase::processBeacon(Packet *packet)
 {
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
     EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
@@ -260,7 +260,7 @@ void Sybil::processBeacon(Packet *packet)
 // handling packets
 //
 
-GpsrOption *Sybil::createGpsrOption(L3Address destination)
+GpsrOption *GpsrBase::createGpsrOption(L3Address destination)
 {
     GpsrOption *gpsrOption = new GpsrOption();
     gpsrOption->setRoutingMode(GPSR_GREEDY_ROUTING);
@@ -269,7 +269,7 @@ GpsrOption *Sybil::createGpsrOption(L3Address destination)
     return gpsrOption;
 }
 
-int Sybil::computeOptionLength(GpsrOption *option)
+int GpsrBase::computeOptionLength(GpsrOption *option)
 {
     // routingMode
     int routingModeBytes = 1;
@@ -287,7 +287,7 @@ int Sybil::computeOptionLength(GpsrOption *option)
 // configuration
 //
 
-void Sybil::configureInterfaces()
+void GpsrBase::configureInterfaces()
 {
     // join multicast groups
     cPatternMatcher interfaceMatcher(interfaces, false, true, false);
@@ -303,28 +303,28 @@ void Sybil::configureInterfaces()
 //
 
 // KLUDGE: implement position registry protocol
-PositionTable Sybil::globalPositionTable;
+PositionTable GpsrBase::globalPositionTable;
 
-Coord Sybil::lookupPositionInGlobalRegistry(const L3Address& address) const
+Coord GpsrBase::lookupPositionInGlobalRegistry(const L3Address& address) const
 {
     // KLUDGE: implement position registry protocol
     return globalPositionTable.getPosition(address);
 }
 
-void Sybil::storePositionInGlobalRegistry(const L3Address& address, const Coord& position) const
+void GpsrBase::storePositionInGlobalRegistry(const L3Address& address, const Coord& position) const
 {
     // KLUDGE: implement position registry protocol
     globalPositionTable.setPosition(address, position);
 }
 
-void Sybil::storeSelfPositionInGlobalRegistry() const
+void GpsrBase::storeSelfPositionInGlobalRegistry() const
 {
     auto selfAddress = getSelfAddress();
     if (!selfAddress.isUnspecified())
         storePositionInGlobalRegistry(selfAddress, mobility->getCurrentPosition());
 }
 
-Coord Sybil::computeIntersectionInsideLineSegments(Coord& begin1, Coord& end1, Coord& begin2, Coord& end2) const
+Coord GpsrBase::computeIntersectionInsideLineSegments(Coord& begin1, Coord& end1, Coord& begin2, Coord& end2) const
 {
     // NOTE: we must explicitly avoid computing the intersection points inside due to double instability
     if (begin1 == begin2 || begin1 == end2 || end1 == begin2 || end1 == end2)
@@ -351,7 +351,7 @@ Coord Sybil::computeIntersectionInsideLineSegments(Coord& begin1, Coord& end1, C
     }
 }
 
-Coord Sybil::getNeighborPosition(const L3Address& address) const
+Coord GpsrBase::getNeighborPosition(const L3Address& address) const
 {
     return neighborPositionTable.getPosition(address);
 }
@@ -360,7 +360,7 @@ Coord Sybil::getNeighborPosition(const L3Address& address) const
 // angle
 //
 
-double Sybil::getVectorAngle(Coord vector) const
+double GpsrBase::getVectorAngle(Coord vector) const
 {
     ASSERT(vector != Coord::ZERO);
     double angle = atan2(-vector.y, vector.x);
@@ -369,7 +369,7 @@ double Sybil::getVectorAngle(Coord vector) const
     return angle;
 }
 
-double Sybil::getNeighborAngle(const L3Address& address) const
+double GpsrBase::getNeighborAngle(const L3Address& address) const
 {
     return getVectorAngle(getNeighborPosition(address) - mobility->getCurrentPosition());
 }
@@ -378,12 +378,12 @@ double Sybil::getNeighborAngle(const L3Address& address) const
 // address
 //
 
-std::string Sybil::getHostName() const
+std::string GpsrBase::getHostName() const
 {
     return host->getFullName();
 }
 
-L3Address Sybil::getSelfAddress() const
+L3Address GpsrBase::getSelfAddress() const
 {
     //TODO choose self address based on a new 'interfaces' parameter
     L3Address ret = routingTable->getRouterIdAsGeneric();
@@ -403,7 +403,7 @@ L3Address Sybil::getSelfAddress() const
     return ret;
 }
 
-L3Address Sybil::getSenderNeighborAddress(const Ptr<const NetworkHeaderBase>& networkHeader) const
+L3Address GpsrBase::getSenderNeighborAddress(const Ptr<const NetworkHeaderBase>& networkHeader) const
 {
     const GpsrOption *gpsrOption = getGpsrOptionFromNetworkDatagram(networkHeader);
     return gpsrOption->getSenderAddress();
@@ -413,7 +413,7 @@ L3Address Sybil::getSenderNeighborAddress(const Ptr<const NetworkHeaderBase>& ne
 // neighbor
 //
 
-simtime_t Sybil::getNextNeighborExpiration()
+simtime_t GpsrBase::getNextNeighborExpiration()
 {
     simtime_t oldestPosition = neighborPositionTable.getOldestPosition();
     if (oldestPosition == SimTime::getMaxTime())
@@ -422,12 +422,12 @@ simtime_t Sybil::getNextNeighborExpiration()
         return oldestPosition + neighborValidityInterval;
 }
 
-void Sybil::purgeNeighbors()
+void GpsrBase::purgeNeighbors()
 {
     neighborPositionTable.removeOldPositions(simTime() - neighborValidityInterval);
 }
 
-std::vector<L3Address> Sybil::getPlanarNeighbors() const
+std::vector<L3Address> GpsrBase::getPlanarNeighbors() const
 {
     std::vector<L3Address> planarNeighbors;
     std::vector<L3Address> neighborAddresses = neighborPositionTable.getAddresses();
@@ -469,7 +469,7 @@ std::vector<L3Address> Sybil::getPlanarNeighbors() const
     return planarNeighbors;
 }
 
-std::vector<L3Address> Sybil::getPlanarNeighborsCounterClockwise(double startAngle) const
+std::vector<L3Address> GpsrBase::getPlanarNeighborsCounterClockwise(double startAngle) const
 {
     std::vector<L3Address> neighborAddresses = getPlanarNeighbors();
     std::sort(neighborAddresses.begin(), neighborAddresses.end(), [&](const L3Address& address1, const L3Address& address2) {
@@ -489,7 +489,7 @@ std::vector<L3Address> Sybil::getPlanarNeighborsCounterClockwise(double startAng
 // next hop
 //
 
-L3Address Sybil::findNextHop(const L3Address& destination, GpsrOption *gpsrOption)
+L3Address GpsrBase::findNextHop(const L3Address& destination, GpsrOption *gpsrOption)
 {
     switch (gpsrOption->getRoutingMode()) {
         case GPSR_GREEDY_ROUTING: return findGreedyRoutingNextHop(destination, gpsrOption);
@@ -498,7 +498,7 @@ L3Address Sybil::findNextHop(const L3Address& destination, GpsrOption *gpsrOptio
     }
 }
 
-L3Address Sybil::findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
+L3Address GpsrBase::findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
 {
     EV_DEBUG << "Finding next hop using greedy routing: destination = " << destination << endl;
     L3Address selfAddress = getSelfAddress();
@@ -530,7 +530,7 @@ L3Address Sybil::findGreedyRoutingNextHop(const L3Address& destination, GpsrOpti
         return bestNeighbor;
 }
 
-L3Address Sybil::findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
+L3Address GpsrBase::findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
 {
     EV_DEBUG << "Finding next hop using perimeter routing: destination = " << destination << endl;
     L3Address selfAddress = getSelfAddress();
@@ -593,7 +593,7 @@ L3Address Sybil::findPerimeterRoutingNextHop(const L3Address& destination, GpsrO
 // routing
 //
 
-INetfilter::IHook::Result Sybil::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
+INetfilter::IHook::Result GpsrBase::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
 {
     const auto& networkHeader = getNetworkProtocolHeader(datagram);
     const L3Address& source = networkHeader->getSourceAddress();
@@ -616,7 +616,7 @@ INetfilter::IHook::Result Sybil::routeDatagram(Packet *datagram, GpsrOption *gps
     }
 }
 
-void Sybil::setGpsrOptionOnNetworkDatagram(Packet *packet, const Ptr<const NetworkHeaderBase>& networkHeader, GpsrOption *gpsrOption)
+void GpsrBase::setGpsrOptionOnNetworkDatagram(Packet *packet, const Ptr<const NetworkHeaderBase>& networkHeader, GpsrOption *gpsrOption)
 {
     packet->trimFront();
 #ifdef WITH_IPv4
@@ -669,7 +669,7 @@ void Sybil::setGpsrOptionOnNetworkDatagram(Packet *packet, const Ptr<const Netwo
     }
 }
 
-const GpsrOption *Sybil::findGpsrOptionInNetworkDatagram(const Ptr<const NetworkHeaderBase>& networkHeader) const
+const GpsrOption *GpsrBase::findGpsrOptionInNetworkDatagram(const Ptr<const NetworkHeaderBase>& networkHeader) const
 {
     const GpsrOption *gpsrOption = nullptr;
 
@@ -703,7 +703,7 @@ const GpsrOption *Sybil::findGpsrOptionInNetworkDatagram(const Ptr<const Network
     return gpsrOption;
 }
 
-GpsrOption *Sybil::findGpsrOptionInNetworkDatagramForUpdate(const Ptr<NetworkHeaderBase>& networkHeader)
+GpsrOption *GpsrBase::findGpsrOptionInNetworkDatagramForUpdate(const Ptr<NetworkHeaderBase>& networkHeader)
 {
     GpsrOption *gpsrOption = nullptr;
 
@@ -737,7 +737,7 @@ GpsrOption *Sybil::findGpsrOptionInNetworkDatagramForUpdate(const Ptr<NetworkHea
     return gpsrOption;
 }
 
-const GpsrOption *Sybil::getGpsrOptionFromNetworkDatagram(const Ptr<const NetworkHeaderBase>& networkHeader) const
+const GpsrOption *GpsrBase::getGpsrOptionFromNetworkDatagram(const Ptr<const NetworkHeaderBase>& networkHeader) const
 {
     const GpsrOption *gpsrOption = findGpsrOptionInNetworkDatagram(networkHeader);
     if (gpsrOption == nullptr)
@@ -745,7 +745,7 @@ const GpsrOption *Sybil::getGpsrOptionFromNetworkDatagram(const Ptr<const Networ
     return gpsrOption;
 }
 
-GpsrOption *Sybil::getGpsrOptionFromNetworkDatagramForUpdate(const Ptr<NetworkHeaderBase>& networkHeader)
+GpsrOption *GpsrBase::getGpsrOptionFromNetworkDatagramForUpdate(const Ptr<NetworkHeaderBase>& networkHeader)
 {
     GpsrOption *gpsrOption = findGpsrOptionInNetworkDatagramForUpdate(networkHeader);
     if (gpsrOption == nullptr)
@@ -757,7 +757,7 @@ GpsrOption *Sybil::getGpsrOptionFromNetworkDatagramForUpdate(const Ptr<NetworkHe
 // netfilter
 //
 
-INetfilter::IHook::Result Sybil::datagramPreRoutingHook(Packet *datagram)
+INetfilter::IHook::Result GpsrBase::datagramPreRoutingHook(Packet *datagram)
 {
     Enter_Method("datagramPreRoutingHook");
     const auto& networkHeader = getNetworkProtocolHeader(datagram);
@@ -771,7 +771,7 @@ INetfilter::IHook::Result Sybil::datagramPreRoutingHook(Packet *datagram)
     }
 }
 
-INetfilter::IHook::Result Sybil::datagramLocalOutHook(Packet *packet)
+INetfilter::IHook::Result GpsrBase::datagramLocalOutHook(Packet *packet)
 {
     Enter_Method("datagramLocalOutHook");
     const auto& networkHeader = getNetworkProtocolHeader(packet);
@@ -789,14 +789,14 @@ INetfilter::IHook::Result Sybil::datagramLocalOutHook(Packet *packet)
 // lifecycle
 //
 
-void Sybil::handleStartOperation(LifecycleOperation *operation)
+void GpsrBase::handleStartOperation(LifecycleOperation *operation)
 {
     configureInterfaces();
     storeSelfPositionInGlobalRegistry();
     scheduleBeaconTimer();
 }
 
-void Sybil::handleStopOperation(LifecycleOperation *operation)
+void GpsrBase::handleStopOperation(LifecycleOperation *operation)
 {
     // TODO: send a beacon to remove ourself from peers neighbor position table
     neighborPositionTable.clear();
@@ -804,7 +804,7 @@ void Sybil::handleStopOperation(LifecycleOperation *operation)
     cancelEvent(purgeNeighborsTimer);
 }
 
-void Sybil::handleCrashOperation(LifecycleOperation *operation)
+void GpsrBase::handleCrashOperation(LifecycleOperation *operation)
 {
     neighborPositionTable.clear();
     cancelEvent(beaconTimer);
@@ -815,7 +815,7 @@ void Sybil::handleCrashOperation(LifecycleOperation *operation)
 // notification
 //
 
-void Sybil::receiveSignal(cComponent *source, simsignal_t signalID, cObject *obj, cObject *details)
+void GpsrBase::receiveSignal(cComponent *source, simsignal_t signalID, cObject *obj, cObject *details)
 {
     Enter_Method("receiveChangeNotification");
     if (signalID == linkBrokenSignal) {
