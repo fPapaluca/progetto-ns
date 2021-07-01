@@ -15,14 +15,38 @@
 
 #include "Sybil.h"
 
+
+using namespace std;
+
 Define_Module(Sybil);
 
 Sybil::Sybil() {
     // TODO Auto-generated constructor stub
-    std::cout << "subaru modello sv" << std::endl;
+    srand(420);
 }
 
 Sybil::~Sybil() {
     // TODO Auto-generated destructor stub
+}
+
+void Sybil::processBeaconTimer() {
+    EV_DEBUG << "Processing beacon timer" << endl;
+    const char*  selfAddressStr = getSelfAddress().toIpv4().str().c_str();
+    const L3Address selfAddress = getSelfAddress();
+    if (!selfAddress.isUnspecified()) {
+        sendBeacon(createBeaconSybil(("host["+to_string(rand() % 30)+"]").c_str()));
+        storeSelfPositionInGlobalRegistry();
+    }
+    scheduleBeaconTimer();
+    schedulePurgeNeighborsTimer();
+}
+
+const Ptr<GpsrBeacon> Sybil::createBeaconSybil(const char* addressStr)
+{
+    const auto& beacon = makeShared<GpsrBeacon>();
+    beacon->setAddress(resolver.resolve(addressStr));
+    beacon->setPosition(mobility->getCurrentPosition());
+    beacon->setChunkLength(B(resolver.resolve(addressStr).getAddressType()->getAddressByteLength() + positionByteLength));
+    return beacon;
 }
 

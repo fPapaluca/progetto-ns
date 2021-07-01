@@ -63,7 +63,8 @@ out/clang-release//gpsrbase/Sybil.o: gpsrbase/Sybil.cc gpsrbase/Sybil.h \
   ../inet4/src\inet/common/lifecycle/ILifecycle.h \
   ../inet4/src\inet/transportlayer/udp/UdpHeader_m.h \
   ../inet4/src\inet/transportlayer/common/CrcMode_m.h \
-  ../inet4/src\inet/transportlayer/contract/TransportHeaderBase_m.h
+  ../inet4/src\inet/transportlayer/contract/TransportHeaderBase_m.h \
+  ../inet4/src\inet/networklayer/common/L3AddressResolver.h
 
 gpsrbase/Sybil.h:
 
@@ -206,3 +207,5 @@ gpsrbase/../gpsrbase/GpsrPositionTable.h:
 ../inet4/src\inet/transportlayer/common/CrcMode_m.h:
 
 ../inet4/src\inet/transportlayer/contract/TransportHeaderBase_m.h:
+
+../inet4/src\inet/networklayer/common/L3AddressResolver.h:

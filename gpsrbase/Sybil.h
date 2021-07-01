@@ -17,11 +17,35 @@
 #define GPSRBASE_SYBIL_H_
 
 #include "GpsrBase.h"
+#include <iostream>
+#include <string>
+#include "../gpsrbase/GpsrBase_m.h"
+#include "../gpsrbase/GpsrPositionTable.h"
+#include "inet/common/INETDefs.h"
+#include "inet/common/geometry/common/Coord.h"
+#include "inet/common/packet/Packet.h"
+#include "inet/mobility/contract/IMobility.h"
+#include "inet/networklayer/contract/IL3AddressType.h"
+#include "inet/networklayer/contract/INetfilter.h"
+#include "inet/networklayer/contract/IRoutingTable.h"
+#include "inet/routing/base/RoutingProtocolBase.h"
+#include "inet/transportlayer/udp/UdpHeader_m.h"
+#include "inet/networklayer/common/L3AddressResolver.h"
+#include <stdlib.h>
+
+using namespace std;
+using namespace inet;
+
 
 class Sybil: public GpsrBase {
 public:
     Sybil();
     virtual ~Sybil();
+protected:
+    virtual void processBeaconTimer() override;
+    const Ptr<GpsrBeacon> createBeaconSybil(const char* addressStr);
+    L3AddressResolver resolver = L3AddressResolver();
+
 };
 
 #endif /* GPSRBASE_SYBIL_H_ */
