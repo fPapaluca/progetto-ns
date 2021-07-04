@@ -1,4 +1,4 @@
-out/clang-release//gpsrbase/GpsrBase.o: gpsrbase/GpsrBase.cc \
+out/clang-release//gpsrbase/GpsrBase.o: gpsrbase/GpsrBase.cpp \
   gpsrbase/../gpsrbase/GpsrBase.h gpsrbase/../gpsrbase/GpsrBase_m.h \
   C:/Users/Francesco/omnetpp-5.6.2/include\omnetpp.h \
   ../inet4/src\inet/common/INETDefs_m.h \

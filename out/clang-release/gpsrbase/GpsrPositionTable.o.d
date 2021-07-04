@@ -1,5 +1,6 @@
 out/clang-release//gpsrbase/GpsrPositionTable.o: \
-  gpsrbase/GpsrPositionTable.cc gpsrbase/../gpsrbase/GpsrPositionTable.h \
+  gpsrbase/GpsrPositionTable.cpp \
+  gpsrbase/../gpsrbase/GpsrPositionTable.h \
   ../inet4/src\inet/common/INETDefs.h \
   ../inet4/src\inet/common/precompiled_release.h \
   ../inet4/src\inet/common/precompiled.h \

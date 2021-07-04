@@ -32,9 +32,11 @@
 #include "inet/transportlayer/udp/UdpHeader_m.h"
 #include "inet/networklayer/common/L3AddressResolver.h"
 #include <stdlib.h>
+#include "../cryptopp850/aes.h"
 
 using namespace std;
 using namespace inet;
+using namespace CryptoPP;
 
 
 class Sybil: public GpsrBase {
