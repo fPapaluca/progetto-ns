@@ -19,10 +19,19 @@ using namespace std;
 Define_Module(GpsrSecure);
 
 
-GpsrSecure::GpsrSecure() {
+void GpsrSecure::initialize(int stage)
+{
+    GpsrBase::initialize(stage);
+    if(stage == 10){
+        InitializeSec();
+    }
+
+}
+
+void GpsrSecure::InitializeSec(){
     bool result = false;
-    const char*  selfAddressStr = getSelfAddress().toIpv4().str().c_str();
-    //const char*  filename= "pk/"+selfAddressStr+".pem";
+    string  selfAddressStr = getSelfAddress().toIpv4().str();
+    string  filename= "pk/"+selfAddressStr+".pem";
     srand(420);
     result = GeneratePrivateKey( CryptoPP::ASN1::secp160r1(), privateKey );
 
@@ -35,8 +44,12 @@ GpsrSecure::GpsrSecure() {
 
     result = VerifyMessage( publicKey, message, signature );
 
-    SavePublicKey( "ciao", publicKey );
+    SavePublicKey( filename, publicKey );
     cout << "Slaved" << endl;
+}
+
+GpsrSecure::GpsrSecure() {
+
 
 }
 

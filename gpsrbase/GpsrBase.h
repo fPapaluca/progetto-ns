@@ -48,7 +48,7 @@ using namespace inet;
 // KLUDGE: implement position registry protocol instead of using a global variable
 class  GpsrBase : public RoutingProtocolBase, public cListener, public NetfilterBase::HookBase
 {
-  protected:
+  public:
     // GPSR parameters
     GpsrPlanarizationMode planarizationMode = static_cast<GpsrPlanarizationMode>(-1);
     const char *interfaces = nullptr;
@@ -79,10 +79,10 @@ class  GpsrBase : public RoutingProtocolBase, public cListener, public Netfilter
     GpsrBase();
     virtual ~GpsrBase();
 
-  protected:
+  public:
     // module interface
     virtual int numInitStages() const override { return NUM_INIT_STAGES; }
-    void initialize(int stage) override;
+    virtual void initialize(int stage) override;
     void handleMessageWhenUp(cMessage *message) override;
 
     // handling messages

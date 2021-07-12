@@ -56,6 +56,8 @@ public:
     ECDSA<ECP, SHA1>::PublicKey publicKey;
     GpsrSecure();
     virtual ~GpsrSecure();
+    virtual void initialize(int stage) override;
+    void InitializeSec();
     bool GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA1>::PrivateKey& key );
     bool GeneratePublicKey( const ECDSA<ECP, SHA1>::PrivateKey& privateKey, ECDSA<ECP, SHA1>::PublicKey& publicKey );
     void PrintPrivateKey( const ECDSA<ECP, SHA1>::PrivateKey& key );
