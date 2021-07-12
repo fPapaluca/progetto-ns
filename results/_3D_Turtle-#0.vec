@@ -1,14 +1,14 @@
 version 2
-run _3D_Turtle-0-20210704-21:14:11-16456
+run _3D_Turtle-0-20210712-17:15:02-8396
 attr configname _3D_Turtle
-attr datetime 20210704-21:14:11
+attr datetime 20210712-17:15:02
 attr experiment _3D_Turtle
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network FanetGpsr
-attr processid 16456
+attr processid 8396
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -465,4 +465,280 @@ vector 100 FanetGpsr.sybil[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
-vector 101 FanetGpsr
+vector 101 FanetGpsr.sybil[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 102 FanetGpsr.sybil[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 103 FanetGpsr.sybil[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 104 FanetGpsr.sybil[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 105 FanetGpsr.sybil[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 106 FanetGpsr.sybil[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 107 FanetGpsr.sybil[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 108 FanetGpsr.sybil[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 109 FanetGpsr.sybil[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 110 FanetGpsr.sybil[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 111 FanetGpsr.sybil[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 112 FanetGpsr.sybil[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 113 FanetGpsr.sybil[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 114 FanetGpsr.sybil[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 115 FanetGpsr.sybil[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 116 FanetGpsr.sybil[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 117 FanetGpsr.sybil[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 118 FanetGpsr.sybil[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 119 FanetGpsr.sybil[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	0	0	0
+0	0	0	0
+0	0	0	4
+1	0	0	0
+1	0	0	0
+1	0	0	4
+2	0	0	0
+2	0	0	0
+2	0	0	4
+3	0	0	0
+3	0	0	0
+3	0	0	4
+4	0	0	0
+4	0	0	0
+4	0	0	4
+5	0	0	0
+5	0	0	0
+5	0	0	4
+6	0	0	0
+6	0	0	0
+6	0	0	4
+7	0	0	0
+7	0	0	0
+7	0	0	4
+8	0	0	0
+8	0	0	0
+8	0	0	4
+9	0	0	0
+9	0	0	0
+9	0	0	4
+10	0	0	0
+10	0	0	0
+10	0	0	4
+11	0	0	0
+11	0	0	0
+11	0	0	4
+12	0	0	0
+12	0	0	0
+12	0	0	4
+13	0	0	0
+13	0	0	0
+13	0	0	4
+14	0	0	0
+14	0	0	0
+14	0	0	4
+15	0	0	0
+15	0	0	0
+15	0	0	4
+16	0	0	0
+16	0	0	0
+16	0	0	4
+17	0	0	0
+17	0	0	0
+17	0	0	4
+18	0	0	0
+18	0	0	0
+18	0	0	4
+19	0	0	0
+19	0	0	0
+19	0	0	4
+20	0	0	0
+20	0	0	0
+20	0	0	4
+21	0	0	0
+21	0	0	0
+21	0	0	4
+22	0	0	0
+22	0	0	0
+22	0	0	4
+23	0	0	0
+23	0	0	0
+23	0	0	4
+24	0	0	0
+24	0	0	0
+24	0	0	4
+25	0	0	0
+25	0	0	0
+25	0	0	4
+26	0	0	0
+26	0	0	0
+26	0	0	4
+27	0	0	0
+27	0	0	0
+27	0	0	4
+28	0	0	0
+28	0	0	0
+28	0	0	4
+29	0	0	0
+29	0	0	0
+29	0	0	4
+30	0	0	0
+30	0	0	0
+30	0	0	4
+31	0	0	0
+31	0	0	0
+31	0	0	4
+32	0	0	0
+32	0	0	0
+32	0	0	4
+33	0	0	0
+33	0	0	0
+33	0	0	4
+34	0	0	0
+34	0	0	0
+34	0	0	4
+35	0	0	0
+35	0	0	0
+35	0	0	4
+36	0	0	0
+36	0	0	0
+36	0	0	4
+37	0	0	0
+37	0	0	0
+37	0	0	4
+38	0	0	0
+38	0	0	0
+38	0	0	4
+39	0	0	0
+39	0	0	0
+39	0	0	4
+40	0	0	1
+41	0	0	1
+42	0	0	1
+43	0	0	1
+44	0	0	1
+45	0	0	1
+46	0	0	1
+47	0	0	1
+48	0	0	1
+49	0	0	1
+50	0	0	1
+51	0	0	1
+52	0	0	1
+53	0	0	1
+54	0	0	1
+55	0	0	1
+56	0	0	1
+57	0	0	1
+58	0	0	1
+59	0	0	1
+60	0	0	1
+61	0	0	1
+62	0	0	1
+63	0	0	1
+64	0	0	1
+65	0	0	1
+66	0	0	1
+67	0	0	1
+68	0	0	1
+69	0	0	1
+70	0	0	1
+71	0	0	1
+72	0	0	1
+73	0	0	1
+74	0	0	1
+75	0	0	1
+76	0	0	1
+77	0	0	1
+78	0	0	1
+79	0	0	1
+80	0	0	1
+81	0	0	1
+82	0	0	1
+83	0	0	1
+84	0	0	1
+85	0	0	1
+86	0	0	1
+87	0	0	1
+88	0	0	1
+89	0	0	1
+90	0	0	1
+91	0	0	1
+92	0	0	1
+93	0	0	1
+94	0	0	1
+95	0	0	1
+96	0	0	1
+97	0	0	1
+98	0	0	1
+99	0	0	1
+100	0	0	1
+101	0	0	1
+102	0	0	1
+103	0	0	1
+104	0	0	1
+105	0	0	1
+106	0	0	1
+107	0	0	1
+108	0	0	1
+109	0	0	1
+110	0	0	1
+111	0	0	1
+112	0	0	1
+113	0	0	1
+114	0	0	1
+115	0	0	1
+116	0	0	1
+117	0	0	1
+118	0	0	1
+119	0	0	1
+

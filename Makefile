@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for progetto-ns
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out -KINET4_PROJ=../inet4 -DINET_IMPORT -I. -I$$\(INET4_PROJ\)/src -L$$\(INET4_PROJ\)/src -lINET$$\(D\)
+#  opp_makemake -f --deep -O out -KINET4_PROJ=C:/Users/tosqu/Documents/omnetpp-5.6.2/samples/inet4 -DINET_IMPORT -I. -I$$\(INET4_PROJ\)/src -L$$\(INET4_PROJ\)/src -lINET$$\(D\)
 #
 
 # Name of target to be created (-o option)
@@ -209,6 +209,7 @@ OBJS = \
     $O/cryptopp850/zlib.o \
     $O/gpsrbase/GpsrBase.o \
     $O/gpsrbase/GpsrPositionTable.o \
+    $O/gpsrbase/GpsrSecure.o \
     $O/gpsrbase/Sybil.o \
     $O/gpsrbase/GpsrBase_m.o
 
@@ -220,7 +221,7 @@ MSGFILES = \
 SMFILES =
 
 # Other makefile variables (-K)
-INET4_PROJ=../inet4
+INET4_PROJ=C:/Users/tosqu/Documents/omnetpp-5.6.2/samples/inet4
 
 #------------------------------------------------------------------------------
 
@@ -265,6 +266,7 @@ endif
 # >>>
 # inserted from file 'makefrag':
 CXXFLAGS += -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mpclmul -maes -mavx -mavx2 -msha
+MSGC:=$(MSGC) --msg6
 
 # <<<
 #------------------------------------------------------------------------------

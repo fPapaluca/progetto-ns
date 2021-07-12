@@ -30,7 +30,7 @@ network FanetGpsr
         //@figure[sndPkText](type=indicatorText; pos=380,40; anchor=w; font=,18; textFormat="packets sent: %g"; initialValue=0);
         //@statistic[packetSent](source=host[14].app[0].packetSent; record=figure(count); targetFigure=sndPkText);
     submodules:
-        host[numHosts]: GpsrRouter {
+        host[numHosts]: GpsrSecureRouter {
             @display("i=misc/drone;p=0,0");
         }
 

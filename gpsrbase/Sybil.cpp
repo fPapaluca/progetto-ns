@@ -51,4 +51,3 @@ const Ptr<GpsrBeacon> Sybil::createBeaconSybil(const char* addressStr)
     beacon->setChunkLength(B(resolver.resolve(addressStr).getAddressType()->getAddressByteLength() + positionByteLength));
     return beacon;
 }
-

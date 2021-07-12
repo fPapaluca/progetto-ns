@@ -1,15 +1,15 @@
-                                                                
+file 26541 1626102905                                           
 version 2
-run _3D_Turtle-0-20210704-21:14:11-16456
+run _3D_Turtle-0-20210712-17:15:02-8396
 attr configname _3D_Turtle
-attr datetime 20210704-21:14:11
+attr datetime 20210712-17:15:02
 attr experiment _3D_Turtle
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network FanetGpsr
-attr processid 16456
+attr processid 8396
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -464,4 +464,202 @@ attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
 vector 100 FanetGpsr.sybil[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
-attr source receptionStateChange
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 101 FanetGpsr.sybil[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 102 FanetGpsr.sybil[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 103 FanetGpsr.sybil[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 104 FanetGpsr.sybil[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 105 FanetGpsr.sybil[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 106 FanetGpsr.sybil[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 107 FanetGpsr.sybil[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 108 FanetGpsr.sybil[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 109 FanetGpsr.sybil[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 110 FanetGpsr.sybil[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 111 FanetGpsr.sybil[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 112 FanetGpsr.sybil[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 113 FanetGpsr.sybil[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 114 FanetGpsr.sybil[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 115 FanetGpsr.sybil[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 116 FanetGpsr.sybil[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 117 FanetGpsr.sybil[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 118 FanetGpsr.sybil[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 119 FanetGpsr.sybil[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	24549 27 0 0 0 0 3 0 4 4 16
+1	24576 27 0 0 0 0 3 0 4 4 16
+2	24603 27 0 0 0 0 3 0 4 4 16
+3	24630 27 0 0 0 0 3 0 4 4 16
+4	24657 27 0 0 0 0 3 0 4 4 16
+5	24684 27 0 0 0 0 3 0 4 4 16
+6	24711 27 0 0 0 0 3 0 4 4 16
+7	24738 27 0 0 0 0 3 0 4 4 16
+8	24765 27 0 0 0 0 3 0 4 4 16
+9	24792 27 0 0 0 0 3 0 4 4 16
+10	24819 30 0 0 0 0 3 0 4 4 16
+11	24849 30 0 0 0 0 3 0 4 4 16
+12	24879 30 0 0 0 0 3 0 4 4 16
+13	24909 30 0 0 0 0 3 0 4 4 16
+14	24939 30 0 0 0 0 3 0 4 4 16
+15	24969 30 0 0 0 0 3 0 4 4 16
+16	24999 30 0 0 0 0 3 0 4 4 16
+17	25029 30 0 0 0 0 3 0 4 4 16
+18	25059 30 0 0 0 0 3 0 4 4 16
+19	25089 30 0 0 0 0 3 0 4 4 16
+20	25119 30 0 0 0 0 3 0 4 4 16
+21	25149 30 0 0 0 0 3 0 4 4 16
+22	25179 30 0 0 0 0 3 0 4 4 16
+23	25209 30 0 0 0 0 3 0 4 4 16
+24	25239 30 0 0 0 0 3 0 4 4 16
+25	25269 30 0 0 0 0 3 0 4 4 16
+26	25299 30 0 0 0 0 3 0 4 4 16
+27	25329 30 0 0 0 0 3 0 4 4 16
+28	25359 30 0 0 0 0 3 0 4 4 16
+29	25389 30 0 0 0 0 3 0 4 4 16
+30	25419 30 0 0 0 0 3 0 4 4 16
+31	25449 30 0 0 0 0 3 0 4 4 16
+32	25479 30 0 0 0 0 3 0 4 4 16
+33	25509 30 0 0 0 0 3 0 4 4 16
+34	25539 30 0 0 0 0 3 0 4 4 16
+35	25569 30 0 0 0 0 3 0 4 4 16
+36	25599 30 0 0 0 0 3 0 4 4 16
+37	25629 30 0 0 0 0 3 0 4 4 16
+38	25659 30 0 0 0 0 3 0 4 4 16
+39	25689 30 0 0 0 0 3 0 4 4 16
+40	25719 10 0 0 0 0 1 1 1 1 1
+41	25729 10 0 0 0 0 1 1 1 1 1
+42	25739 10 0 0 0 0 1 1 1 1 1
+43	25749 10 0 0 0 0 1 1 1 1 1
+44	25759 10 0 0 0 0 1 1 1 1 1
+45	25769 10 0 0 0 0 1 1 1 1 1
+46	25779 10 0 0 0 0 1 1 1 1 1
+47	25789 10 0 0 0 0 1 1 1 1 1
+48	25799 10 0 0 0 0 1 1 1 1 1
+49	25809 10 0 0 0 0 1 1 1 1 1
+50	25819 10 0 0 0 0 1 1 1 1 1
+51	25829 10 0 0 0 0 1 1 1 1 1
+52	25839 10 0 0 0 0 1 1 1 1 1
+53	25849 10 0 0 0 0 1 1 1 1 1
+54	25859 10 0 0 0 0 1 1 1 1 1
+55	25869 10 0 0 0 0 1 1 1 1 1
+56	25879 10 0 0 0 0 1 1 1 1 1
+57	25889 10 0 0 0 0 1 1 1 1 1
+58	25899 10 0 0 0 0 1 1 1 1 1
+59	25909 10 0 0 0 0 1 1 1 1 1
+60	25919 10 0 0 0 0 1 1 1 1 1
+61	25929 10 0 0 0 0 1 1 1 1 1
+62	25939 10 0 0 0 0 1 1 1 1 1
+63	25949 10 0 0 0 0 1 1 1 1 1
+64	25959 10 0 0 0 0 1 1 1 1 1
+65	25969 10 0 0 0 0 1 1 1 1 1
+66	25979 10 0 0 0 0 1 1 1 1 1
+67	25989 10 0 0 0 0 1 1 1 1 1
+68	25999 10 0 0 0 0 1 1 1 1 1
+69	26009 10 0 0 0 0 1 1 1 1 1
+70	26019 10 0 0 0 0 1 1 1 1 1
+71	26029 10 0 0 0 0 1 1 1 1 1
+72	26039 10 0 0 0 0 1 1 1 1 1
+73	26049 10 0 0 0 0 1 1 1 1 1
+74	26059 10 0 0 0 0 1 1 1 1 1
+75	26069 10 0 0 0 0 1 1 1 1 1
+76	26079 10 0 0 0 0 1 1 1 1 1
+77	26089 10 0 0 0 0 1 1 1 1 1
+78	26099 10 0 0 0 0 1 1 1 1 1
+79	26109 10 0 0 0 0 1 1 1 1 1
+80	26119 10 0 0 0 0 1 1 1 1 1
+81	26129 10 0 0 0 0 1 1 1 1 1
+82	26139 10 0 0 0 0 1 1 1 1 1
+83	26149 10 0 0 0 0 1 1 1 1 1
+84	26159 10 0 0 0 0 1 1 1 1 1
+85	26169 10 0 0 0 0 1 1 1 1 1
+86	26179 10 0 0 0 0 1 1 1 1 1
+87	26189 10 0 0 0 0 1 1 1 1 1
+88	26199 10 0 0 0 0 1 1 1 1 1
+89	26209 10 0 0 0 0 1 1 1 1 1
+90	26219 10 0 0 0 0 1 1 1 1 1
+91	26229 10 0 0 0 0 1 1 1 1 1
+92	26239 10 0 0 0 0 1 1 1 1 1
+93	26249 10 0 0 0 0 1 1 1 1 1
+94	26259 10 0 0 0 0 1 1 1 1 1
+95	26269 10 0 0 0 0 1 1 1 1 1
+96	26279 10 0 0 0 0 1 1 1 1 1
+97	26289 10 0 0 0 0 1 1 1 1 1
+98	26299 10 0 0 0 0 1 1 1 1 1
+99	26309 10 0 0 0 0 1 1 1 1 1
+100	26319 11 0 0 0 0 1 1 1 1 1
+101	26330 11 0 0 0 0 1 1 1 1 1
+102	26341 11 0 0 0 0 1 1 1 1 1
+103	26352 11 0 0 0 0 1 1 1 1 1
+104	26363 11 0 0 0 0 1 1 1 1 1
+105	26374 11 0 0 0 0 1 1 1 1 1
+106	26385 11 0 0 0 0 1 1 1 1 1
+107	26396 11 0 0 0 0 1 1 1 1 1
+108	26407 11 0 0 0 0 1 1 1 1 1
+109	26418 11 0 0 0 0 1 1 1 1 1
+110	26429 11 0 0 0 0 1 1 1 1 1
+111	26440 11 0 0 0 0 1 1 1 1 1
+112	26451 11 0 0 0 0 1 1 1 1 1
+113	26462 11 0 0 0 0 1 1 1 1 1
+114	26473 11 0 0 0 0 1 1 1 1 1
+115	26484 11 0 0 0 0 1 1 1 1 1
+116	26495 11 0 0 0 0 1 1 1 1 1
+117	26506 11 0 0 0 0 1 1 1 1 1
+118	26517 11 0 0 0 0 1 1 1 1 1
+119	26528 11 0 0 0 0 1 1 1 1 1
+
