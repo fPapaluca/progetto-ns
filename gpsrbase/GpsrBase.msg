@@ -48,6 +48,7 @@ class GpsrBeacon extends FieldsChunk
 {
     L3Address address;
     Coord position;
+    string signature;
 }
 
 //

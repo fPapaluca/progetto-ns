@@ -22,7 +22,6 @@
 #include <assert.h>
 #include "../gpsrbase/GpsrBase_m.h"
 #include "../gpsrbase/GpsrPositionTable.h"
-#include "../gpsrbase/GpsrSecureBeacon.h"
 #include "inet/common/INETDefs.h"
 #include "inet/common/geometry/common/Coord.h"
 #include "inet/common/packet/Packet.h"

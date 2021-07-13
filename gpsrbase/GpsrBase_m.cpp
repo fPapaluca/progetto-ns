@@ -249,6 +249,7 @@ void GpsrBeacon::copy(const GpsrBeacon& other)
 {
     this->address = other.address;
     this->position = other.position;
+    this->signature = other.signature;
 }
 
 void GpsrBeacon::parsimPack(omnetpp::cCommBuffer *b) const
@@ -256,6 +257,7 @@ void GpsrBeacon::parsimPack(omnetpp::cCommBuffer *b) const
     ::inet::FieldsChunk::parsimPack(b);
     doParsimPacking(b,this->address);
     doParsimPacking(b,this->position);
+    doParsimPacking(b,this->signature);
 }
 
 void GpsrBeacon::parsimUnpack(omnetpp::cCommBuffer *b)
@@ -263,6 +265,7 @@ void GpsrBeacon::parsimUnpack(omnetpp::cCommBuffer *b)
     ::inet::FieldsChunk::parsimUnpack(b);
     doParsimUnpacking(b,this->address);
     doParsimUnpacking(b,this->position);
+    doParsimUnpacking(b,this->signature);
 }
 
 const L3Address& GpsrBeacon::getAddress() const
@@ -287,6 +290,17 @@ void GpsrBeacon::setPosition(const Coord& position)
     this->position = position;
 }
 
+const char * GpsrBeacon::getSignature() const
+{
+    return this->signature.c_str();
+}
+
+void GpsrBeacon::setSignature(const char * signature)
+{
+    handleChange();
+    this->signature = signature;
+}
+
 class GpsrBeaconDescriptor : public omnetpp::cClassDescriptor
 {
   private:
@@ -294,6 +308,7 @@ class GpsrBeaconDescriptor : public omnetpp::cClassDescriptor
     enum FieldConstants {
         FIELD_address,
         FIELD_position,
+        FIELD_signature,
     };
   public:
     GpsrBeaconDescriptor();
@@ -356,7 +371,7 @@ const char *GpsrBeaconDescriptor::getProperty(const char *propertyname) const
 int GpsrBeaconDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 2+basedesc->getFieldCount() : 2;
+    return basedesc ? 3+basedesc->getFieldCount() : 3;
 }
 
 unsigned int GpsrBeaconDescriptor::getFieldTypeFlags(int field) const
@@ -370,8 +385,9 @@ unsigned int GpsrBeaconDescriptor::getFieldTypeFlags(int field) const
     static unsigned int fieldTypeFlags[] = {
         0,    // FIELD_address
         FD_ISCOMPOUND,    // FIELD_position
+        FD_ISEDITABLE,    // FIELD_signature
     };
-    return (field >= 0 && field < 2) ? fieldTypeFlags[field] : 0;
+    return (field >= 0 && field < 3) ? fieldTypeFlags[field] : 0;
 }
 
 const char *GpsrBeaconDescriptor::getFieldName(int field) const
@@ -385,8 +401,9 @@ const char *GpsrBeaconDescriptor::getFieldName(int field) const
     static const char *fieldNames[] = {
         "address",
         "position",
+        "signature",
     };
-    return (field >= 0 && field < 2) ? fieldNames[field] : nullptr;
+    return (field >= 0 && field < 3) ? fieldNames[field] : nullptr;
 }
 
 int GpsrBeaconDescriptor::findField(const char *fieldName) const
@@ -395,6 +412,7 @@ int GpsrBeaconDescriptor::findField(const char *fieldName) const
     int base = basedesc ? basedesc->getFieldCount() : 0;
     if (fieldName[0] == 'a' && strcmp(fieldName, "address") == 0) return base+0;
     if (fieldName[0] == 'p' && strcmp(fieldName, "position") == 0) return base+1;
+    if (fieldName[0] == 's' && strcmp(fieldName, "signature") == 0) return base+2;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
@@ -409,8 +427,9 @@ const char *GpsrBeaconDescriptor::getFieldTypeString(int field) const
     static const char *fieldTypeStrings[] = {
         "inet::L3Address",    // FIELD_address
         "inet::Coord",    // FIELD_position
+        "string",    // FIELD_signature
     };
-    return (field >= 0 && field < 2) ? fieldTypeStrings[field] : nullptr;
+    return (field >= 0 && field < 3) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **GpsrBeaconDescriptor::getFieldPropertyNames(int field) const
@@ -479,6 +498,7 @@ std::string GpsrBeaconDescriptor::getFieldValueAsString(void *object, int field,
     switch (field) {
         case FIELD_address: return pp->getAddress().str();
         case FIELD_position: {std::stringstream out; out << pp->getPosition(); return out.str();}
+        case FIELD_signature: return oppstring2string(pp->getSignature());
         default: return "";
     }
 }
@@ -493,6 +513,7 @@ bool GpsrBeaconDescriptor::setFieldValueAsString(void *object, int field, int i,
     }
     GpsrBeacon *pp = (GpsrBeacon *)object; (void)pp;
     switch (field) {
+        case FIELD_signature: pp->setSignature((value)); return true;
         default: return false;
     }
 }

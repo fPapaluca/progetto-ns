@@ -65,7 +65,6 @@ out/clang-release//gpsrbase/GpsrSecure.o: gpsrbase/GpsrSecure.cpp \
   ../inet4/src\inet/transportlayer/udp/UdpHeader_m.h \
   ../inet4/src\inet/transportlayer/common/CrcMode_m.h \
   ../inet4/src\inet/transportlayer/contract/TransportHeaderBase_m.h \
-  gpsrbase/../gpsrbase/GpsrSecureBeacon.h \
   ../inet4/src\inet/networklayer/common/L3AddressResolver.h \
   gpsrbase/../cryptopp850/aes.h gpsrbase/../cryptopp850/rijndael.h \
   gpsrbase/../cryptopp850/seckey.h gpsrbase/../cryptopp850/config.h \
@@ -262,8 +261,6 @@ gpsrbase/../gpsrbase/GpsrPositionTable.h:
 ../inet4/src\inet/transportlayer/common/CrcMode_m.h:
 
 ../inet4/src\inet/transportlayer/contract/TransportHeaderBase_m.h:
-
-gpsrbase/../gpsrbase/GpsrSecureBeacon.h:
 
 ../inet4/src\inet/networklayer/common/L3AddressResolver.h:
 

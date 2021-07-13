@@ -210,7 +210,6 @@ OBJS = \
     $O/gpsrbase/GpsrBase.o \
     $O/gpsrbase/GpsrPositionTable.o \
     $O/gpsrbase/GpsrSecure.o \
-    $O/gpsrbase/GpsrSecureBeacon.o \
     $O/gpsrbase/Sybil.o \
     $O/gpsrbase/GpsrBase_m.o
 

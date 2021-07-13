@@ -83,6 +83,7 @@ enum GpsrPlanarizationMode {
  * {
  *     L3Address address;
  *     Coord position;
+ *     string signature;
  * }
  * </pre>
  */
@@ -91,6 +92,7 @@ class GpsrBeacon : public ::inet::FieldsChunk
   protected:
     L3Address address;
     Coord position;
+    omnetpp::opp_string signature;
 
   private:
     void copy(const GpsrBeacon& other);
@@ -115,13 +117,15 @@ class GpsrBeacon : public ::inet::FieldsChunk
     virtual const Coord& getPosition() const;
     virtual Coord& getPositionForUpdate() { handleChange();return const_cast<Coord&>(const_cast<GpsrBeacon*>(this)->getPosition());}
     virtual void setPosition(const Coord& position);
+    virtual const char * getSignature() const;
+    virtual void setSignature(const char * signature);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const GpsrBeacon& obj) {obj.parsimPack(b);}
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, GpsrBeacon& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>gpsrbase/GpsrBase.msg:59</tt> by nedtool.
+ * Class generated from <tt>gpsrbase/GpsrBase.msg:60</tt> by nedtool.
  * <pre>
  * //
  * // The GPSROption is used to add extra routing information for network datagrams.

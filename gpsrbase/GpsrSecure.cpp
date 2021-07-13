@@ -140,17 +140,17 @@ void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::Public
 
 const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
 {
-    const auto& beacon = makeShared<GpsrSecureBeacon>();
+    const auto& beacon = makeShared<GpsrBeacon>();
     beacon->setAddress(getSelfAddress());
     beacon->setPosition(mobility->getCurrentPosition());
-    beacon->setSignature(getSelfAddress());
-    beacon->setChunkLength(B(2*getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength));
+    beacon->setSignature("noice");
+    beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + strlen(beacon->getSignature())));
     return beacon;
 }
 
 void GpsrSecure::processBeacon(Packet *packet)
 {
-    const auto& beacon = packet->peekAtFront<GpsrSecureBeacon>();
+    const auto& beacon = packet->peekAtFront<GpsrBeacon>();
     cout << beacon->getSignature() << endl;
     EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
     neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
