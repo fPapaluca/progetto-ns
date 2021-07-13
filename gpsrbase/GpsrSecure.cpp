@@ -18,17 +18,18 @@
 using namespace std;
 Define_Module(GpsrSecure);
 
-
 void GpsrSecure::initialize(int stage)
 {
     GpsrBase::initialize(stage);
     if(stage == 10){
         InitializeSec();
+
     }
 
 }
 
 void GpsrSecure::InitializeSec(){
+
     bool result = false;
     string  selfAddressStr = getSelfAddress().toIpv4().str();
     string  filename= "pk/"+selfAddressStr+".pem";
@@ -45,7 +46,6 @@ void GpsrSecure::InitializeSec(){
     result = VerifyMessage( publicKey, message, signature );
 
     SavePublicKey( filename, publicKey );
-    cout << "Slaved" << endl;
 }
 
 GpsrSecure::GpsrSecure() {
@@ -138,6 +138,24 @@ void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::Public
     key.Load( FileSource( filename.c_str(), true /*pump all*/ ).Ref() );
 }
 
+const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
+{
+    const auto& beacon = makeShared<GpsrSecureBeacon>();
+    beacon->setAddress(getSelfAddress());
+    beacon->setPosition(mobility->getCurrentPosition());
+    beacon->setSignature(getSelfAddress());
+    beacon->setChunkLength(B(2*getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength));
+    return beacon;
+}
+
+void GpsrSecure::processBeacon(Packet *packet)
+{
+    const auto& beacon = packet->peekAtFront<GpsrSecureBeacon>();
+    cout << beacon->getSignature() << endl;
+    EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
+    neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
+    delete packet;
+}
 
 
 /*

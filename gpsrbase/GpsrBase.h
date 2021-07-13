@@ -102,9 +102,9 @@ class  GpsrBase : public RoutingProtocolBase, public cListener, public Netfilter
     void processUdpPacket(Packet *packet);
 
     // handling beacons
-    const Ptr<GpsrBeacon> createBeacon();
-    void sendBeacon(const Ptr<GpsrBeacon>& beacon);
-    void processBeacon(Packet *packet);
+    virtual const Ptr<GpsrBeacon> createBeacon();
+    virtual void sendBeacon(const Ptr<GpsrBeacon>& beacon);
+    virtual void processBeacon(Packet *packet);
 
     // handling packets
     GpsrOption *createGpsrOption(L3Address destination);

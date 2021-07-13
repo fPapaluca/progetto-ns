@@ -22,6 +22,7 @@
 #include <assert.h>
 #include "../gpsrbase/GpsrBase_m.h"
 #include "../gpsrbase/GpsrPositionTable.h"
+#include "../gpsrbase/GpsrSecureBeacon.h"
 #include "inet/common/INETDefs.h"
 #include "inet/common/geometry/common/Coord.h"
 #include "inet/common/packet/Packet.h"
@@ -41,6 +42,34 @@
 #include "../cryptopp850/integer.h"
 #include "../cryptopp850/filters.h"
 #include "../cryptopp850/oids.h"
+
+#include <algorithm>
+
+#include "inet/common/INETUtils.h"
+#include "inet/common/IProtocolRegistrationListener.h"
+#include "inet/common/ModuleAccess.h"
+#include "inet/common/ProtocolTag_m.h"
+#include "inet/common/lifecycle/ModuleOperations.h"
+#include "inet/linklayer/common/InterfaceTag_m.h"
+#include "inet/networklayer/common/HopLimitTag_m.h"
+#include "inet/networklayer/common/IpProtocolId_m.h"
+#include "inet/networklayer/common/L3AddressTag_m.h"
+#include "inet/networklayer/common/L3Tools.h"
+#include "inet/networklayer/common/NextHopAddressTag_m.h"
+#include "inet/networklayer/contract/IInterfaceTable.h"
+
+#ifdef WITH_IPv4
+#include "inet/networklayer/ipv4/Ipv4Header_m.h"
+#endif
+
+#ifdef WITH_IPv6
+#include "inet/networklayer/ipv6/Ipv6ExtensionHeaders_m.h"
+#include "inet/networklayer/ipv6/Ipv6InterfaceData.h"
+#endif
+
+#ifdef WITH_NEXTHOP
+#include "inet/networklayer/nexthop/NextHopForwardingHeader_m.h"
+#endif
 
 
 
@@ -66,6 +95,8 @@ public:
     bool VerifyMessage( const ECDSA<ECP, SHA1>::PublicKey& key, const string& message, const string& signature );
     void SavePublicKey( const string& filename, const ECDSA<ECP, SHA1>::PublicKey& key );
     void LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::PublicKey& key );
+    virtual const Ptr<GpsrBeacon> createBeacon() override;
+    virtual void processBeacon(Packet *packet) override;
 };
 
 #endif /* GPSRBASE_GPSRSECURE_H_ */
