@@ -22,9 +22,6 @@ Define_Module(Sybil);
 
 Sybil::Sybil() {
     // TODO Auto-generated constructor stub
-    srand(420);
-    cout << "Hello Crypto++" << endl;
-    cout << "Aes block size is " << AES::BLOCKSIZE << endl;
 }
 
 Sybil::~Sybil() {
