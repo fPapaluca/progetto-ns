@@ -37,14 +37,14 @@ void GpsrSecure::InitializeSec(){
     result = GeneratePrivateKey( CryptoPP::ASN1::secp160r1(), privateKey );
 
     result = GeneratePublicKey( privateKey, publicKey );
-
+    /*
     string message = "Yoda said, Subaru Baracca. Don't try this at home.";
     string signature;
 
     result = SignMessage( privateKey, message, signature );
 
     result = VerifyMessage( publicKey, message, signature );
-
+    */
     SavePublicKey( filename, publicKey );
 }
 
@@ -140,20 +140,38 @@ void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::Public
 
 const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
 {
+    bool result;
     const auto& beacon = makeShared<GpsrBeacon>();
     beacon->setAddress(getSelfAddress());
     beacon->setPosition(mobility->getCurrentPosition());
-    beacon->setSignature("noice");
-    beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + strlen(beacon->getSignature())));
+    string signature;
+    string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
+    cout << "this is the message: " << message << endl ;
+    result = SignMessage( privateKey, message, signature );
+    cout << "this is the signature in create beacon: "+ signature << endl ;
+    cout << "signature length " << signature.length() <<endl;
+    beacon->setSignature(signature);
+    cout << "beacon->getSignature() length " << signature.length() <<endl;
+    beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
     return beacon;
 }
 
 void GpsrSecure::processBeacon(Packet *packet)
 {
+    ECDSA<ECP, SHA1>::PublicKey currentPublicKey;
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
-    cout << beacon->getSignature() << endl;
-    EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
-    neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
+    cout << "this is the signature in process beacon: "<< beacon->getSignature() << endl;
+    string  selfAddressStr = beacon->getAddress().toIpv4().str(); //getSelfAddress().toIpv4().str();
+    cout << "filename: " << selfAddressStr << endl;
+    string  filename= "pk/"+selfAddressStr+".pem";
+    LoadPublicKey(filename, currentPublicKey);
+    string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
+    if(VerifyMessage(currentPublicKey,message,beacon->getSignature())){
+        cout << "iammu belli" << endl ;
+        EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
+        neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
+    }
+
     delete packet;
 }
 

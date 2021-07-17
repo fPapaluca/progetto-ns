@@ -92,7 +92,7 @@ class GpsrBeacon : public ::inet::FieldsChunk
   protected:
     L3Address address;
     Coord position;
-    omnetpp::opp_string signature;
+    std::string signature;
 
   private:
     void copy(const GpsrBeacon& other);
@@ -117,8 +117,8 @@ class GpsrBeacon : public ::inet::FieldsChunk
     virtual const Coord& getPosition() const;
     virtual Coord& getPositionForUpdate() { handleChange();return const_cast<Coord&>(const_cast<GpsrBeacon*>(this)->getPosition());}
     virtual void setPosition(const Coord& position);
-    virtual const char * getSignature() const;
-    virtual void setSignature(const char * signature);
+    virtual const std::string getSignature() const;
+    virtual void setSignature(std::string signature);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const GpsrBeacon& obj) {obj.parsimPack(b);}
