@@ -19,6 +19,8 @@ import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;
 import inet.*.*.UnitDiskRadioMedium;
 import inet.*.*.StandardHost;
 import inet.*.*.GpsrRouter;
+import inet.common.geometry.common.OsgGeographicCoordinateSystem;
+
 
 network FanetGpsrNormal
 {
@@ -47,6 +49,10 @@ network FanetGpsrNormal
         configurator: Ipv4NetworkConfigurator {
             @display("p=100,300");
         }
+        coordinateSystem: OsgGeographicCoordinateSystem {
+            parameters:
+                @display("p=150,600");
+        } 
 }
 
 network FanetGpsrSecure
@@ -76,5 +82,9 @@ network FanetGpsrSecure
         configurator: Ipv4NetworkConfigurator {
             @display("p=100,300");
         }
+        coordinateSystem: OsgGeographicCoordinateSystem {
+            parameters:
+                @display("p=150,600");
+        } 
 }
 
