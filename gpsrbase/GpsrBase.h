@@ -150,7 +150,7 @@ class  GpsrBase : public RoutingProtocolBase, public cListener, public Netfilter
     L3Address findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
 
     // routing
-    Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);
+    virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);
 
     // netfilter
     virtual Result datagramPreRoutingHook(Packet *datagram) override;
