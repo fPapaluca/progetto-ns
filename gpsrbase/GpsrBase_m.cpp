@@ -290,12 +290,12 @@ void GpsrBeacon::setPosition(const Coord& position)
     this->position = position;
 }
 
-const std::string GpsrBeacon::getSignature() const
+const char * GpsrBeacon::getSignature() const
 {
-    return this->signature;
+    return this->signature.c_str();
 }
 
-void GpsrBeacon::setSignature(std::string signature)
+void GpsrBeacon::setSignature(const char * signature)
 {
     handleChange();
     this->signature = signature;

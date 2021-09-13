@@ -41,7 +41,7 @@ const Ptr<GpsrBeacon> SybilSecure::createBeaconSybil(const char* addressStr)
     SignMessage( privateKey, message, signature );
     //cout << "this is the signature in create beacon: "+ signature << endl ;
     //cout << "signature length " << signature.length() <<endl;
-    beacon->setSignature(signature);
+    beacon->setSignature(signature.c_str());
     //cout << "beacon->getSignature() length " << signature.length() <<endl;
     beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
     return beacon;
