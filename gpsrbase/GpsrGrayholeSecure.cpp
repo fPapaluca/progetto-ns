@@ -52,12 +52,18 @@ void GpsrGrayholeSecure::sendAck(const Ptr<GpsrBeacon>& beacon, const L3Address&
 void GpsrGrayholeSecure::processBeacon(Packet *packet)
 {
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
-    cout << packet->getName() << endl;
+    //cout << packet->getName() << endl;
     if(strncmp(packet->getName(),"ACK",3)==0){
-        cout << "--------------------------- " << packet->getName() << " ----------------------" << endl;
+        if(strncmp("(inet::Packet)ACK",beacon->getSignature(),17)==0){
+            delete packet;
+            return;
+        }
+        cout << "----" << beacon->getSignature() << " ----" << endl;
     }
-    EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
-    neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
+    else{
+        EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
+        neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
+    }
     delete packet;
 }
 
@@ -71,5 +77,52 @@ GpsrGrayholeSecure::~GpsrGrayholeSecure() {
     // TODO Auto-generated destructor stub
 }
 
+INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
+{
+    const auto& networkHeader = getNetworkProtocolHeader(datagram);
+    const L3Address& source = networkHeader->getSourceAddress();
+    const L3Address& destination = networkHeader->getDestinationAddress();
+    EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
+    auto nextHop = findNextHop(destination, gpsrOption);
+    datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
+    if (nextHop.isUnspecified()) {
+        EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
+        if (displayBubbles && hasGUI())
+            getContainingNode(host)->bubble("No next hop found, dropping packet");
+        return DROP;
+    }
+    else {
+        sendAck(createAck(datagram->str()),source);
+        cout << "xxxx" << datagram->str() << endl;
+        if(strncmp(datagram->getName(),"ACK",3)!=0){
+            saveMessage(destination.str(), datagram->str());
+        }
+        EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
+        gpsrOption->setSenderAddress(getSelfAddress());
+        auto interfaceEntry = CHK(interfaceTable->findInterfaceByName(outputInterface));
+        datagram->addTagIfAbsent<InterfaceReq>()->setInterfaceId(interfaceEntry->getInterfaceId());
+        return ACCEPT;
+    }
+}
 
+void GpsrGrayholeSecure::saveMessage(string dest, string msg){
 
+    if(mappa_messaggi.count(dest)==0){
+        list<tuple<string,simtime_t>> lista;
+        mappa_messaggi[dest] = lista;
+    }
+    tuple<string, simtime_t> elem (msg,simTime());
+    mappa_messaggi[dest].push_back(elem);
+    print_map(mappa_messaggi);
+}
+
+void GpsrGrayholeSecure::print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m)
+{
+    for (auto const &pair: m) {
+        std::cout << "{" << pair.first << ": ";// << pair.second << "}\n";
+        for(auto const &t : pair.second) {
+            std::cout << get<0>(t) << ", " << get<1>(t) <<";; ";
+        }
+        std::cout << "}\n";
+    }
+}

@@ -70,6 +70,9 @@
 #include "inet/networklayer/nexthop/NextHopForwardingHeader_m.h"
 #endif
 
+#include <unordered_map>
+#include <tuple>
+
 
 
 
@@ -80,12 +83,17 @@ using namespace CryptoPP;
 
 class GpsrGrayholeSecure: public GpsrBase {
 public:
+    unordered_map<string,list<tuple<string,simtime_t>>> mappa_messaggi;
+    unordered_map<string,int> mappa_num_non_inviati;
     GpsrGrayholeSecure();
     virtual ~GpsrGrayholeSecure();
     // handling beacons
     virtual const Ptr<GpsrBeacon> createAck(string name);
     virtual void sendAck(const Ptr<GpsrBeacon>& beacon, const L3Address& address);
     virtual void processBeacon(Packet *packet);
+    virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);
+    virtual void saveMessage(string dest, string msg);
+    virtual void print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m);
 
 };
 

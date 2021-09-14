@@ -1,4 +1,4 @@
-file 1257783 1631539649                                         
+file 1257783 1631558560                                         
 version 2
 run _3D_Turtle_Normal-0-20210913-15:27:15-7732
 attr configname _3D_Turtle_Normal
@@ -77,2254 +77,2253 @@ vector 0 FanetGpsrNormal.host[0].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+0	97135 27 0 0 0 0 3 0 4 4 16
 vector 1 FanetGpsrNormal.host[1].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+1	97162 27 0 0 0 0 3 0 4 4 16
 vector 2 FanetGpsrNormal.host[2].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+2	97189 27 0 0 0 0 3 0 4 4 16
 vector 3 FanetGpsrNormal.host[3].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+3	97216 27 0 0 0 0 3 0 4 4 16
 vector 4 FanetGpsrNormal.host[4].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+4	97243 27 0 0 0 0 3 0 4 4 16
 vector 5 FanetGpsrNormal.host[5].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+5	97270 27 0 0 0 0 3 0 4 4 16
 vector 6 FanetGpsrNormal.host[6].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+6	97297 27 0 0 0 0 3 0 4 4 16
 vector 7 FanetGpsrNormal.host[7].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+7	97324 27 0 0 0 0 3 0 4 4 16
 vector 8 FanetGpsrNormal.host[8].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+8	97351 27 0 0 0 0 3 0 4 4 16
 vector 9 FanetGpsrNormal.host[9].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+9	97378 27 0 0 0 0 3 0 4 4 16
 vector 10 FanetGpsrNormal.host[10].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+10	97405 30 0 0 0 0 3 0 4 4 16
 vector 11 FanetGpsrNormal.host[11].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+11	97435 30 0 0 0 0 3 0 4 4 16
 vector 12 FanetGpsrNormal.host[12].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+12	97465 30 0 0 0 0 3 0 4 4 16
 vector 13 FanetGpsrNormal.host[13].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+13	97495 30 0 0 0 0 3 0 4 4 16
 vector 14 FanetGpsrNormal.host[14].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+14	97525 30 0 0 0 0 3 0 4 4 16
 vector 15 FanetGpsrNormal.host[15].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+15	97555 30 0 0 0 0 3 0 4 4 16
 vector 16 FanetGpsrNormal.host[16].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+16	97585 30 0 0 0 0 3 0 4 4 16
 vector 17 FanetGpsrNormal.host[17].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+17	97615 30 0 0 0 0 3 0 4 4 16
 vector 18 FanetGpsrNormal.host[18].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+18	97645 30 0 0 0 0 3 0 4 4 16
 vector 19 FanetGpsrNormal.host[19].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+19	97675 30 0 0 0 0 3 0 4 4 16
 vector 20 FanetGpsrNormal.host[20].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+20	97705 30 0 0 0 0 3 0 4 4 16
 vector 21 FanetGpsrNormal.host[21].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+21	97735 30 0 0 0 0 3 0 4 4 16
 vector 22 FanetGpsrNormal.host[22].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+22	97765 30 0 0 0 0 3 0 4 4 16
 vector 23 FanetGpsrNormal.host[23].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+23	97795 30 0 0 0 0 3 0 4 4 16
 vector 24 FanetGpsrNormal.host[24].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+24	97825 30 0 0 0 0 3 0 4 4 16
 vector 25 FanetGpsrNormal.host[25].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+25	97855 30 0 0 0 0 3 0 4 4 16
 vector 26 FanetGpsrNormal.host[26].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+26	97885 30 0 0 0 0 3 0 4 4 16
 vector 27 FanetGpsrNormal.host[27].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+27	97915 30 0 0 0 0 3 0 4 4 16
 vector 28 FanetGpsrNormal.host[28].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+28	97945 30 0 0 0 0 3 0 4 4 16
 vector 29 FanetGpsrNormal.host[29].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+29	97975 30 0 0 0 0 3 0 4 4 16
 vector 30 FanetGpsrNormal.grayhole[0].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+30	98005 30 0 0 0 0 3 0 4 4 16
 vector 31 FanetGpsrNormal.grayhole[1].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+31	98035 30 0 0 0 0 3 0 4 4 16
 vector 32 FanetGpsrNormal.grayhole[2].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+32	98065 30 0 0 0 0 3 0 4 4 16
 vector 33 FanetGpsrNormal.grayhole[3].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+33	98095 30 0 0 0 0 3 0 4 4 16
 vector 34 FanetGpsrNormal.grayhole[4].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+34	98125 30 0 0 0 0 3 0 4 4 16
 vector 35 FanetGpsrNormal.grayhole[5].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+35	98155 30 0 0 0 0 3 0 4 4 16
 vector 36 FanetGpsrNormal.grayhole[6].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+36	98185 30 0 0 0 0 3 0 4 4 16
 vector 37 FanetGpsrNormal.grayhole[7].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+37	98215 30 0 0 0 0 3 0 4 4 16
 vector 38 FanetGpsrNormal.grayhole[8].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+38	98245 30 0 0 0 0 3 0 4 4 16
 vector 39 FanetGpsrNormal.grayhole[9].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+39	98275 30 0 0 0 0 3 0 4 4 16
 vector 40 FanetGpsrNormal.host[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+40	98305 9521 0 119468 0 24.54891645688 347 1 3 693 1731
 vector 41 FanetGpsrNormal.host[0].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+41	107826 2826 0 119365 0 24.548864168971 103 1 2 154 256
 vector 42 FanetGpsrNormal.host[1].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+42	110652 13692 0 119735 0 24.575127921242 497 1 3 993 2481
 vector 43 FanetGpsrNormal.host[1].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+43	124344 1334 0 118180 0 24.34793416448 49 1 2 73 121
 vector 44 FanetGpsrNormal.host[2].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+44	125678 222 0 16375 0 3.872989907041 9 1 3 17 41
 vector 45 FanetGpsrNormal.host[2].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+45	125900 1330 0 120289 0 24.6987473072 49 1 2 73 121
 vector 46 FanetGpsrNormal.host[3].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+46	127230 16561 0 120533 0 24.733592788904 601 1 3 1201 3001
 vector 47 FanetGpsrNormal.host[3].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+47	143791 2716 0 119453 0 24.548915646259 99 1 2 148 246
 vector 48 FanetGpsrNormal.host[4].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+48	146507 8860 0 120086 0 24.65036883685 321 1 3 641 1601
 vector 49 FanetGpsrNormal.host[4].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+49	155367 2400 0 119636 0 24.549018371276 87 1 2 130 216
 vector 50 FanetGpsrNormal.host[5].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+50	157767 13520 0 119993 0 24.630499483893 491 1 3 981 2451
 vector 51 FanetGpsrNormal.host[5].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+51	171287 1217 0 116398 0 23.874359714475 45 1 2 67 111
 vector 52 FanetGpsrNormal.host[6].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+52	172504 14410 0 119981 0 24.63049935654 523 1 3 1045 2611
 vector 53 FanetGpsrNormal.host[6].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+53	186914 1446 0 117965 0 24.31745390841 53 1 2 79 131
 vector 54 FanetGpsrNormal.host[7].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+54	188360 13690 0 119989 0 24.630499389534 497 1 3 993 2481
 vector 55 FanetGpsrNormal.host[7].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+55	202050 1278 0 115152 0 23.699372444671 47 1 2 70 116
 vector 56 FanetGpsrNormal.host[8].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+56	203328 10481 0 120182 0 24.663477799083 381 1 3 761 1901
 vector 57 FanetGpsrNormal.host[8].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+57	213809 1335 0 120413 0 24.730570823559 49 1 2 73 121
 vector 58 FanetGpsrNormal.host[9].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+58	215144 12007 0 120537 0 24.733592819821 435 1 3 869 2171
 vector 59 FanetGpsrNormal.host[9].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+59	227151 2394 0 119545 0 24.548967259911 87 1 2 130 216
 vector 60 FanetGpsrNormal.host[10].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+60	229545 10589 0 120442 0 24.730571560261 385 1 3 769 1921
 vector 61 FanetGpsrNormal.host[10].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+61	240134 1338 0 114835 0 23.604911543102 49 1 2 73 121
 vector 62 FanetGpsrNormal.host[11].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+62	241472 16812 0 120541 0 24.733593134197 611 1 3 1221 3051
 vector 63 FanetGpsrNormal.host[11].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+63	258284 1388 0 118289 0 24.391962027313 51 1 2 76 126
 vector 64 FanetGpsrNormal.host[12].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+64	259672 3721 0 120202 0 24.663478158415 135 1 3 269 671
 vector 65 FanetGpsrNormal.host[12].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+65	263393 1550 0 115846 0 23.783090951294 57 1 2 85 141
 vector 66 FanetGpsrNormal.host[13].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+66	264943 13088 0 120430 0 24.730571364002 475 1 3 949 2371
 vector 67 FanetGpsrNormal.host[13].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+67	278031 1220 0 115523 0 23.75491160657 45 1 2 67 111
 vector 68 FanetGpsrNormal.host[14].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+68	279251 6763 0 119731 0 24.57512785714 246 1 3 491 1225
 vector 69 FanetGpsrNormal.host[14].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+69	286014 1330 0 117115 0 24.052223367753 49 1 2 73 121
 vector 70 FanetGpsrNormal.host[15].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+70	287344 10714 0 120434 0 24.730571436308 389 1 3 777 1941
 vector 71 FanetGpsrNormal.host[15].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+71	298058 1334 0 115415 0 23.741692615112 49 1 2 73 121
 vector 72 FanetGpsrNormal.host[16].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+72	299392 11038 0 119973 0 24.630499135884 401 1 3 801 2001
 vector 73 FanetGpsrNormal.host[16].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+73	310430 1391 0 120520 0 24.733592185795 51 1 2 76 126
 vector 74 FanetGpsrNormal.host[17].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+74	311821 12194 0 120418 0 24.730571152159 443 1 3 885 2211
 vector 75 FanetGpsrNormal.host[17].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+75	324015 1173 0 118775 0 24.44215191961 43 1 2 64 106
 vector 76 FanetGpsrNormal.host[18].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+76	325188 11019 0 119820 0 24.581234033649 401 1 3 801 2001
 vector 77 FanetGpsrNormal.host[18].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+77	336207 1227 0 119112 0 24.464844152468 45 1 2 67 111
 vector 78 FanetGpsrNormal.host[19].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+78	337434 9214 0 120438 0 24.730571481091 335 1 3 669 1671
 vector 79 FanetGpsrNormal.host[19].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+79	346648 1387 0 118559 0 24.404924656635 51 1 2 76 126
 vector 80 FanetGpsrNormal.host[20].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+80	348035 11827 0 119844 0 24.58123461018 429 1 3 857 2141
 vector 81 FanetGpsrNormal.host[20].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+81	359862 1394 0 118885 0 24.442652841003 51 1 2 76 126
 vector 82 FanetGpsrNormal.host[21].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+82	361256 6474 0 119836 0 24.58123433659 235 1 3 469 1171
 vector 83 FanetGpsrNormal.host[21].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+83	367730 1335 0 118082 0 24.347858385088 49 1 2 73 121
 vector 84 FanetGpsrNormal.host[22].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+84	369065 14217 0 120094 0 24.650369234223 515 1 3 1029 2571
 vector 85 FanetGpsrNormal.host[22].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+85	383282 1327 0 118665 0 24.436322747636 49 1 2 73 121
 vector 86 FanetGpsrNormal.host[23].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+86	384609 2608 0 118193 0 24.347935061612 95 1 3 189 471
 vector 87 FanetGpsrNormal.host[23].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+87	387217 1444 0 119730 0 24.57512702411 53 1 2 79 131
 vector 88 FanetGpsrNormal.host[24].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+88	388661 13050 0 120009 0 24.630499634382 473 1 3 945 2361
 vector 89 FanetGpsrNormal.host[24].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+89	401711 1390 0 117357 0 24.197975824957 51 1 2 76 126
 vector 90 FanetGpsrNormal.host[25].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+90	403101 8993 0 120529 0 24.733592776277 325 1 3 649 1621
 vector 91 FanetGpsrNormal.host[25].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+91	412094 1329 0 117017 0 24.043826021626 49 1 2 73 121
 vector 92 FanetGpsrNormal.host[26].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+92	413423 10545 0 119269 0 24.520937886843 383 1 3 765 1911
 vector 93 FanetGpsrNormal.host[26].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+93	423968 1333 0 119819 0 24.581233790749 49 1 2 73 121
 vector 94 FanetGpsrNormal.host[27].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+94	425301 12926 0 120414 0 24.73057098801 469 1 3 937 2341
 vector 95 FanetGpsrNormal.host[27].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+95	438227 1497 0 118998 0 24.454069664608 55 1 2 82 136
 vector 96 FanetGpsrNormal.host[28].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+96	439724 7519 0 119639 0 24.549018823902 273 1 3 545 1361
 vector 97 FanetGpsrNormal.host[28].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+97	447243 1397 0 120085 0 24.650368384224 51 1 2 76 126
 vector 98 FanetGpsrNormal.host[29].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+98	448640 13696 0 119985 0 24.630499378366 497 1 3 993 2481
 vector 99 FanetGpsrNormal.host[29].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+99	462336 1328 0 115299 0 23.700932972971 49 1 2 73 121
 vector 100 FanetGpsrNormal.grayhole[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+100	463664 6220 0 118682 0 24.436323575901 219 1 3 437 1091
 vector 101 FanetGpsrNormal.grayhole[0].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+101	469884 1273 0 115634 0 23.76983755119 45 1 2 67 111
 vector 102 FanetGpsrNormal.grayhole[1].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+102	471157 1442 0 118918 0 24.442653788321 51 1 3 101 251
 vector 103 FanetGpsrNormal.grayhole[1].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+103	472599 1329 0 117616 0 24.21557154427 47 1 2 70 116
 vector 104 FanetGpsrNormal.grayhole[2].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+104	473928 11191 0 120422 0 24.730571174223 393 1 3 785 1961
 vector 105 FanetGpsrNormal.grayhole[2].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+105	485119 1386 0 120181 0 24.663477448419 49 1 2 73 121
 vector 106 FanetGpsrNormal.grayhole[3].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+106	486505 9622 0 119840 0 24.58123444725 337 1 3 673 1681
 vector 107 FanetGpsrNormal.grayhole[3].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+107	496127 1328 0 119260 0 24.520937230342 47 1 2 70 116
 vector 108 FanetGpsrNormal.grayhole[4].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+108	497455 14121 0 119997 0 24.630499526047 495 1 3 989 2471
 vector 109 FanetGpsrNormal.grayhole[4].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+109	511576 1437 0 117817 0 24.258897868358 51 1 2 76 126
 vector 110 FanetGpsrNormal.grayhole[5].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+110	513013 17018 0 120521 0 24.733592674316 597 1 3 1193 2981
 vector 111 FanetGpsrNormal.grayhole[5].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+111	530031 1551 0 119968 0 24.630498647363 55 1 2 82 136
 vector 112 FanetGpsrNormal.grayhole[6].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+112	531582 17498 0 120525 0 24.733592774058 611 1 3 1221 3051
 vector 113 FanetGpsrNormal.grayhole[6].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+113	549080 1553 0 117702 0 24.218506102587 55 1 2 82 136
 vector 114 FanetGpsrNormal.grayhole[7].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+114	550633 12699 0 119462 0 24.548916363829 445 1 3 889 2221
 vector 115 FanetGpsrNormal.grayhole[7].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+115	563332 1376 0 113606 0 23.356007959134 49 1 2 73 121
 vector 116 FanetGpsrNormal.grayhole[8].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+116	564708 10918 0 120426 0 24.730571213417 383 1 3 765 1911
 vector 117 FanetGpsrNormal.grayhole[8].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+117	575626 1327 0 113711 0 23.377283639178 47 1 2 70 116
 vector 118 FanetGpsrNormal.grayhole[9].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+118	576953 6810 0 119370 0 24.548864785798 239 1 3 477 1191
 vector 119 FanetGpsrNormal.grayhole[9].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+119	583763 1381 0 114226 0 23.524559377135 49 1 2 73 121
 vector 120 FanetGpsrNormal.grayhole[6].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+120	585144 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
 vector 121 FanetGpsrNormal.grayhole[6].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+121	585941 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
 vector 122 FanetGpsrNormal.grayhole[6].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+122	586738 1540 203 117661 0.533222386381 24.21848343592 54 0 1 27 27
 vector 123 FanetGpsrNormal.grayhole[6].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+123	588278 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
 vector 124 FanetGpsrNormal.grayhole[6].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+124	589075 770 203 117661 0.533222386381 24.21848343592 27 0 0 0 0
 vector 125 FanetGpsrNormal.grayhole[6].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+125	589845 797 203 117661 0.533222386381 24.21848343592 27 56 56 1512 84672
 vector 126 FanetGpsrNormal.host[9].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+126	590642 6479 246 120538 0.533245310539 24.733592819821 217 56 140 15848 1404928
 vector 127 FanetGpsrNormal.host[9].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+127	597121 5743 246 120538 0.533245310539 24.733592819821 193 40 124 9400 584320
 vector 128 FanetGpsrNormal.host[22].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+128	602864 7658 250 120095 0.533245629023 24.650369234223 257 56 140 17752 1464512
 vector 129 FanetGpsrNormal.host[22].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+129	610522 6420 250 120095 0.533245629023 24.650369234223 217 40 40 8680 347200
 vector 130 FanetGpsrNormal.host[3].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+130	616942 8921 254 120534 0.533245634635 24.733592788904 300 56 140 20496 1665216
 vector 131 FanetGpsrNormal.host[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+131	625863 8302 254 120534 0.533245634635 24.733592788904 280 40 124 13216 778624
 vector 132 FanetGpsrNormal.host[16].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+132	634165 5967 258 119974 0.533245659077 24.630499135884 200 56 140 14896 1351616
 vector 133 FanetGpsrNormal.host[16].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+133	640132 4611 258 119974 0.533245659077 24.630499135884 156 40 40 6240 249600
 vector 134 FanetGpsrNormal.host[25].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+134	644743 4858 262 120530 0.533245844569 24.733592776277 162 56 140 12432 1166592
 vector 135 FanetGpsrNormal.host[25].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+135	649601 3620 262 120530 0.533245844569 24.733592776277 122 40 40 4880 195200
 vector 136 FanetGpsrNormal.host[4].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+136	653221 4764 266 120087 0.533245908399 24.65036883685 160 56 140 10640 831040
 vector 137 FanetGpsrNormal.host[4].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+137	657985 4764 266 120087 0.533245908399 24.65036883685 160 40 124 8080 531520
 vector 138 FanetGpsrNormal.grayhole[0].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+138	662749 3220 270 118683 0.533245928597 24.436323575901 109 56 140 6524 424144
 vector 139 FanetGpsrNormal.grayhole[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+139	665969 3072 270 118683 0.533245928597 24.436323575901 104 40 40 4160 166400
 vector 140 FanetGpsrNormal.host[1].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+140	669041 7383 274 119736 0.533245951166 24.575127921242 248 56 140 17920 1568000
 vector 141 FanetGpsrNormal.host[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+141	676424 5911 274 119736 0.533245951166 24.575127921242 200 40 40 8000 320000
 vector 142 FanetGpsrNormal.grayhole[5].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+142	682335 8813 278 120522 0.53324598338 24.733592674316 298 56 140 18788 1346128
 vector 143 FanetGpsrNormal.grayhole[5].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+143	691148 8067 278 120522 0.53324598338 24.733592674316 273 40 40 10920 436800
 vector 144 FanetGpsrNormal.host[22].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+144	699215 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
 vector 145 FanetGpsrNormal.host[22].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+145	699919 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
 vector 146 FanetGpsrNormal.host[22].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+146	700623 1360 313 118624 0.53755938448 24.436300080969 48 0 1 24 24
 vector 147 FanetGpsrNormal.host[22].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+147	701983 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
 vector 148 FanetGpsrNormal.host[22].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+148	702687 680 313 118624 0.53755938448 24.436300080969 24 0 0 0 0
 vector 149 FanetGpsrNormal.host[22].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+149	703367 704 313 118624 0.53755938448 24.436300080969 24 56 56 1344 75264
 vector 150 FanetGpsrNormal.grayhole[6].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+150	704071 9109 364 120526 0.537582627124 24.733592774058 305 56 140 22456 2010176
 vector 151 FanetGpsrNormal.grayhole[6].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+151	713180 7756 364 120526 0.537582627124 24.733592774058 261 40 124 12120 693120
 vector 152 FanetGpsrNormal.host[13].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+152	720936 7038 368 120431 0.537582837255 24.730571364002 237 56 140 14952 1072512
 vector 153 FanetGpsrNormal.host[13].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+153	727974 6419 368 120431 0.537582837255 24.730571364002 217 40 40 8680 347200
 vector 154 FanetGpsrNormal.host[28].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+154	734393 4057 372 119640 0.537582865413 24.549018823902 136 56 140 10976 1085056
 vector 155 FanetGpsrNormal.host[28].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+155	738450 2838 372 118687 0.537582865413 24.436323597635 96 40 40 3840 153600
 vector 156 FanetGpsrNormal.host[14].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+156	741288 3610 376 119732 0.537582867422 24.57512785714 122 56 56 6832 382592
 vector 157 FanetGpsrNormal.host[14].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+157	744898 3579 376 119732 0.537582867422 24.57512785714 121 40 40 4840 193600
 vector 158 FanetGpsrNormal.host[27].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+158	748477 6925 384 120415 0.53758297782 24.73057098801 234 56 56 13104 733824
 vector 159 FanetGpsrNormal.host[27].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+159	755402 6925 384 120415 0.53758297782 24.73057098801 234 40 40 9360 374400
 vector 160 FanetGpsrNormal.host[0].app[0] pingTxSeq:vector ETV
 attr interpolationmode none
 attr title "ping tx seq, vector"
+160	762327 730 426 119322 0.548813502304 24.548813502304 25 0 24 300 4900
 vector 161 FanetGpsrNormal.grayhole[7].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+161	763057 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
 vector 162 FanetGpsrNormal.grayhole[7].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+162	763763 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
 vector 163 FanetGpsrNormal.grayhole[7].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+163	764469 1364 431 113565 0.56916699023 23.355985292467 48 0 1 24 24
 vector 164 FanetGpsrNormal.grayhole[7].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+164	765833 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
 vector 165 FanetGpsrNormal.grayhole[7].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+165	766539 682 431 113565 0.56916699023 23.355985292467 24 0 0 0 0
 vector 166 FanetGpsrNormal.grayhole[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+166	767221 706 431 113565 0.56916699023 23.355985292467 24 56 56 1344 75264
 vector 167 FanetGpsrNormal.grayhole[4].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+167	767927 7344 474 119998 0.569189862163 24.630499526047 247 56 140 17864 1564864
 vector 168 FanetGpsrNormal.grayhole[4].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+168	775271 5889 474 119998 0.569189862163 24.630499526047 199 40 40 7960 318400
 vector 169 FanetGpsrNormal.host[0].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+169	781160 5120 478 119469 0.569189965706 24.54891645688 173 56 140 11704 937664
 vector 170 FanetGpsrNormal.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+170	786280 4402 478 118476 0.569189965706 24.402667775561 149 40 40 5960 238400
 vector 171 FanetGpsrNormal.host[7].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+171	790682 7394 482 119990 0.569190145589 24.630499389534 248 56 140 17920 1568000
 vector 172 FanetGpsrNormal.host[7].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+172	798076 5923 482 119990 0.569190145589 24.630499389534 200 40 40 8000 320000
 vector 173 FanetGpsrNormal.grayhole[9].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+173	803999 3546 486 119371 0.569190293109 24.548864785798 119 56 140 8680 768320
 vector 174 FanetGpsrNormal.grayhole[9].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+174	807545 2809 486 117839 0.569190293109 24.258898643104 95 40 40 3800 152000
 vector 175 FanetGpsrNormal.host[11].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+175	810354 9036 494 120542 0.569190523509 24.733593134197 305 56 140 19264 1384544
 vector 176 FanetGpsrNormal.host[11].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+176	819390 8241 494 120542 0.569190523509 24.733593134197 279 40 40 11160 446400
 vector 177 FanetGpsrNormal.host[2].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+177	827631 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
 vector 178 FanetGpsrNormal.host[2].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+178	828341 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
 vector 179 FanetGpsrNormal.host[2].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+179	829051 1372 536 120248 0.59725992661 24.698724640533 48 0 1 24 24
 vector 180 FanetGpsrNormal.host[2].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+180	830423 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
 vector 181 FanetGpsrNormal.host[2].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+181	831133 686 536 120248 0.59725992661 24.698724640533 24 0 0 0 0
 vector 182 FanetGpsrNormal.host[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+182	831819 710 536 120248 0.59725992661 24.698724640533 24 56 56 1344 75264
 vector 183 FanetGpsrNormal.host[15].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+183	832529 5737 579 120435 0.597283473136 24.730571436308 194 56 56 10864 608384
 vector 184 FanetGpsrNormal.host[15].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+184	838266 5737 579 120435 0.597283473136 24.730571436308 194 40 40 7760 310400
 vector 185 FanetGpsrNormal.host[12].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+185	844003 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
 vector 186 FanetGpsrNormal.host[12].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+186	844828 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
 vector 187 FanetGpsrNormal.host[12].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+187	845653 1594 622 115805 0.599569084821 23.783068284627 56 0 1 28 28
 vector 188 FanetGpsrNormal.host[12].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+188	847247 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
 vector 189 FanetGpsrNormal.host[12].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+189	848072 797 622 115805 0.599569084821 23.783068284627 28 0 0 0 0
 vector 190 FanetGpsrNormal.host[12].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+190	848869 825 622 115805 0.599569084821 23.783068284627 28 56 56 1568 87808
 vector 191 FanetGpsrNormal.grayhole[2].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+191	849694 5784 665 120423 0.599592409194 24.730571174223 196 56 56 10976 614656
 vector 192 FanetGpsrNormal.grayhole[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+192	855478 5784 665 120423 0.599592409194 24.730571174223 196 40 40 7840 313600
 vector 193 FanetGpsrNormal.host[17].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+193	861262 6535 669 120419 0.599592732571 24.730571152159 221 56 56 12376 693056
 vector 194 FanetGpsrNormal.host[17].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+194	867797 6535 669 120419 0.599592732571 24.730571152159 221 40 40 8840 353600
 vector 195 FanetGpsrNormal.host[11].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+195	874332 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
 vector 196 FanetGpsrNormal.host[11].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+196	875068 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
 vector 197 FanetGpsrNormal.host[11].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+197	875804 1422 751 118248 0.60022688657 24.391939360646 50 0 1 25 25
 vector 198 FanetGpsrNormal.host[11].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+198	877226 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
 vector 199 FanetGpsrNormal.host[11].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+199	877962 711 751 118248 0.60022688657 24.391939360646 25 0 0 0 0
 vector 200 FanetGpsrNormal.host[11].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+200	878673 736 751 118248 0.60022688657 24.391939360646 25 56 56 1400 78400
 vector 201 FanetGpsrNormal.host[6].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+201	879409 7725 802 119982 0.600250128443 24.63049935654 261 56 56 14616 818496
 vector 202 FanetGpsrNormal.host[6].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+202	887134 7725 802 119982 0.600250128443 24.63049935654 261 40 40 10440 417600
 vector 203 FanetGpsrNormal.host[29].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+203	894859 7341 806 119986 0.600250204942 24.630499378366 248 56 56 13888 777728
 vector 204 FanetGpsrNormal.host[29].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+204	902200 7341 806 119986 0.600250204942 24.630499378366 248 40 40 9920 396800
 vector 205 FanetGpsrNormal.grayhole[7].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+205	909541 6615 818 119463 0.600250420178 24.548916363829 222 56 140 16464 1486464
 vector 206 FanetGpsrNormal.grayhole[7].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+206	916156 5144 818 118464 0.600250420178 24.40266768251 174 40 40 6960 278400
 vector 207 FanetGpsrNormal.host[18].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+207	921300 5909 830 119821 0.600250482036 24.581234033649 200 56 56 11200 627200
 vector 208 FanetGpsrNormal.host[18].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+208	927209 5909 830 119821 0.600250482036 24.581234033649 200 40 40 8000 320000
 vector 209 FanetGpsrNormal.host[20].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+209	933118 6336 834 119845 0.600250526793 24.58123461018 214 56 56 11984 671104
 vector 210 FanetGpsrNormal.host[20].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+210	939454 6336 834 119845 0.600250526793 24.58123461018 214 40 40 8560 342400
 vector 211 FanetGpsrNormal.host[5].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+211	945790 7239 838 119994 0.600250550802 24.630499483893 245 56 56 13720 768320
 vector 212 FanetGpsrNormal.host[5].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+212	953029 7239 838 119994 0.600250550802 24.630499483893 245 40 40 9800 392000
 vector 213 FanetGpsrNormal.host[27].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+213	960268 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
 vector 214 FanetGpsrNormal.host[27].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+214	961066 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
 vector 215 FanetGpsrNormal.host[27].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+215	961864 1542 873 118957 0.6238199824 24.454046997941 54 0 1 27 27
 vector 216 FanetGpsrNormal.host[27].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+216	963406 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
 vector 217 FanetGpsrNormal.host[27].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+217	964204 771 873 118957 0.6238199824 24.454046997941 27 0 0 0 0
 vector 218 FanetGpsrNormal.host[27].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+218	964975 798 873 118957 0.6238199824 24.454046997941 27 56 56 1512 84672
 vector 219 FanetGpsrNormal.host[8].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+219	965773 5611 920 120183 0.62384302073 24.663477799083 190 56 56 10640 595840
 vector 220 FanetGpsrNormal.host[8].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+220	971384 5611 920 120183 0.62384302073 24.663477799083 190 40 40 7600 304000
 vector 221 FanetGpsrNormal.host[10].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+221	976995 5676 932 120443 0.623843296783 24.730571560261 192 56 56 10752 602112
 vector 222 FanetGpsrNormal.host[10].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+222	982671 5676 932 120443 0.623843296783 24.730571560261 192 40 40 7680 307200
 vector 223 FanetGpsrNormal.grayhole[8].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+223	988347 5650 936 120427 0.623843297191 24.730571213417 191 56 56 10696 598976
 vector 224 FanetGpsrNormal.grayhole[8].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+224	993997 5650 936 120427 0.623843297191 24.730571213417 191 40 40 7640 305600
 vector 225 FanetGpsrNormal.host[19].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+225	999647 4944 940 120439 0.623843391685 24.730571481091 167 56 56 9352 523712
 vector 226 FanetGpsrNormal.host[19].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+226	1004591 4944 940 120439 0.623843391685 24.730571481091 167 40 40 6680 267200
 vector 227 FanetGpsrNormal.grayhole[4].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+227	1009535 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
 vector 228 FanetGpsrNormal.grayhole[4].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+228	1010273 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
 vector 229 FanetGpsrNormal.grayhole[4].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+229	1011011 1426 987 117776 0.639972583158 24.258875201691 50 0 1 25 25
 vector 230 FanetGpsrNormal.grayhole[4].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+230	1012437 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
 vector 231 FanetGpsrNormal.grayhole[4].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+231	1013175 713 987 117776 0.639972583158 24.258875201691 25 0 0 0 0
 vector 232 FanetGpsrNormal.grayhole[4].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+232	1013888 738 987 117776 0.639972583158 24.258875201691 25 56 56 1400 78400
 vector 233 FanetGpsrNormal.host[0].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+233	1014626 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
 vector 234 FanetGpsrNormal.host[0].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+234	1016160 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
 vector 235 FanetGpsrNormal.host[0].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+235	1017694 2918 1094 119324 0.641263902886 24.548813502304 102 0 1 51 51
 vector 236 FanetGpsrNormal.host[0].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+236	1020612 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
 vector 237 FanetGpsrNormal.host[0].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+237	1022146 1459 1094 119324 0.641263902886 24.548813502304 51 0 0 0 0
 vector 238 FanetGpsrNormal.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+238	1023605 1534 1094 119324 0.641263902886 24.548813502304 51 56 140 4872 555072
 vector 239 FanetGpsrNormal.host[19].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+239	1025139 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
 vector 240 FanetGpsrNormal.host[19].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+240	1025875 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
 vector 241 FanetGpsrNormal.host[19].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+241	1026611 1422 1201 118518 0.64944830467 24.404901989968 50 0 1 25 25
 vector 242 FanetGpsrNormal.host[19].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+242	1028033 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
 vector 243 FanetGpsrNormal.host[19].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+243	1028769 711 1201 118518 0.64944830467 24.404901989968 25 0 0 0 0
 vector 244 FanetGpsrNormal.host[19].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+244	1029480 736 1201 118518 0.64944830467 24.404901989968 25 56 56 1400 78400
 vector 245 FanetGpsrNormal.host[23].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+245	1030216 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
 vector 246 FanetGpsrNormal.host[23].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+246	1030986 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
 vector 247 FanetGpsrNormal.host[23].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+247	1031756 1488 1308 119689 0.662492931355 24.575104357443 52 0 1 26 26
 vector 248 FanetGpsrNormal.host[23].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+248	1033244 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
 vector 249 FanetGpsrNormal.host[23].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+249	1034014 744 1308 119689 0.662492931355 24.575104357443 26 0 0 0 0
 vector 250 FanetGpsrNormal.host[23].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+250	1034758 770 1308 119689 0.662492931355 24.575104357443 26 56 56 1456 81536
 vector 251 FanetGpsrNormal.host[26].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+251	1035528 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
 vector 252 FanetGpsrNormal.host[26].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+252	1036237 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
 vector 253 FanetGpsrNormal.host[26].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+253	1036946 1370 1394 119778 0.666847517947 24.581211124082 48 0 1 24 24
 vector 254 FanetGpsrNormal.host[26].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+254	1038316 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
 vector 255 FanetGpsrNormal.host[26].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+255	1039025 685 1394 119778 0.666847517947 24.581211124082 24 0 0 0 0
 vector 256 FanetGpsrNormal.host[26].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+256	1039710 709 1394 119778 0.666847517947 24.581211124082 24 56 56 1344 75264
 vector 257 FanetGpsrNormal.host[24].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+257	1040419 6994 1441 120010 0.666870568839 24.630499634382 236 56 56 13216 740096
 vector 258 FanetGpsrNormal.host[24].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+258	1047413 6994 1441 120010 0.666870568839 24.630499634382 236 40 40 9440 377600
 vector 259 FanetGpsrNormal.grayhole[3].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+259	1054407 4981 1449 119841 0.666870588231 24.58123444725 168 56 56 9408 526848
 vector 260 FanetGpsrNormal.grayhole[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+260	1059388 4981 1449 119841 0.666870588231 24.58123444725 168 40 40 6720 268800
 vector 261 FanetGpsrNormal.host[21].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+261	1064369 3467 1457 119837 0.666870901265 24.58123433659 117 56 56 6552 366912
 vector 262 FanetGpsrNormal.host[21].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+262	1067836 3467 1457 119837 0.666870901265 24.58123433659 117 40 40 4680 187200
 vector 263 FanetGpsrNormal.host[6].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+263	1071303 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
 vector 264 FanetGpsrNormal.host[6].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+264	1072073 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
 vector 265 FanetGpsrNormal.host[6].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+265	1072843 1488 1543 117924 0.760340928566 24.317431241743 52 0 1 26 26
 vector 266 FanetGpsrNormal.host[6].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+266	1074331 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
 vector 267 FanetGpsrNormal.host[6].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+267	1075101 744 1543 117924 0.760340928566 24.317431241743 26 0 0 0 0
 vector 268 FanetGpsrNormal.host[6].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+268	1075845 770 1543 117924 0.760340928566 24.317431241743 26 56 56 1456 81536
 vector 269 FanetGpsrNormal.host[26].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+269	1076615 5646 1622 119270 0.760364505935 24.520937886843 191 56 56 10696 598976
 vector 270 FanetGpsrNormal.host[26].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+270	1082261 5646 1622 119270 0.760364505935 24.520937886843 191 40 40 7640 305600
 vector 271 FanetGpsrNormal.host[14].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+271	1087907 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
 vector 272 FanetGpsrNormal.host[14].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+272	1088615 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
 vector 273 FanetGpsrNormal.host[14].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+273	1089323 1368 1697 117074 0.852311660536 24.052200701086 48 0 1 24 24
 vector 274 FanetGpsrNormal.host[14].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+274	1090691 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
 vector 275 FanetGpsrNormal.host[14].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+275	1091399 684 1697 117074 0.852311660536 24.052200701086 24 0 0 0 0
 vector 276 FanetGpsrNormal.host[14].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+276	1092083 708 1697 117074 0.852311660536 24.052200701086 24 56 56 1344 75264
 vector 277 FanetGpsrNormal.host[1].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+277	1092791 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
 vector 278 FanetGpsrNormal.host[1].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+278	1093503 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
 vector 279 FanetGpsrNormal.host[1].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+279	1094215 1376 1799 118139 0.867561871652 24.347911497813 48 0 1 24 24
 vector 280 FanetGpsrNormal.host[1].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+280	1095591 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
 vector 281 FanetGpsrNormal.host[1].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+281	1096303 688 1799 118139 0.867561871652 24.347911497813 24 0 0 0 0
 vector 282 FanetGpsrNormal.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+282	1096991 712 1799 118139 0.867561871652 24.347911497813 24 56 56 1344 75264
 vector 283 FanetGpsrNormal.host[23].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+283	1097703 1394 1854 118194 0.867585418425 24.347935061612 47 56 56 2632 147392
 vector 284 FanetGpsrNormal.host[23].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+284	1099097 1394 1854 118194 0.867585418425 24.347935061612 47 40 40 1880 75200
 vector 285 FanetGpsrNormal.grayhole[5].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+285	1100491 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
 vector 286 FanetGpsrNormal.grayhole[5].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+286	1101292 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
 vector 287 FanetGpsrNormal.grayhole[5].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+287	1102093 1548 1947 119927 0.907183297677 24.630475980696 54 0 1 27 27
 vector 288 FanetGpsrNormal.grayhole[5].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+288	1103641 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
 vector 289 FanetGpsrNormal.grayhole[5].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+289	1104442 774 1947 119927 0.907183297677 24.630475980696 27 0 0 0 0
 vector 290 FanetGpsrNormal.grayhole[5].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+290	1105216 801 1947 119927 0.907183297677 24.630475980696 27 56 56 1512 84672
 vector 291 FanetGpsrNormal.grayhole[2].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+291	1106017 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
 vector 292 FanetGpsrNormal.grayhole[2].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+292	1106729 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
 vector 293 FanetGpsrNormal.grayhole[2].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+293	1107441 1376 2069 120140 0.911396724405 24.663454781752 48 0 1 24 24
 vector 294 FanetGpsrNormal.grayhole[2].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+294	1108817 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
 vector 295 FanetGpsrNormal.grayhole[2].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+295	1109529 688 2069 120140 0.911396724405 24.663454781752 24 0 0 0 0
 vector 296 FanetGpsrNormal.grayhole[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+296	1110217 712 2069 120140 0.911396724405 24.663454781752 24 56 56 1344 75264
 vector 297 FanetGpsrNormal.host[12].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+297	1110929 1993 2128 120203 0.911420051401 24.663478158415 67 56 56 3752 210112
 vector 298 FanetGpsrNormal.host[12].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+298	1112922 1993 2128 120203 0.911420051401 24.663478158415 67 40 40 2680 107200
 vector 299 FanetGpsrNormal.host[3].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+299	1114915 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
 vector 300 FanetGpsrNormal.host[3].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+300	1116391 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
 vector 301 FanetGpsrNormal.host[3].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+301	1117867 2806 2178 119377 0.935864919331 24.548864979592 98 0 1 49 49
 vector 302 FanetGpsrNormal.host[3].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+302	1120673 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
 vector 303 FanetGpsrNormal.host[3].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+303	1122149 1415 2178 119377 0.935864919331 24.548864979592 49 0 0.04137031581 0.04137031581 0.0017115030302191
 vector 304 FanetGpsrNormal.host[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+304	1123564 1476 2178 119377 0.935864919331 24.548864979592 49 56 140 4760 548800
 vector 305 FanetGpsrNormal.host[10].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+305	1125040 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
 vector 306 FanetGpsrNormal.host[10].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+306	1125751 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
 vector 307 FanetGpsrNormal.host[10].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+307	1126462 1374 2295 114794 0.947926173685 23.604888876435 48 0 1 24 24
 vector 308 FanetGpsrNormal.host[10].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+308	1127836 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
 vector 309 FanetGpsrNormal.host[10].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+309	1128547 687 2295 114794 0.947926173685 23.604888876435 24 0 0 0 0
 vector 310 FanetGpsrNormal.host[10].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+310	1129234 711 2295 114794 0.947926173685 23.604888876435 24 56 56 1344 75264
 vector 311 FanetGpsrNormal.host[16].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+311	1129945 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
 vector 312 FanetGpsrNormal.host[16].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+312	1130687 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
 vector 313 FanetGpsrNormal.host[16].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+313	1131429 1434 2406 120479 0.969249171671 24.733569519128 50 0 1 25 25
 vector 314 FanetGpsrNormal.host[16].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+314	1132863 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
 vector 315 FanetGpsrNormal.host[16].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+315	1133605 717 2406 120479 0.969249171671 24.733569519128 25 0 0 0 0
 vector 316 FanetGpsrNormal.host[16].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+316	1134322 742 2406 120479 0.969249171671 24.733569519128 25 56 56 1400 78400
 vector 317 FanetGpsrNormal.host[24].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+317	1135064 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
 vector 318 FanetGpsrNormal.host[24].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+318	1135804 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
 vector 319 FanetGpsrNormal.host[24].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+319	1136544 1430 2554 117316 1.008315450279 24.19795315829 50 0 1 25 25
 vector 320 FanetGpsrNormal.host[24].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+320	1137974 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
 vector 321 FanetGpsrNormal.host[24].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+321	1138714 715 2554 117316 1.008315450279 24.19795315829 25 0 0 0 0
 vector 322 FanetGpsrNormal.host[24].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+322	1139429 740 2554 117316 1.008315450279 24.19795315829 25 56 56 1400 78400
 vector 323 FanetGpsrNormal.host[8].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+323	1140169 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
 vector 324 FanetGpsrNormal.host[8].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+324	1140882 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
 vector 325 FanetGpsrNormal.host[8].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+325	1141595 1378 2665 120372 1.037022517296 24.730548156892 48 0 1 24 24
 vector 326 FanetGpsrNormal.host[8].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+326	1142973 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
 vector 327 FanetGpsrNormal.host[8].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+327	1143686 689 2665 120372 1.037022517296 24.730548156892 24 0 0 0 0
 vector 328 FanetGpsrNormal.host[8].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+328	1144375 713 2665 120372 1.037022517296 24.730548156892 24 56 56 1344 75264
 vector 329 FanetGpsrNormal.grayhole[3].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+329	1145088 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
 vector 330 FanetGpsrNormal.grayhole[3].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+330	1145769 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
 vector 331 FanetGpsrNormal.grayhole[3].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+331	1146450 1316 2773 119219 1.069100744324 24.520914563675 46 0 1 23 23
 vector 332 FanetGpsrNormal.grayhole[3].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+332	1147766 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
 vector 333 FanetGpsrNormal.grayhole[3].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+333	1148447 658 2773 119219 1.069100744324 24.520914563675 23 0 0 0 0
 vector 334 FanetGpsrNormal.grayhole[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+334	1149105 681 2773 119219 1.069100744324 24.520914563675 23 56 56 1288 72128
 vector 335 FanetGpsrNormal.host[25].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+335	1149786 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
 vector 336 FanetGpsrNormal.host[25].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+336	1150492 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
 vector 337 FanetGpsrNormal.host[25].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+337	1151198 1364 2918 116976 1.115559567465 24.043803354959 48 0 1 24 24
 vector 338 FanetGpsrNormal.host[25].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+338	1152562 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
 vector 339 FanetGpsrNormal.host[25].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+339	1153268 682 2918 116976 1.115559567465 24.043803354959 24 0 0 0 0
 vector 340 FanetGpsrNormal.host[25].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+340	1153950 706 2918 116976 1.115559567465 24.043803354959 24 56 56 1344 75264
 vector 341 FanetGpsrNormal.grayhole[9].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+341	1154656 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
 vector 342 FanetGpsrNormal.grayhole[9].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+342	1155365 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
 vector 343 FanetGpsrNormal.grayhole[9].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+343	1156074 1370 3320 114185 1.197428772459 23.524536710468 48 0 1 24 24
 vector 344 FanetGpsrNormal.grayhole[9].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+344	1157444 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
 vector 345 FanetGpsrNormal.grayhole[9].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+345	1158153 685 3320 114185 1.197428772459 23.524536710468 24 0 0 0 0
 vector 346 FanetGpsrNormal.grayhole[9].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+346	1158838 709 3320 114185 1.197428772459 23.524536710468 24 56 56 1344 75264
 vector 347 FanetGpsrNormal.host[9].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+347	1159547 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
 vector 348 FanetGpsrNormal.host[9].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+348	1160846 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
 vector 349 FanetGpsrNormal.host[9].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+349	1162145 2472 3452 119475 1.203888585558 24.548916593244 86 0 1 43 43
 vector 350 FanetGpsrNormal.host[9].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+350	1164617 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
 vector 351 FanetGpsrNormal.host[9].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+351	1165916 1236 3452 119475 1.203888585558 24.548916593244 43 0 0 0 0
 vector 352 FanetGpsrNormal.host[9].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+352	1167152 1299 3452 119475 1.203888585558 24.548916593244 43 56 140 4088 464128
 vector 353 FanetGpsrNormal.host[15].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+353	1168451 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
 vector 354 FanetGpsrNormal.host[15].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+354	1169160 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
 vector 355 FanetGpsrNormal.host[15].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+355	1169869 1370 3558 115374 1.214241298381 23.741669948445 48 0 1 24 24
 vector 356 FanetGpsrNormal.host[15].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+356	1171239 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
 vector 357 FanetGpsrNormal.host[15].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+357	1171948 685 3558 115374 1.214241298381 23.741669948445 24 0 0 0 0
 vector 358 FanetGpsrNormal.host[15].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+358	1172633 709 3558 115374 1.214241298381 23.741669948445 24 56 56 1344 75264
 vector 359 FanetGpsrNormal.host[2].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+359	1173342 114 3625 16376 1.214264864338 3.872989907041 4 56 56 224 12544
 vector 360 FanetGpsrNormal.host[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+360	1173456 114 3625 16376 1.214264864338 3.872989907041 4 40 40 160 6400
 vector 361 FanetGpsrNormal.host[28].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+361	1173570 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
 vector 362 FanetGpsrNormal.host[28].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+362	1174314 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
 vector 363 FanetGpsrNormal.host[28].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+363	1175058 1438 3666 120044 1.27905101818 24.650345717557 50 0 1 25 25
 vector 364 FanetGpsrNormal.host[28].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+364	1176496 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
 vector 365 FanetGpsrNormal.host[28].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+365	1177240 719 3666 120044 1.27905101818 24.650345717557 25 0 0 0 0
 vector 366 FanetGpsrNormal.host[28].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+366	1177959 744 3666 120044 1.27905101818 24.650345717557 25 56 56 1400 78400
 vector 367 FanetGpsrNormal.host[7].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+367	1178703 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
 vector 368 FanetGpsrNormal.host[7].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+368	1179384 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
 vector 369 FanetGpsrNormal.host[7].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+369	1180065 1316 3799 115111 1.306193991797 23.699349778004 46 0 1 23 23
 vector 370 FanetGpsrNormal.host[7].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+370	1181381 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
 vector 371 FanetGpsrNormal.host[7].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+371	1182062 658 3799 115111 1.306193991797 23.699349778004 23 0 0 0 0
 vector 372 FanetGpsrNormal.host[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+372	1182720 681 3799 115111 1.306193991797 23.699349778004 23 56 56 1288 72128
 vector 373 FanetGpsrNormal.grayhole[1].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+373	1183401 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
 vector 374 FanetGpsrNormal.grayhole[1].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+374	1184083 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
 vector 375 FanetGpsrNormal.grayhole[1].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+375	1184765 1318 3906 117575 1.307318960316 24.215548877603 46 0 1 23 23
 vector 376 FanetGpsrNormal.grayhole[1].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+376	1186083 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
 vector 377 FanetGpsrNormal.grayhole[1].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+377	1186765 659 3906 117575 1.307318960316 24.215548877603 23 0 0 0 0
 vector 378 FanetGpsrNormal.grayhole[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+378	1187424 682 3906 117575 1.307318960316 24.215548877603 23 56 56 1288 72128
 vector 379 FanetGpsrNormal.host[18].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+379	1188106 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
 vector 380 FanetGpsrNormal.host[18].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+380	1188757 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
 vector 381 FanetGpsrNormal.host[18].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+381	1189408 1258 3994 119071 1.341140129836 24.464821485801 44 0 1 22 22
 vector 382 FanetGpsrNormal.host[18].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+382	1190666 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
 vector 383 FanetGpsrNormal.host[18].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+383	1191317 629 3994 119071 1.341140129836 24.464821485801 22 0 0 0 0
 vector 384 FanetGpsrNormal.host[18].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+384	1191946 651 3994 119071 1.341140129836 24.464821485801 22 56 56 1232 68992
 vector 385 FanetGpsrNormal.host[29].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+385	1192597 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
 vector 386 FanetGpsrNormal.host[29].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+386	1193304 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
 vector 387 FanetGpsrNormal.host[29].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+387	1194011 1366 4107 115258 1.348008227302 23.700910306304 48 0 1 24 24
 vector 388 FanetGpsrNormal.host[29].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+388	1195377 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
 vector 389 FanetGpsrNormal.host[29].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+389	1196084 683 4107 115258 1.348008227302 23.700910306304 24 0 0 0 0
 vector 390 FanetGpsrNormal.host[29].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+390	1196767 707 4107 115258 1.348008227302 23.700910306304 24 56 56 1344 75264
 vector 391 FanetGpsrNormal.grayhole[0].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+391	1197474 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
 vector 392 FanetGpsrNormal.grayhole[0].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+392	1198127 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
 vector 393 FanetGpsrNormal.grayhole[0].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+393	1198780 1262 4225 115593 1.364933292847 23.769814884523 44 0 1 22 22
 vector 394 FanetGpsrNormal.grayhole[0].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+394	1200042 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
 vector 395 FanetGpsrNormal.grayhole[0].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+395	1200695 631 4225 115593 1.364933292847 23.769814884523 22 0 0 0 0
 vector 396 FanetGpsrNormal.grayhole[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+396	1201326 653 4225 115593 1.364933292847 23.769814884523 22 56 56 1232 68992
 vector 397 FanetGpsrNormal.host[21].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+397	1201979 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
 vector 398 FanetGpsrNormal.host[21].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+398	1202689 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
 vector 399 FanetGpsrNormal.host[21].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+399	1203399 1372 4323 118041 1.368126060581 24.347835718421 48 0 1 24 24
 vector 400 FanetGpsrNormal.host[21].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+400	1204771 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
 vector 401 FanetGpsrNormal.host[21].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+401	1205481 686 4323 118041 1.368126060581 24.347835718421 24 0 0 0 0
 vector 402 FanetGpsrNormal.host[21].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+402	1206167 710 4323 118041 1.368126060581 24.347835718421 24 56 56 1344 75264
 vector 403 FanetGpsrNormal.host[5].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+403	1206877 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
 vector 404 FanetGpsrNormal.host[5].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+404	1207523 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
 vector 405 FanetGpsrNormal.host[5].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+405	1208169 1248 4423 116357 1.391923358198 23.874337047808 44 0 1 22 22
 vector 406 FanetGpsrNormal.host[5].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+406	1209417 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
 vector 407 FanetGpsrNormal.host[5].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+407	1210063 624 4423 116357 1.391923358198 23.874337047808 22 0 0 0 0
 vector 408 FanetGpsrNormal.host[5].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+408	1210687 646 4423 116357 1.391923358198 23.874337047808 22 56 56 1232 68992
 vector 409 FanetGpsrNormal.host[20].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+409	1211333 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
 vector 410 FanetGpsrNormal.host[20].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+410	1212077 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
 vector 411 FanetGpsrNormal.host[20].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+411	1212821 1438 4667 118844 1.404647744261 24.442630174336 50 0 1 25 25
 vector 412 FanetGpsrNormal.host[20].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+412	1214259 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
 vector 413 FanetGpsrNormal.host[20].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+413	1215003 719 4667 118844 1.404647744261 24.442630174336 25 0 0 0 0
 vector 414 FanetGpsrNormal.host[20].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+414	1215722 744 4667 118844 1.404647744261 24.442630174336 25 56 56 1400 78400
 vector 415 FanetGpsrNormal.grayhole[1].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromLower
 attr title "packets received from lower layer, vector(packetBytes)"
+415	1216466 737 4722 118919 1.404671168724 24.442653788321 25 56 56 1400 78400
 vector 416 FanetGpsrNormal.grayhole[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
+416	1217203 737 4722 118919 1.404671168724 24.442653788321 25 40 40 1000 40000
 vector 417 FanetGpsrNormal.host[13].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+417	1217940 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
 vector 418 FanetGpsrNormal.host[13].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+418	1218590 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
 vector 419 FanetGpsrNormal.host[13].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+419	1219240 1256 4892 115482 1.419482612982 23.754888939903 44 0 1 22 22
 vector 420 FanetGpsrNormal.host[13].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+420	1220496 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
 vector 421 FanetGpsrNormal.host[13].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+421	1221146 628 4892 115482 1.419482612982 23.754888939903 22 0 0 0 0
 vector 422 FanetGpsrNormal.host[13].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+422	1221774 650 4892 115482 1.419482612982 23.754888939903 22 56 56 1232 68992
 vector 423 FanetGpsrNormal.grayhole[8].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+423	1222424 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
 vector 424 FanetGpsrNormal.grayhole[8].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+424	1223106 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
 vector 425 FanetGpsrNormal.grayhole[8].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+425	1223788 1318 5003 113670 1.482574956724 23.377260972511 46 0 1 23 23
 vector 426 FanetGpsrNormal.grayhole[8].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+426	1225106 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
 vector 427 FanetGpsrNormal.grayhole[8].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+427	1225788 659 5003 113670 1.482574956724 23.377260972511 23 0 0 0 0
 vector 428 FanetGpsrNormal.grayhole[8].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+428	1226447 682 5003 113670 1.482574956724 23.377260972511 23 56 56 1288 72128
 vector 429 FanetGpsrNormal.host[4].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+429	1227129 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
 vector 430 FanetGpsrNormal.host[4].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+430	1228431 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
 vector 431 FanetGpsrNormal.host[4].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+431	1229733 2478 5110 119553 1.484042235417 24.548967704609 86 0 1 43 43
 vector 432 FanetGpsrNormal.host[4].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+432	1232211 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
 vector 433 FanetGpsrNormal.host[4].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+433	1233513 1239 5110 119553 1.484042235417 24.548967704609 43 0 0 0 0
 vector 434 FanetGpsrNormal.host[4].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+434	1234752 1302 5110 119553 1.484042235417 24.548967704609 43 56 140 4088 464128
 vector 435 FanetGpsrNormal.host[17].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
+435	1236054 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
 vector 436 FanetGpsrNormal.host[17].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet pushed, vector(packetBytes)"
+436	1236678 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
 vector 437 FanetGpsrNormal.host[17].wlan[0].mac.queue queueLength:vector ETV
 attr interpolationmode sample-hold
 attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
 attr title "queue length, vector"
+437	1237302 1206 5531 118734 1.498847002862 24.442129252943 42 0 1 21 21
 vector 438 FanetGpsrNormal.host[17].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "packet popped, vector(packetBytes)"
+438	1238508 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
 vector 439 FanetGpsrNormal.host[17].wlan[0].mac.queue queueingTime:vector ETV
 attr interpolationmode none
 attr source queueingTime(packetPopped)
 attr title "queueing times, vector"
 attr unit s
+439	1239132 603 5531 118734 1.498847002862 24.442129252943 21 0 0 0 0
 vector 440 FanetGpsrNormal.host[17].wlan[0].mac sentDownPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets sent to lower layer, vector(packetBytes)"
+440	1239735 624 5531 118734 1.498847002862 24.442129252943 21 56 56 1176 65856
 vector 441 FanetGpsrNormal.grayhole[4].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+441	1240359 1455 5728 119459 1.548864301056 24.54891630308 48 140 140 6720 940800
 vector 442 FanetGpsrNormal.grayhole[7].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+442	1241814 1471 5730 119463 1.548864465112 24.548916363829 48 140 140 6720 940800
 vector 443 FanetGpsrNormal.host[7].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+443	1243285 1471 5732 119461 1.548864813144 24.548916347997 48 140 140 6720 940800
 vector 444 FanetGpsrNormal.grayhole[9].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+444	1244756 737 5734 119371 1.548864886253 24.548864785798 24 140 140 3360 470400
 vector 445 FanetGpsrNormal.host[1].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+445	1245493 1472 5741 119471 1.548865079899 24.548916508933 48 140 140 6720 940800
 vector 446 FanetGpsrNormal.host[11].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+446	1246965 795 5743 119467 1.548865110859 24.548916447039 26 140 140 3640 509600
 vector 447 FanetGpsrNormal.grayhole[5].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+447	1247760 746 5745 119455 1.548865157283 24.54891616796 25 140 140 3500 490000
 vector 448 FanetGpsrNormal.grayhole[6].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+448	1248506 1353 5820 119547 1.5489161875 24.548967522259 44 140 140 6160 862400
 vector 449 FanetGpsrNormal.host[16].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+449	1249859 1356 5822 119560 1.548916223093 24.548967893937 44 140 140 6160 862400
 vector 450 FanetGpsrNormal.host[0].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+450	1251215 718 5830 119469 1.548916323032 24.54891645688 24 140 140 3360 470400
 vector 451 FanetGpsrNormal.grayhole[0].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+451	1251933 148 5836 24717 1.548916403739 5.548916629479 5 140 140 700 98000
 vector 452 FanetGpsrNormal.host[9].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+452	1252081 736 5838 119638 1.548916408283 24.549018815974 24 140 140 3360 470400
 vector 453 FanetGpsrNormal.host[22].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+453	1252817 1238 24796 119642 5.548967835528 24.549018910053 40 140 140 5600 784000
 vector 454 FanetGpsrNormal.host[25].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+454	1254055 1238 24798 119647 5.548967868906 24.549019282401 40 140 140 5600 784000
 vector 455 FanetGpsrNormal.host[28].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+455	1255293 1219 24802 119640 5.548967961761 24.549018823902 40 140 140 5600 784000
 vector 456 FanetGpsrNormal.host[3].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+456	1256512 619 24806 119566 5.548968173598 24.548968206896 20 140 140 2800 392000
 vector 457 FanetGpsrNormal.host[13].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsNotAddressedToUs(packetDropped)
 attr title "packet drop: not addressed to us, vector(packetBytes)"
+457	1257131 619 24889 119649 5.549019331693 24.549019330921 20 140 140 2800 392000
 vector 458 FanetGpsrNormal.host[14].wlan[0].mac packetDropIncorrectlyReceived:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
 attr title "packet drop: incorrectly received, vector(packetBytes)"
-0	97135 27 0 0 0 0 3 0 4 4 16
-1	97162 27 0 0 0 0 3 0 4 4 16
-2	97189 27 0 0 0 0 3 0 4 4 16
-3	97216 27 0 0 0 0 3 0 4 4 16
-4	97243 27 0 0 0 0 3 0 4 4 16
-5	97270 27 0 0 0 0 3 0 4 4 16
-6	97297 27 0 0 0 0 3 0 4 4 16
-7	97324 27 0 0 0 0 3 0 4 4 16
-8	97351 27 0 0 0 0 3 0 4 4 16
-9	97378 27 0 0 0 0 3 0 4 4 16
-10	97405 30 0 0 0 0 3 0 4 4 16
-11	97435 30 0 0 0 0 3 0 4 4 16
-12	97465 30 0 0 0 0 3 0 4 4 16
-13	97495 30 0 0 0 0 3 0 4 4 16
-14	97525 30 0 0 0 0 3 0 4 4 16
-15	97555 30 0 0 0 0 3 0 4 4 16
-16	97585 30 0 0 0 0 3 0 4 4 16
-17	97615 30 0 0 0 0 3 0 4 4 16
-18	97645 30 0 0 0 0 3 0 4 4 16
-19	97675 30 0 0 0 0 3 0 4 4 16
-20	97705 30 0 0 0 0 3 0 4 4 16
-21	97735 30 0 0 0 0 3 0 4 4 16
-22	97765 30 0 0 0 0 3 0 4 4 16
-23	97795 30 0 0 0 0 3 0 4 4 16
-24	97825 30 0 0 0 0 3 0 4 4 16
-25	97855 30 0 0 0 0 3 0 4 4 16
-26	97885 30 0 0 0 0 3 0 4 4 16
-27	97915 30 0 0 0 0 3 0 4 4 16
-28	97945 30 0 0 0 0 3 0 4 4 16
-29	97975 30 0 0 0 0 3 0 4 4 16
-30	98005 30 0 0 0 0 3 0 4 4 16
-31	98035 30 0 0 0 0 3 0 4 4 16
-32	98065 30 0 0 0 0 3 0 4 4 16
-33	98095 30 0 0 0 0 3 0 4 4 16
-34	98125 30 0 0 0 0 3 0 4 4 16
-35	98155 30 0 0 0 0 3 0 4 4 16
-36	98185 30 0 0 0 0 3 0 4 4 16
-37	98215 30 0 0 0 0 3 0 4 4 16
-38	98245 30 0 0 0 0 3 0 4 4 16
-39	98275 30 0 0 0 0 3 0 4 4 16
-40	98305 9521 0 119468 0 24.54891645688 347 1 3 693 1731
-41	107826 2826 0 119365 0 24.548864168971 103 1 2 154 256
-42	110652 13692 0 119735 0 24.575127921242 497 1 3 993 2481
-43	124344 1334 0 118180 0 24.34793416448 49 1 2 73 121
-44	125678 222 0 16375 0 3.872989907041 9 1 3 17 41
-45	125900 1330 0 120289 0 24.6987473072 49 1 2 73 121
-46	127230 16561 0 120533 0 24.733592788904 601 1 3 1201 3001
-47	143791 2716 0 119453 0 24.548915646259 99 1 2 148 246
-48	146507 8860 0 120086 0 24.65036883685 321 1 3 641 1601
-49	155367 2400 0 119636 0 24.549018371276 87 1 2 130 216
-50	157767 13520 0 119993 0 24.630499483893 491 1 3 981 2451
-51	171287 1217 0 116398 0 23.874359714475 45 1 2 67 111
-52	172504 14410 0 119981 0 24.63049935654 523 1 3 1045 2611
-53	186914 1446 0 117965 0 24.31745390841 53 1 2 79 131
-54	188360 13690 0 119989 0 24.630499389534 497 1 3 993 2481
-55	202050 1278 0 115152 0 23.699372444671 47 1 2 70 116
-56	203328 10481 0 120182 0 24.663477799083 381 1 3 761 1901
-57	213809 1335 0 120413 0 24.730570823559 49 1 2 73 121
-58	215144 12007 0 120537 0 24.733592819821 435 1 3 869 2171
-59	227151 2394 0 119545 0 24.548967259911 87 1 2 130 216
-60	229545 10589 0 120442 0 24.730571560261 385 1 3 769 1921
-61	240134 1338 0 114835 0 23.604911543102 49 1 2 73 121
-62	241472 16812 0 120541 0 24.733593134197 611 1 3 1221 3051
-63	258284 1388 0 118289 0 24.391962027313 51 1 2 76 126
-64	259672 3721 0 120202 0 24.663478158415 135 1 3 269 671
-65	263393 1550 0 115846 0 23.783090951294 57 1 2 85 141
-66	264943 13088 0 120430 0 24.730571364002 475 1 3 949 2371
-67	278031 1220 0 115523 0 23.75491160657 45 1 2 67 111
-68	279251 6763 0 119731 0 24.57512785714 246 1 3 491 1225
-69	286014 1330 0 117115 0 24.052223367753 49 1 2 73 121
-70	287344 10714 0 120434 0 24.730571436308 389 1 3 777 1941
-71	298058 1334 0 115415 0 23.741692615112 49 1 2 73 121
-72	299392 11038 0 119973 0 24.630499135884 401 1 3 801 2001
-73	310430 1391 0 120520 0 24.733592185795 51 1 2 76 126
-74	311821 12194 0 120418 0 24.730571152159 443 1 3 885 2211
-75	324015 1173 0 118775 0 24.44215191961 43 1 2 64 106
-76	325188 11019 0 119820 0 24.581234033649 401 1 3 801 2001
-77	336207 1227 0 119112 0 24.464844152468 45 1 2 67 111
-78	337434 9214 0 120438 0 24.730571481091 335 1 3 669 1671
-79	346648 1387 0 118559 0 24.404924656635 51 1 2 76 126
-80	348035 11827 0 119844 0 24.58123461018 429 1 3 857 2141
-81	359862 1394 0 118885 0 24.442652841003 51 1 2 76 126
-82	361256 6474 0 119836 0 24.58123433659 235 1 3 469 1171
-83	367730 1335 0 118082 0 24.347858385088 49 1 2 73 121
-84	369065 14217 0 120094 0 24.650369234223 515 1 3 1029 2571
-85	383282 1327 0 118665 0 24.436322747636 49 1 2 73 121
-86	384609 2608 0 118193 0 24.347935061612 95 1 3 189 471
-87	387217 1444 0 119730 0 24.57512702411 53 1 2 79 131
-88	388661 13050 0 120009 0 24.630499634382 473 1 3 945 2361
-89	401711 1390 0 117357 0 24.197975824957 51 1 2 76 126
-90	403101 8993 0 120529 0 24.733592776277 325 1 3 649 1621
-91	412094 1329 0 117017 0 24.043826021626 49 1 2 73 121
-92	413423 10545 0 119269 0 24.520937886843 383 1 3 765 1911
-93	423968 1333 0 119819 0 24.581233790749 49 1 2 73 121
-94	425301 12926 0 120414 0 24.73057098801 469 1 3 937 2341
-95	438227 1497 0 118998 0 24.454069664608 55 1 2 82 136
-96	439724 7519 0 119639 0 24.549018823902 273 1 3 545 1361
-97	447243 1397 0 120085 0 24.650368384224 51 1 2 76 126
-98	448640 13696 0 119985 0 24.630499378366 497 1 3 993 2481
-99	462336 1328 0 115299 0 23.700932972971 49 1 2 73 121
-100	463664 6220 0 118682 0 24.436323575901 219 1 3 437 1091
-101	469884 1273 0 115634 0 23.76983755119 45 1 2 67 111
-102	471157 1442 0 118918 0 24.442653788321 51 1 3 101 251
-103	472599 1329 0 117616 0 24.21557154427 47 1 2 70 116
-104	473928 11191 0 120422 0 24.730571174223 393 1 3 785 1961
-105	485119 1386 0 120181 0 24.663477448419 49 1 2 73 121
-106	486505 9622 0 119840 0 24.58123444725 337 1 3 673 1681
-107	496127 1328 0 119260 0 24.520937230342 47 1 2 70 116
-108	497455 14121 0 119997 0 24.630499526047 495 1 3 989 2471
-109	511576 1437 0 117817 0 24.258897868358 51 1 2 76 126
-110	513013 17018 0 120521 0 24.733592674316 597 1 3 1193 2981
-111	530031 1551 0 119968 0 24.630498647363 55 1 2 82 136
-112	531582 17498 0 120525 0 24.733592774058 611 1 3 1221 3051
-113	549080 1553 0 117702 0 24.218506102587 55 1 2 82 136
-114	550633 12699 0 119462 0 24.548916363829 445 1 3 889 2221
-115	563332 1376 0 113606 0 23.356007959134 49 1 2 73 121
-116	564708 10918 0 120426 0 24.730571213417 383 1 3 765 1911
-117	575626 1327 0 113711 0 23.377283639178 47 1 2 70 116
-118	576953 6810 0 119370 0 24.548864785798 239 1 3 477 1191
-119	583763 1381 0 114226 0 23.524559377135 49 1 2 73 121
-120	585144 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
-121	585941 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
-122	586738 1540 203 117661 0.533222386381 24.21848343592 54 0 1 27 27
-123	588278 797 203 117661 0.533222386381 24.21848343592 27 40 40 1080 43200
-124	589075 770 203 117661 0.533222386381 24.21848343592 27 0 0 0 0
-125	589845 797 203 117661 0.533222386381 24.21848343592 27 56 56 1512 84672
-126	590642 6479 246 120538 0.533245310539 24.733592819821 217 56 140 15848 1404928
-127	597121 5743 246 120538 0.533245310539 24.733592819821 193 40 124 9400 584320
-128	602864 7658 250 120095 0.533245629023 24.650369234223 257 56 140 17752 1464512
-129	610522 6420 250 120095 0.533245629023 24.650369234223 217 40 40 8680 347200
-130	616942 8921 254 120534 0.533245634635 24.733592788904 300 56 140 20496 1665216
-131	625863 8302 254 120534 0.533245634635 24.733592788904 280 40 124 13216 778624
-132	634165 5967 258 119974 0.533245659077 24.630499135884 200 56 140 14896 1351616
-133	640132 4611 258 119974 0.533245659077 24.630499135884 156 40 40 6240 249600
-134	644743 4858 262 120530 0.533245844569 24.733592776277 162 56 140 12432 1166592
-135	649601 3620 262 120530 0.533245844569 24.733592776277 122 40 40 4880 195200
-136	653221 4764 266 120087 0.533245908399 24.65036883685 160 56 140 10640 831040
-137	657985 4764 266 120087 0.533245908399 24.65036883685 160 40 124 8080 531520
-138	662749 3220 270 118683 0.533245928597 24.436323575901 109 56 140 6524 424144
-139	665969 3072 270 118683 0.533245928597 24.436323575901 104 40 40 4160 166400
-140	669041 7383 274 119736 0.533245951166 24.575127921242 248 56 140 17920 1568000
-141	676424 5911 274 119736 0.533245951166 24.575127921242 200 40 40 8000 320000
-142	682335 8813 278 120522 0.53324598338 24.733592674316 298 56 140 18788 1346128
-143	691148 8067 278 120522 0.53324598338 24.733592674316 273 40 40 10920 436800
-144	699215 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
-145	699919 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
-146	700623 1360 313 118624 0.53755938448 24.436300080969 48 0 1 24 24
-147	701983 704 313 118624 0.53755938448 24.436300080969 24 40 40 960 38400
-148	702687 680 313 118624 0.53755938448 24.436300080969 24 0 0 0 0
-149	703367 704 313 118624 0.53755938448 24.436300080969 24 56 56 1344 75264
-150	704071 9109 364 120526 0.537582627124 24.733592774058 305 56 140 22456 2010176
-151	713180 7756 364 120526 0.537582627124 24.733592774058 261 40 124 12120 693120
-152	720936 7038 368 120431 0.537582837255 24.730571364002 237 56 140 14952 1072512
-153	727974 6419 368 120431 0.537582837255 24.730571364002 217 40 40 8680 347200
-154	734393 4057 372 119640 0.537582865413 24.549018823902 136 56 140 10976 1085056
-155	738450 2838 372 118687 0.537582865413 24.436323597635 96 40 40 3840 153600
-156	741288 3610 376 119732 0.537582867422 24.57512785714 122 56 56 6832 382592
-157	744898 3579 376 119732 0.537582867422 24.57512785714 121 40 40 4840 193600
-158	748477 6925 384 120415 0.53758297782 24.73057098801 234 56 56 13104 733824
-159	755402 6925 384 120415 0.53758297782 24.73057098801 234 40 40 9360 374400
-160	762327 730 426 119322 0.548813502304 24.548813502304 25 0 24 300 4900
-161	763057 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
-162	763763 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
-163	764469 1364 431 113565 0.56916699023 23.355985292467 48 0 1 24 24
-164	765833 706 431 113565 0.56916699023 23.355985292467 24 40 40 960 38400
-165	766539 682 431 113565 0.56916699023 23.355985292467 24 0 0 0 0
-166	767221 706 431 113565 0.56916699023 23.355985292467 24 56 56 1344 75264
-167	767927 7344 474 119998 0.569189862163 24.630499526047 247 56 140 17864 1564864
-168	775271 5889 474 119998 0.569189862163 24.630499526047 199 40 40 7960 318400
-169	781160 5120 478 119469 0.569189965706 24.54891645688 173 56 140 11704 937664
-170	786280 4402 478 118476 0.569189965706 24.402667775561 149 40 40 5960 238400
-171	790682 7394 482 119990 0.569190145589 24.630499389534 248 56 140 17920 1568000
-172	798076 5923 482 119990 0.569190145589 24.630499389534 200 40 40 8000 320000
-173	803999 3546 486 119371 0.569190293109 24.548864785798 119 56 140 8680 768320
-174	807545 2809 486 117839 0.569190293109 24.258898643104 95 40 40 3800 152000
-175	810354 9036 494 120542 0.569190523509 24.733593134197 305 56 140 19264 1384544
-176	819390 8241 494 120542 0.569190523509 24.733593134197 279 40 40 11160 446400
-177	827631 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
-178	828341 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
-179	829051 1372 536 120248 0.59725992661 24.698724640533 48 0 1 24 24
-180	830423 710 536 120248 0.59725992661 24.698724640533 24 40 40 960 38400
-181	831133 686 536 120248 0.59725992661 24.698724640533 24 0 0 0 0
-182	831819 710 536 120248 0.59725992661 24.698724640533 24 56 56 1344 75264
-183	832529 5737 579 120435 0.597283473136 24.730571436308 194 56 56 10864 608384
-184	838266 5737 579 120435 0.597283473136 24.730571436308 194 40 40 7760 310400
-185	844003 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
-186	844828 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
-187	845653 1594 622 115805 0.599569084821 23.783068284627 56 0 1 28 28
-188	847247 825 622 115805 0.599569084821 23.783068284627 28 40 40 1120 44800
-189	848072 797 622 115805 0.599569084821 23.783068284627 28 0 0 0 0
-190	848869 825 622 115805 0.599569084821 23.783068284627 28 56 56 1568 87808
-191	849694 5784 665 120423 0.599592409194 24.730571174223 196 56 56 10976 614656
-192	855478 5784 665 120423 0.599592409194 24.730571174223 196 40 40 7840 313600
-193	861262 6535 669 120419 0.599592732571 24.730571152159 221 56 56 12376 693056
-194	867797 6535 669 120419 0.599592732571 24.730571152159 221 40 40 8840 353600
-195	874332 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
-196	875068 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
-197	875804 1422 751 118248 0.60022688657 24.391939360646 50 0 1 25 25
-198	877226 736 751 118248 0.60022688657 24.391939360646 25 40 40 1000 40000
-199	877962 711 751 118248 0.60022688657 24.391939360646 25 0 0 0 0
-200	878673 736 751 118248 0.60022688657 24.391939360646 25 56 56 1400 78400
-201	879409 7725 802 119982 0.600250128443 24.63049935654 261 56 56 14616 818496
-202	887134 7725 802 119982 0.600250128443 24.63049935654 261 40 40 10440 417600
-203	894859 7341 806 119986 0.600250204942 24.630499378366 248 56 56 13888 777728
-204	902200 7341 806 119986 0.600250204942 24.630499378366 248 40 40 9920 396800
-205	909541 6615 818 119463 0.600250420178 24.548916363829 222 56 140 16464 1486464
-206	916156 5144 818 118464 0.600250420178 24.40266768251 174 40 40 6960 278400
-207	921300 5909 830 119821 0.600250482036 24.581234033649 200 56 56 11200 627200
-208	927209 5909 830 119821 0.600250482036 24.581234033649 200 40 40 8000 320000
-209	933118 6336 834 119845 0.600250526793 24.58123461018 214 56 56 11984 671104
-210	939454 6336 834 119845 0.600250526793 24.58123461018 214 40 40 8560 342400
-211	945790 7239 838 119994 0.600250550802 24.630499483893 245 56 56 13720 768320
-212	953029 7239 838 119994 0.600250550802 24.630499483893 245 40 40 9800 392000
-213	960268 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
-214	961066 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
-215	961864 1542 873 118957 0.6238199824 24.454046997941 54 0 1 27 27
-216	963406 798 873 118957 0.6238199824 24.454046997941 27 40 40 1080 43200
-217	964204 771 873 118957 0.6238199824 24.454046997941 27 0 0 0 0
-218	964975 798 873 118957 0.6238199824 24.454046997941 27 56 56 1512 84672
-219	965773 5611 920 120183 0.62384302073 24.663477799083 190 56 56 10640 595840
-220	971384 5611 920 120183 0.62384302073 24.663477799083 190 40 40 7600 304000
-221	976995 5676 932 120443 0.623843296783 24.730571560261 192 56 56 10752 602112
-222	982671 5676 932 120443 0.623843296783 24.730571560261 192 40 40 7680 307200
-223	988347 5650 936 120427 0.623843297191 24.730571213417 191 56 56 10696 598976
-224	993997 5650 936 120427 0.623843297191 24.730571213417 191 40 40 7640 305600
-225	999647 4944 940 120439 0.623843391685 24.730571481091 167 56 56 9352 523712
-226	1004591 4944 940 120439 0.623843391685 24.730571481091 167 40 40 6680 267200
-227	1009535 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
-228	1010273 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
-229	1011011 1426 987 117776 0.639972583158 24.258875201691 50 0 1 25 25
-230	1012437 738 987 117776 0.639972583158 24.258875201691 25 40 40 1000 40000
-231	1013175 713 987 117776 0.639972583158 24.258875201691 25 0 0 0 0
-232	1013888 738 987 117776 0.639972583158 24.258875201691 25 56 56 1400 78400
-233	1014626 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
-234	1016160 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
-235	1017694 2918 1094 119324 0.641263902886 24.548813502304 102 0 1 51 51
-236	1020612 1534 1094 119324 0.641263902886 24.548813502304 51 40 124 4056 412224
-237	1022146 1459 1094 119324 0.641263902886 24.548813502304 51 0 0 0 0
-238	1023605 1534 1094 119324 0.641263902886 24.548813502304 51 56 140 4872 555072
-239	1025139 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
-240	1025875 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
-241	1026611 1422 1201 118518 0.64944830467 24.404901989968 50 0 1 25 25
-242	1028033 736 1201 118518 0.64944830467 24.404901989968 25 40 40 1000 40000
-243	1028769 711 1201 118518 0.64944830467 24.404901989968 25 0 0 0 0
-244	1029480 736 1201 118518 0.64944830467 24.404901989968 25 56 56 1400 78400
-245	1030216 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
-246	1030986 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
-247	1031756 1488 1308 119689 0.662492931355 24.575104357443 52 0 1 26 26
-248	1033244 770 1308 119689 0.662492931355 24.575104357443 26 40 40 1040 41600
-249	1034014 744 1308 119689 0.662492931355 24.575104357443 26 0 0 0 0
-250	1034758 770 1308 119689 0.662492931355 24.575104357443 26 56 56 1456 81536
-251	1035528 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
-252	1036237 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
-253	1036946 1370 1394 119778 0.666847517947 24.581211124082 48 0 1 24 24
-254	1038316 709 1394 119778 0.666847517947 24.581211124082 24 40 40 960 38400
-255	1039025 685 1394 119778 0.666847517947 24.581211124082 24 0 0 0 0
-256	1039710 709 1394 119778 0.666847517947 24.581211124082 24 56 56 1344 75264
-257	1040419 6994 1441 120010 0.666870568839 24.630499634382 236 56 56 13216 740096
-258	1047413 6994 1441 120010 0.666870568839 24.630499634382 236 40 40 9440 377600
-259	1054407 4981 1449 119841 0.666870588231 24.58123444725 168 56 56 9408 526848
-260	1059388 4981 1449 119841 0.666870588231 24.58123444725 168 40 40 6720 268800
-261	1064369 3467 1457 119837 0.666870901265 24.58123433659 117 56 56 6552 366912
-262	1067836 3467 1457 119837 0.666870901265 24.58123433659 117 40 40 4680 187200
-263	1071303 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
-264	1072073 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
-265	1072843 1488 1543 117924 0.760340928566 24.317431241743 52 0 1 26 26
-266	1074331 770 1543 117924 0.760340928566 24.317431241743 26 40 40 1040 41600
-267	1075101 744 1543 117924 0.760340928566 24.317431241743 26 0 0 0 0
-268	1075845 770 1543 117924 0.760340928566 24.317431241743 26 56 56 1456 81536
-269	1076615 5646 1622 119270 0.760364505935 24.520937886843 191 56 56 10696 598976
-270	1082261 5646 1622 119270 0.760364505935 24.520937886843 191 40 40 7640 305600
-271	1087907 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
-272	1088615 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
-273	1089323 1368 1697 117074 0.852311660536 24.052200701086 48 0 1 24 24
-274	1090691 708 1697 117074 0.852311660536 24.052200701086 24 40 40 960 38400
-275	1091399 684 1697 117074 0.852311660536 24.052200701086 24 0 0 0 0
-276	1092083 708 1697 117074 0.852311660536 24.052200701086 24 56 56 1344 75264
-277	1092791 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
-278	1093503 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
-279	1094215 1376 1799 118139 0.867561871652 24.347911497813 48 0 1 24 24
-280	1095591 712 1799 118139 0.867561871652 24.347911497813 24 40 40 960 38400
-281	1096303 688 1799 118139 0.867561871652 24.347911497813 24 0 0 0 0
-282	1096991 712 1799 118139 0.867561871652 24.347911497813 24 56 56 1344 75264
-283	1097703 1394 1854 118194 0.867585418425 24.347935061612 47 56 56 2632 147392
-284	1099097 1394 1854 118194 0.867585418425 24.347935061612 47 40 40 1880 75200
-285	1100491 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
-286	1101292 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
-287	1102093 1548 1947 119927 0.907183297677 24.630475980696 54 0 1 27 27
-288	1103641 801 1947 119927 0.907183297677 24.630475980696 27 40 40 1080 43200
-289	1104442 774 1947 119927 0.907183297677 24.630475980696 27 0 0 0 0
-290	1105216 801 1947 119927 0.907183297677 24.630475980696 27 56 56 1512 84672
-291	1106017 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
-292	1106729 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
-293	1107441 1376 2069 120140 0.911396724405 24.663454781752 48 0 1 24 24
-294	1108817 712 2069 120140 0.911396724405 24.663454781752 24 40 40 960 38400
-295	1109529 688 2069 120140 0.911396724405 24.663454781752 24 0 0 0 0
-296	1110217 712 2069 120140 0.911396724405 24.663454781752 24 56 56 1344 75264
-297	1110929 1993 2128 120203 0.911420051401 24.663478158415 67 56 56 3752 210112
-298	1112922 1993 2128 120203 0.911420051401 24.663478158415 67 40 40 2680 107200
-299	1114915 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
-300	1116391 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
-301	1117867 2806 2178 119377 0.935864919331 24.548864979592 98 0 1 49 49
-302	1120673 1476 2178 119377 0.935864919331 24.548864979592 49 40 124 3976 409024
-303	1122149 1415 2178 119377 0.935864919331 24.548864979592 49 0 0.04137031581 0.04137031581 0.0017115030302191
-304	1123564 1476 2178 119377 0.935864919331 24.548864979592 49 56 140 4760 548800
-305	1125040 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
-306	1125751 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
-307	1126462 1374 2295 114794 0.947926173685 23.604888876435 48 0 1 24 24
-308	1127836 711 2295 114794 0.947926173685 23.604888876435 24 40 40 960 38400
-309	1128547 687 2295 114794 0.947926173685 23.604888876435 24 0 0 0 0
-310	1129234 711 2295 114794 0.947926173685 23.604888876435 24 56 56 1344 75264
-311	1129945 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
-312	1130687 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
-313	1131429 1434 2406 120479 0.969249171671 24.733569519128 50 0 1 25 25
-314	1132863 742 2406 120479 0.969249171671 24.733569519128 25 40 40 1000 40000
-315	1133605 717 2406 120479 0.969249171671 24.733569519128 25 0 0 0 0
-316	1134322 742 2406 120479 0.969249171671 24.733569519128 25 56 56 1400 78400
-317	1135064 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
-318	1135804 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
-319	1136544 1430 2554 117316 1.008315450279 24.19795315829 50 0 1 25 25
-320	1137974 740 2554 117316 1.008315450279 24.19795315829 25 40 40 1000 40000
-321	1138714 715 2554 117316 1.008315450279 24.19795315829 25 0 0 0 0
-322	1139429 740 2554 117316 1.008315450279 24.19795315829 25 56 56 1400 78400
-323	1140169 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
-324	1140882 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
-325	1141595 1378 2665 120372 1.037022517296 24.730548156892 48 0 1 24 24
-326	1142973 713 2665 120372 1.037022517296 24.730548156892 24 40 40 960 38400
-327	1143686 689 2665 120372 1.037022517296 24.730548156892 24 0 0 0 0
-328	1144375 713 2665 120372 1.037022517296 24.730548156892 24 56 56 1344 75264
-329	1145088 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
-330	1145769 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
-331	1146450 1316 2773 119219 1.069100744324 24.520914563675 46 0 1 23 23
-332	1147766 681 2773 119219 1.069100744324 24.520914563675 23 40 40 920 36800
-333	1148447 658 2773 119219 1.069100744324 24.520914563675 23 0 0 0 0
-334	1149105 681 2773 119219 1.069100744324 24.520914563675 23 56 56 1288 72128
-335	1149786 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
-336	1150492 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
-337	1151198 1364 2918 116976 1.115559567465 24.043803354959 48 0 1 24 24
-338	1152562 706 2918 116976 1.115559567465 24.043803354959 24 40 40 960 38400
-339	1153268 682 2918 116976 1.115559567465 24.043803354959 24 0 0 0 0
-340	1153950 706 2918 116976 1.115559567465 24.043803354959 24 56 56 1344 75264
-341	1154656 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
-342	1155365 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
-343	1156074 1370 3320 114185 1.197428772459 23.524536710468 48 0 1 24 24
-344	1157444 709 3320 114185 1.197428772459 23.524536710468 24 40 40 960 38400
-345	1158153 685 3320 114185 1.197428772459 23.524536710468 24 0 0 0 0
-346	1158838 709 3320 114185 1.197428772459 23.524536710468 24 56 56 1344 75264
-347	1159547 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
-348	1160846 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
-349	1162145 2472 3452 119475 1.203888585558 24.548916593244 86 0 1 43 43
-350	1164617 1299 3452 119475 1.203888585558 24.548916593244 43 40 124 3400 344320
-351	1165916 1236 3452 119475 1.203888585558 24.548916593244 43 0 0 0 0
-352	1167152 1299 3452 119475 1.203888585558 24.548916593244 43 56 140 4088 464128
-353	1168451 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
-354	1169160 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
-355	1169869 1370 3558 115374 1.214241298381 23.741669948445 48 0 1 24 24
-356	1171239 709 3558 115374 1.214241298381 23.741669948445 24 40 40 960 38400
-357	1171948 685 3558 115374 1.214241298381 23.741669948445 24 0 0 0 0
-358	1172633 709 3558 115374 1.214241298381 23.741669948445 24 56 56 1344 75264
-359	1173342 114 3625 16376 1.214264864338 3.872989907041 4 56 56 224 12544
-360	1173456 114 3625 16376 1.214264864338 3.872989907041 4 40 40 160 6400
-361	1173570 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
-362	1174314 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
-363	1175058 1438 3666 120044 1.27905101818 24.650345717557 50 0 1 25 25
-364	1176496 744 3666 120044 1.27905101818 24.650345717557 25 40 40 1000 40000
-365	1177240 719 3666 120044 1.27905101818 24.650345717557 25 0 0 0 0
-366	1177959 744 3666 120044 1.27905101818 24.650345717557 25 56 56 1400 78400
-367	1178703 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
-368	1179384 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
-369	1180065 1316 3799 115111 1.306193991797 23.699349778004 46 0 1 23 23
-370	1181381 681 3799 115111 1.306193991797 23.699349778004 23 40 40 920 36800
-371	1182062 658 3799 115111 1.306193991797 23.699349778004 23 0 0 0 0
-372	1182720 681 3799 115111 1.306193991797 23.699349778004 23 56 56 1288 72128
-373	1183401 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
-374	1184083 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
-375	1184765 1318 3906 117575 1.307318960316 24.215548877603 46 0 1 23 23
-376	1186083 682 3906 117575 1.307318960316 24.215548877603 23 40 40 920 36800
-377	1186765 659 3906 117575 1.307318960316 24.215548877603 23 0 0 0 0
-378	1187424 682 3906 117575 1.307318960316 24.215548877603 23 56 56 1288 72128
-379	1188106 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
-380	1188757 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
-381	1189408 1258 3994 119071 1.341140129836 24.464821485801 44 0 1 22 22
-382	1190666 651 3994 119071 1.341140129836 24.464821485801 22 40 40 880 35200
-383	1191317 629 3994 119071 1.341140129836 24.464821485801 22 0 0 0 0
-384	1191946 651 3994 119071 1.341140129836 24.464821485801 22 56 56 1232 68992
-385	1192597 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
-386	1193304 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
-387	1194011 1366 4107 115258 1.348008227302 23.700910306304 48 0 1 24 24
-388	1195377 707 4107 115258 1.348008227302 23.700910306304 24 40 40 960 38400
-389	1196084 683 4107 115258 1.348008227302 23.700910306304 24 0 0 0 0
-390	1196767 707 4107 115258 1.348008227302 23.700910306304 24 56 56 1344 75264
-391	1197474 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
-392	1198127 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
-393	1198780 1262 4225 115593 1.364933292847 23.769814884523 44 0 1 22 22
-394	1200042 653 4225 115593 1.364933292847 23.769814884523 22 40 40 880 35200
-395	1200695 631 4225 115593 1.364933292847 23.769814884523 22 0 0 0 0
-396	1201326 653 4225 115593 1.364933292847 23.769814884523 22 56 56 1232 68992
-397	1201979 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
-398	1202689 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
-399	1203399 1372 4323 118041 1.368126060581 24.347835718421 48 0 1 24 24
-400	1204771 710 4323 118041 1.368126060581 24.347835718421 24 40 40 960 38400
-401	1205481 686 4323 118041 1.368126060581 24.347835718421 24 0 0 0 0
-402	1206167 710 4323 118041 1.368126060581 24.347835718421 24 56 56 1344 75264
-403	1206877 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
-404	1207523 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
-405	1208169 1248 4423 116357 1.391923358198 23.874337047808 44 0 1 22 22
-406	1209417 646 4423 116357 1.391923358198 23.874337047808 22 40 40 880 35200
-407	1210063 624 4423 116357 1.391923358198 23.874337047808 22 0 0 0 0
-408	1210687 646 4423 116357 1.391923358198 23.874337047808 22 56 56 1232 68992
-409	1211333 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
-410	1212077 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
-411	1212821 1438 4667 118844 1.404647744261 24.442630174336 50 0 1 25 25
-412	1214259 744 4667 118844 1.404647744261 24.442630174336 25 40 40 1000 40000
-413	1215003 719 4667 118844 1.404647744261 24.442630174336 25 0 0 0 0
-414	1215722 744 4667 118844 1.404647744261 24.442630174336 25 56 56 1400 78400
-415	1216466 737 4722 118919 1.404671168724 24.442653788321 25 56 56 1400 78400
-416	1217203 737 4722 118919 1.404671168724 24.442653788321 25 40 40 1000 40000
-417	1217940 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
-418	1218590 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
-419	1219240 1256 4892 115482 1.419482612982 23.754888939903 44 0 1 22 22
-420	1220496 650 4892 115482 1.419482612982 23.754888939903 22 40 40 880 35200
-421	1221146 628 4892 115482 1.419482612982 23.754888939903 22 0 0 0 0
-422	1221774 650 4892 115482 1.419482612982 23.754888939903 22 56 56 1232 68992
-423	1222424 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
-424	1223106 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
-425	1223788 1318 5003 113670 1.482574956724 23.377260972511 46 0 1 23 23
-426	1225106 682 5003 113670 1.482574956724 23.377260972511 23 40 40 920 36800
-427	1225788 659 5003 113670 1.482574956724 23.377260972511 23 0 0 0 0
-428	1226447 682 5003 113670 1.482574956724 23.377260972511 23 56 56 1288 72128
-429	1227129 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
-430	1228431 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
-431	1229733 2478 5110 119553 1.484042235417 24.548967704609 86 0 1 43 43
-432	1232211 1302 5110 119553 1.484042235417 24.548967704609 43 40 124 3400 344320
-433	1233513 1239 5110 119553 1.484042235417 24.548967704609 43 0 0 0 0
-434	1234752 1302 5110 119553 1.484042235417 24.548967704609 43 56 140 4088 464128
-435	1236054 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
-436	1236678 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
-437	1237302 1206 5531 118734 1.498847002862 24.442129252943 42 0 1 21 21
-438	1238508 624 5531 118734 1.498847002862 24.442129252943 21 40 40 840 33600
-439	1239132 603 5531 118734 1.498847002862 24.442129252943 21 0 0 0 0
-440	1239735 624 5531 118734 1.498847002862 24.442129252943 21 56 56 1176 65856
-441	1240359 1455 5728 119459 1.548864301056 24.54891630308 48 140 140 6720 940800
-442	1241814 1471 5730 119463 1.548864465112 24.548916363829 48 140 140 6720 940800
-443	1243285 1471 5732 119461 1.548864813144 24.548916347997 48 140 140 6720 940800
-444	1244756 737 5734 119371 1.548864886253 24.548864785798 24 140 140 3360 470400
-445	1245493 1472 5741 119471 1.548865079899 24.548916508933 48 140 140 6720 940800
-446	1246965 795 5743 119467 1.548865110859 24.548916447039 26 140 140 3640 509600
-447	1247760 746 5745 119455 1.548865157283 24.54891616796 25 140 140 3500 490000
-448	1248506 1353 5820 119547 1.5489161875 24.548967522259 44 140 140 6160 862400
-449	1249859 1356 5822 119560 1.548916223093 24.548967893937 44 140 140 6160 862400
-450	1251215 718 5830 119469 1.548916323032 24.54891645688 24 140 140 3360 470400
-451	1251933 148 5836 24717 1.548916403739 5.548916629479 5 140 140 700 98000
-452	1252081 736 5838 119638 1.548916408283 24.549018815974 24 140 140 3360 470400
-453	1252817 1238 24796 119642 5.548967835528 24.549018910053 40 140 140 5600 784000
-454	1254055 1238 24798 119647 5.548967868906 24.549019282401 40 140 140 5600 784000
-455	1255293 1219 24802 119640 5.548967961761 24.549018823902 40 140 140 5600 784000
-456	1256512 619 24806 119566 5.548968173598 24.548968206896 20 140 140 2800 392000
-457	1257131 619 24889 119649 5.549019331693 24.549019330921 20 140 140 2800 392000
-458	1257750 31 105312 105312 21.693640170254 21.693640170254 1 56 56 56 3136
-
+458	1257750 33 105312 105312 21.693640170254 21.693640170254 1 56 56 56 3136
