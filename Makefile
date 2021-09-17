@@ -208,8 +208,10 @@ OBJS = \
     $O/cryptopp850/zinflate.o \
     $O/cryptopp850/zlib.o \
     $O/gpsrbase/GpsrBase.o \
+    $O/gpsrbase/GpsrGrayholeSecure.o \
     $O/gpsrbase/GpsrPositionTable.o \
     $O/gpsrbase/GpsrSecure.o \
+    $O/gpsrbase/Grayhole.o \
     $O/gpsrbase/Sybil.o \
     $O/gpsrbase/SybilSecure.o \
     $O/gpsrbase/GpsrBase_m.o
