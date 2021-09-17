@@ -80,20 +80,20 @@ using namespace CryptoPP;
 
 class GpsrSecure: public GpsrBase {
 public:
-    ECDSA<ECP, SHA1>::PrivateKey privateKey;
-    ECDSA<ECP, SHA1>::PublicKey publicKey;
+    ECDSA<ECP, SHA256>::PrivateKey privateKey;
+    ECDSA<ECP, SHA256>::PublicKey publicKey;
     GpsrSecure();
     virtual ~GpsrSecure();
     virtual void initialize(int stage) override;
     void InitializeSec();
-    bool GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA1>::PrivateKey& key );
-    bool GeneratePublicKey( const ECDSA<ECP, SHA1>::PrivateKey& privateKey, ECDSA<ECP, SHA1>::PublicKey& publicKey );
-    void PrintPrivateKey( const ECDSA<ECP, SHA1>::PrivateKey& key );
-    void PrintPublicKey( const ECDSA<ECP, SHA1>::PublicKey& key );
-    bool SignMessage( const ECDSA<ECP, SHA1>::PrivateKey& key, const string& message, string& signature );
-    bool VerifyMessage( const ECDSA<ECP, SHA1>::PublicKey& key, const string& message, const string& signature );
-    void SavePublicKey( const string& filename, const ECDSA<ECP, SHA1>::PublicKey& key );
-    void LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::PublicKey& key );
+    bool GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA256>::PrivateKey& key );
+    bool GeneratePublicKey( const ECDSA<ECP, SHA256>::PrivateKey& privateKey, ECDSA<ECP, SHA256>::PublicKey& publicKey );
+    void PrintPrivateKey( const ECDSA<ECP, SHA256>::PrivateKey& key );
+    void PrintPublicKey( const ECDSA<ECP, SHA256>::PublicKey& key );
+    bool SignMessage( const ECDSA<ECP, SHA256>::PrivateKey& key, const string& message, string& signature );
+    bool VerifyMessage( const ECDSA<ECP, SHA256>::PublicKey& key, const string& message, const string& signature );
+    void SavePublicKey( const string& filename, const ECDSA<ECP, SHA256>::PublicKey& key );
+    void LoadPublicKey( const string& filename, ECDSA<ECP, SHA256>::PublicKey& key );
     virtual const Ptr<GpsrBeacon> createBeacon() override;
     virtual void processBeacon(Packet *packet) override;
 };

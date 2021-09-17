@@ -1,0 +1,860 @@
+file 36095 1631872176                                           
+version 2
+run _3D_Turtle_Sybil_Secure-0-20210917-11:49:21-16756
+attr configname _3D_Turtle_Sybil_Secure
+attr datetime 20210917-11:49:21
+attr experiment _3D_Turtle_Sybil_Secure
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network FanetGpsrSecure
+attr processid 16756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.host[*].osgModel "\"3d/drone.ive.100.scale.0,0,90.rot\""
+param *.sybil[*].osgModel "\"3d/glider.osgb.100.scale.0,0,90.rot\""
+param *.host*.mobility.typename "\"TurtleMobility\""
+param *.host*.mobility.turtleScript "xmldoc(\"config.xml\")"
+param *.sybil*.mobility.typename "\"TurtleMobility\""
+param *.sybil*.mobility.turtleScript "xmldoc(\"config.xml\")"
+param *.host[0].numApps 1
+param *.host[0].app[0].typename "\"PingApp\""
+param *.host[0].app[0].destAddr "\"host[4]\""
+param *.host[0].app[0].printPing true
+param **.wlan[*].bitrate 24Mbps
+param *.configurator.addStaticRoutes false
+param **.netmaskRoutes "\"\""
+param **.arp.typename "\"GlobalArp\""
+param **.planarizationMode "\"RNG\""
+param **.beaconInterval 1s
+param *.host*.wlan[0].typename "\"AckingWirelessInterface\""
+param *.host*.wlan[0].radio.transmitter.communicationRange 300m
+param *.sybil*.wlan[0].typename "\"AckingWirelessInterface\""
+param *.sybil*.wlan[0].radio.transmitter.communicationRange 300m
+param *.visualizer.osgVisualizer.typename "\"IntegratedOsgVisualizer\""
+param *.visualizer.osgVisualizer.sceneVisualizer.typename "\"SceneOsgEarthVisualizer\""
+param *.visualizer.osgVisualizer.sceneVisualizer.mapFile "\"unical.earth\""
+param *.coordinateSystem.sceneLongitude 16.2215deg
+param *.coordinateSystem.sceneLatitude 39.3701deg
+param *.visualizer.osgVisualizer.sceneVisualizer.clearColor "\"skyblue\""
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneShading false
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneColor "\"#000000\""
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneOpacity 0.0
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneImageSize 4000m
+param *.visualizer.osgVisualizer.sceneVisualizer.axisLength 2000m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMinX 0m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMinY 0m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMinZ 0m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMaxX 1700m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMaxY 300m
+param *.visualizer.osgVisualizer.sceneVisualizer.sceneMaxZ 20m
+param *.coordinateSystem.sceneAltitude 20m
+param *.coordinateSystem.sceneHeading 169deg
+param *.visualizer.osgVisualizer.networkNodeVisualizer.displayModuleName false
+param *.visualizer.*.mobilityVisualizer.displayMobility true
+param *.visualizer.*.mobilityVisualizer.displayPositions true
+param *.visualizer.*.mobilityVisualizer.displayOrientations true
+param *.visualizer.*.mobilityVisualizer.displayVelocities true
+param *.visualizer.*.mobilityVisualizer.displayMovementTrails true
+param *.visualizer.*.mobilityVisualizer.animationSpeed 1
+param **.constraintAreaMinX 0m
+param **.constraintAreaMinY 0m
+param **.constraintAreaMinZ 200m
+param **.constraintAreaMaxX 1500m
+param **.constraintAreaMaxY 800m
+param **.constraintAreaMaxZ 400m
+
+vector 0 FanetGpsrSecure.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 FanetGpsrSecure.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 FanetGpsrSecure.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 FanetGpsrSecure.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 FanetGpsrSecure.host[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 FanetGpsrSecure.host[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 FanetGpsrSecure.host[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 FanetGpsrSecure.host[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 FanetGpsrSecure.host[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 FanetGpsrSecure.host[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 10 FanetGpsrSecure.host[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 FanetGpsrSecure.host[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 12 FanetGpsrSecure.host[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 FanetGpsrSecure.host[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 14 FanetGpsrSecure.host[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 FanetGpsrSecure.host[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 16 FanetGpsrSecure.host[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 FanetGpsrSecure.host[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 18 FanetGpsrSecure.host[18].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 FanetGpsrSecure.host[19].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 20 FanetGpsrSecure.host[20].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 FanetGpsrSecure.host[21].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 22 FanetGpsrSecure.host[22].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 FanetGpsrSecure.host[23].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 24 FanetGpsrSecure.host[24].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 FanetGpsrSecure.host[25].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 26 FanetGpsrSecure.host[26].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 FanetGpsrSecure.host[27].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 28 FanetGpsrSecure.host[28].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 29 FanetGpsrSecure.host[29].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 30 FanetGpsrSecure.host[30].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 31 FanetGpsrSecure.host[31].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 32 FanetGpsrSecure.host[32].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 33 FanetGpsrSecure.host[33].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 34 FanetGpsrSecure.host[34].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 35 FanetGpsrSecure.host[35].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 36 FanetGpsrSecure.host[36].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 37 FanetGpsrSecure.host[37].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 38 FanetGpsrSecure.host[38].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 39 FanetGpsrSecure.host[39].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 40 FanetGpsrSecure.sybil[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 41 FanetGpsrSecure.sybil[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 42 FanetGpsrSecure.sybil[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 43 FanetGpsrSecure.sybil[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 44 FanetGpsrSecure.sybil[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 45 FanetGpsrSecure.sybil[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 46 FanetGpsrSecure.sybil[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 47 FanetGpsrSecure.sybil[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 48 FanetGpsrSecure.sybil[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 49 FanetGpsrSecure.sybil[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 50 FanetGpsrSecure.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 51 FanetGpsrSecure.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 52 FanetGpsrSecure.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 53 FanetGpsrSecure.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 54 FanetGpsrSecure.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 55 FanetGpsrSecure.host[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 56 FanetGpsrSecure.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 57 FanetGpsrSecure.host[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 58 FanetGpsrSecure.host[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 59 FanetGpsrSecure.host[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 60 FanetGpsrSecure.host[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 61 FanetGpsrSecure.host[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 62 FanetGpsrSecure.host[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 63 FanetGpsrSecure.host[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 64 FanetGpsrSecure.host[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 65 FanetGpsrSecure.host[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 66 FanetGpsrSecure.host[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 67 FanetGpsrSecure.host[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 68 FanetGpsrSecure.host[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 69 FanetGpsrSecure.host[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 70 FanetGpsrSecure.host[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 71 FanetGpsrSecure.host[10].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 72 FanetGpsrSecure.host[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 73 FanetGpsrSecure.host[11].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 74 FanetGpsrSecure.host[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 75 FanetGpsrSecure.host[12].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 76 FanetGpsrSecure.host[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 77 FanetGpsrSecure.host[13].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 78 FanetGpsrSecure.host[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 79 FanetGpsrSecure.host[14].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 80 FanetGpsrSecure.host[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 81 FanetGpsrSecure.host[15].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 82 FanetGpsrSecure.host[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 83 FanetGpsrSecure.host[16].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 84 FanetGpsrSecure.host[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 85 FanetGpsrSecure.host[17].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 86 FanetGpsrSecure.host[18].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 87 FanetGpsrSecure.host[18].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 88 FanetGpsrSecure.host[19].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 89 FanetGpsrSecure.host[19].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 90 FanetGpsrSecure.host[20].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 91 FanetGpsrSecure.host[20].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 92 FanetGpsrSecure.host[21].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 93 FanetGpsrSecure.host[21].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 94 FanetGpsrSecure.host[22].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 95 FanetGpsrSecure.host[22].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 96 FanetGpsrSecure.host[23].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 97 FanetGpsrSecure.host[23].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 98 FanetGpsrSecure.host[24].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 99 FanetGpsrSecure.host[24].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 100 FanetGpsrSecure.host[25].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 101 FanetGpsrSecure.host[25].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 102 FanetGpsrSecure.host[26].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 103 FanetGpsrSecure.host[26].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 104 FanetGpsrSecure.host[27].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 105 FanetGpsrSecure.host[27].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 106 FanetGpsrSecure.host[28].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 107 FanetGpsrSecure.host[28].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 108 FanetGpsrSecure.host[29].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 109 FanetGpsrSecure.host[29].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 110 FanetGpsrSecure.host[30].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 111 FanetGpsrSecure.host[30].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 112 FanetGpsrSecure.host[31].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 113 FanetGpsrSecure.host[31].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 114 FanetGpsrSecure.host[32].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 115 FanetGpsrSecure.host[32].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 116 FanetGpsrSecure.host[33].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 117 FanetGpsrSecure.host[33].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 118 FanetGpsrSecure.host[34].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 119 FanetGpsrSecure.host[34].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 120 FanetGpsrSecure.host[35].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 121 FanetGpsrSecure.host[35].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 122 FanetGpsrSecure.host[36].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 123 FanetGpsrSecure.host[36].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 124 FanetGpsrSecure.host[37].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 125 FanetGpsrSecure.host[37].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 126 FanetGpsrSecure.host[38].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 127 FanetGpsrSecure.host[38].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 128 FanetGpsrSecure.host[39].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 129 FanetGpsrSecure.host[39].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 130 FanetGpsrSecure.sybil[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 131 FanetGpsrSecure.sybil[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 132 FanetGpsrSecure.sybil[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 133 FanetGpsrSecure.sybil[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 134 FanetGpsrSecure.sybil[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 135 FanetGpsrSecure.sybil[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 136 FanetGpsrSecure.sybil[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 137 FanetGpsrSecure.sybil[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 138 FanetGpsrSecure.sybil[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 139 FanetGpsrSecure.sybil[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 140 FanetGpsrSecure.sybil[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 141 FanetGpsrSecure.sybil[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 142 FanetGpsrSecure.sybil[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 143 FanetGpsrSecure.sybil[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 144 FanetGpsrSecure.sybil[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 145 FanetGpsrSecure.sybil[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 146 FanetGpsrSecure.sybil[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 147 FanetGpsrSecure.sybil[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 148 FanetGpsrSecure.sybil[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 149 FanetGpsrSecure.sybil[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 150 FanetGpsrSecure.host[7].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 151 FanetGpsrSecure.host[7].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 152 FanetGpsrSecure.host[7].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 153 FanetGpsrSecure.host[7].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 154 FanetGpsrSecure.host[7].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 155 FanetGpsrSecure.host[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 156 FanetGpsrSecure.host[11].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 157 FanetGpsrSecure.host[11].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+0	33031 27 0 0 0 0 3 0 4 4 16
+1	33058 27 0 0 0 0 3 0 4 4 16
+2	33085 27 0 0 0 0 3 0 4 4 16
+3	33112 27 0 0 0 0 3 0 4 4 16
+4	33139 27 0 0 0 0 3 0 4 4 16
+5	33166 27 0 0 0 0 3 0 4 4 16
+6	33193 27 0 0 0 0 3 0 4 4 16
+7	33220 27 0 0 0 0 3 0 4 4 16
+8	33247 27 0 0 0 0 3 0 4 4 16
+9	33274 27 0 0 0 0 3 0 4 4 16
+10	33301 30 0 0 0 0 3 0 4 4 16
+11	33331 30 0 0 0 0 3 0 4 4 16
+12	33361 30 0 0 0 0 3 0 4 4 16
+13	33391 30 0 0 0 0 3 0 4 4 16
+14	33421 30 0 0 0 0 3 0 4 4 16
+15	33451 30 0 0 0 0 3 0 4 4 16
+16	33481 30 0 0 0 0 3 0 4 4 16
+17	33511 30 0 0 0 0 3 0 4 4 16
+18	33541 30 0 0 0 0 3 0 4 4 16
+19	33571 30 0 0 0 0 3 0 4 4 16
+20	33601 30 0 0 0 0 3 0 4 4 16
+21	33631 30 0 0 0 0 3 0 4 4 16
+22	33661 30 0 0 0 0 3 0 4 4 16
+23	33691 30 0 0 0 0 3 0 4 4 16
+24	33721 30 0 0 0 0 3 0 4 4 16
+25	33751 30 0 0 0 0 3 0 4 4 16
+26	33781 30 0 0 0 0 3 0 4 4 16
+27	33811 30 0 0 0 0 3 0 4 4 16
+28	33841 30 0 0 0 0 3 0 4 4 16
+29	33871 30 0 0 0 0 3 0 4 4 16
+30	33901 30 0 0 0 0 3 0 4 4 16
+31	33931 30 0 0 0 0 3 0 4 4 16
+32	33961 30 0 0 0 0 3 0 4 4 16
+33	33991 30 0 0 0 0 3 0 4 4 16
+34	34021 30 0 0 0 0 3 0 4 4 16
+35	34051 30 0 0 0 0 3 0 4 4 16
+36	34081 30 0 0 0 0 3 0 4 4 16
+37	34111 30 0 0 0 0 3 0 4 4 16
+38	34141 30 0 0 0 0 3 0 4 4 16
+39	34171 30 0 0 0 0 3 0 4 4 16
+40	34201 30 0 0 0 0 3 0 4 4 16
+41	34231 30 0 0 0 0 3 0 4 4 16
+42	34261 30 0 0 0 0 3 0 4 4 16
+43	34291 30 0 0 0 0 3 0 4 4 16
+44	34321 30 0 0 0 0 3 0 4 4 16
+45	34351 30 0 0 0 0 3 0 4 4 16
+46	34381 30 0 0 0 0 3 0 4 4 16
+47	34411 30 0 0 0 0 3 0 4 4 16
+48	34441 30 0 0 0 0 3 0 4 4 16
+49	34471 30 0 0 0 0 3 0 4 4 16
+50	34501 35 0 259 0 0.531839560508 2 1 3 4 10
+51	34536 10 0 0 0 0 1 1 1 1 1
+52	34546 10 0 0 0 0 1 1 1 1 1
+53	34556 10 0 0 0 0 1 1 1 1 1
+54	34566 10 0 0 0 0 1 1 1 1 1
+55	34576 10 0 0 0 0 1 1 1 1 1
+56	34586 35 0 260 0 0.531839604807 2 1 3 4 10
+57	34621 10 0 0 0 0 1 1 1 1 1
+58	34631 10 0 0 0 0 1 1 1 1 1
+59	34641 10 0 0 0 0 1 1 1 1 1
+60	34651 10 0 0 0 0 1 1 1 1 1
+61	34661 10 0 0 0 0 1 1 1 1 1
+62	34671 34 0 261 0 0.53183981333 2 1 3 4 10
+63	34705 10 0 0 0 0 1 1 1 1 1
+64	34715 10 0 0 0 0 1 1 1 1 1
+65	34725 60 0 304 0 0.531875590593 3 1 2 4 6
+66	34785 10 0 0 0 0 1 1 1 1 1
+67	34795 10 0 0 0 0 1 1 1 1 1
+68	34805 10 0 0 0 0 1 1 1 1 1
+69	34815 10 0 0 0 0 1 1 1 1 1
+70	34825 10 0 0 0 0 1 1 1 1 1
+71	34835 10 0 0 0 0 1 1 1 1 1
+72	34845 60 0 305 0 0.531876035719 3 1 3 5 11
+73	34905 10 0 0 0 0 1 1 1 1 1
+74	34915 10 0 0 0 0 1 1 1 1 1
+75	34925 10 0 0 0 0 1 1 1 1 1
+76	34935 10 0 0 0 0 1 1 1 1 1
+77	34945 10 0 0 0 0 1 1 1 1 1
+78	34955 10 0 0 0 0 1 1 1 1 1
+79	34965 10 0 0 0 0 1 1 1 1 1
+80	34975 10 0 0 0 0 1 1 1 1 1
+81	34985 10 0 0 0 0 1 1 1 1 1
+82	34995 35 0 263 0 0.531839881206 2 1 3 4 10
+83	35030 10 0 0 0 0 1 1 1 1 1
+84	35040 10 0 0 0 0 1 1 1 1 1
+85	35050 10 0 0 0 0 1 1 1 1 1
+86	35060 10 0 0 0 0 1 1 1 1 1
+87	35070 10 0 0 0 0 1 1 1 1 1
+88	35080 10 0 0 0 0 1 1 1 1 1
+89	35090 10 0 0 0 0 1 1 1 1 1
+90	35100 10 0 0 0 0 1 1 1 1 1
+91	35110 10 0 0 0 0 1 1 1 1 1
+92	35120 10 0 0 0 0 1 1 1 1 1
+93	35130 10 0 0 0 0 1 1 1 1 1
+94	35140 10 0 0 0 0 1 1 1 1 1
+95	35150 10 0 0 0 0 1 1 1 1 1
+96	35160 10 0 0 0 0 1 1 1 1 1
+97	35170 10 0 0 0 0 1 1 1 1 1
+98	35180 10 0 0 0 0 1 1 1 1 1
+99	35190 10 0 0 0 0 1 1 1 1 1
+100	35200 11 0 0 0 0 1 1 1 1 1
+101	35211 11 0 0 0 0 1 1 1 1 1
+102	35222 11 0 0 0 0 1 1 1 1 1
+103	35233 11 0 0 0 0 1 1 1 1 1
+104	35244 11 0 0 0 0 1 1 1 1 1
+105	35255 11 0 0 0 0 1 1 1 1 1
+106	35266 11 0 0 0 0 1 1 1 1 1
+107	35277 11 0 0 0 0 1 1 1 1 1
+108	35288 11 0 0 0 0 1 1 1 1 1
+109	35299 11 0 0 0 0 1 1 1 1 1
+110	35310 11 0 0 0 0 1 1 1 1 1
+111	35321 11 0 0 0 0 1 1 1 1 1
+112	35332 11 0 0 0 0 1 1 1 1 1
+113	35343 11 0 0 0 0 1 1 1 1 1
+114	35354 11 0 0 0 0 1 1 1 1 1
+115	35365 11 0 0 0 0 1 1 1 1 1
+116	35376 11 0 0 0 0 1 1 1 1 1
+117	35387 11 0 0 0 0 1 1 1 1 1
+118	35398 37 0 258 0 0.531839481457 2 1 3 4 10
+119	35435 11 0 0 0 0 1 1 1 1 1
+120	35446 36 0 257 0 0.53183947528 2 1 3 4 10
+121	35482 11 0 0 0 0 1 1 1 1 1
+122	35493 11 0 0 0 0 1 1 1 1 1
+123	35504 11 0 0 0 0 1 1 1 1 1
+124	35515 37 0 256 0 0.531839413135 2 1 3 4 10
+125	35552 11 0 0 0 0 1 1 1 1 1
+126	35563 11 0 0 0 0 1 1 1 1 1
+127	35574 11 0 0 0 0 1 1 1 1 1
+128	35585 11 0 0 0 0 1 1 1 1 1
+129	35596 11 0 0 0 0 1 1 1 1 1
+130	35607 11 0 0 0 0 1 1 1 1 1
+131	35618 11 0 0 0 0 1 1 1 1 1
+132	35629 37 0 262 0 0.531839827416 2 1 3 4 10
+133	35666 11 0 0 0 0 1 1 1 1 1
+134	35677 11 0 0 0 0 1 1 1 1 1
+135	35688 11 0 0 0 0 1 1 1 1 1
+136	35699 11 0 0 0 0 1 1 1 1 1
+137	35710 11 0 0 0 0 1 1 1 1 1
+138	35721 11 0 0 0 0 1 1 1 1 1
+139	35732 11 0 0 0 0 1 1 1 1 1
+140	35743 11 0 0 0 0 1 1 1 1 1
+141	35754 11 0 0 0 0 1 1 1 1 1
+142	35765 11 0 0 0 0 1 1 1 1 1
+143	35776 11 0 0 0 0 1 1 1 1 1
+144	35787 11 0 0 0 0 1 1 1 1 1
+145	35798 11 0 0 0 0 1 1 1 1 1
+146	35809 11 0 0 0 0 1 1 1 1 1
+147	35820 11 0 0 0 0 1 1 1 1 1
+148	35831 11 0 0 0 0 1 1 1 1 1
+149	35842 11 0 0 0 0 1 1 1 1 1
+150	35853 27 253 253 0.531838923926 0.531838923926 1 82 82 82 6724
+151	35880 27 253 253 0.531838923926 0.531838923926 1 82 82 82 6724
+152	35907 52 253 253 0.531838923926 0.531838923926 2 0 1 1 1
+153	35959 27 253 253 0.531838923926 0.531838923926 1 82 82 82 6724
+154	35986 26 253 253 0.531838923926 0.531838923926 1 0 0 0 0
+155	36012 27 253 253 0.531838923926 0.531838923926 1 98 98 98 9604
+156	36039 27 306 306 0.531876035719 0.531876035719 1 98 98 98 9604
+157	36066 27 306 306 0.531876035719 0.531876035719 1 82 82 82 6724
+

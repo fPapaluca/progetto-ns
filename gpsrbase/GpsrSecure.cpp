@@ -34,7 +34,7 @@ void GpsrSecure::InitializeSec(){
     string  selfAddressStr = getSelfAddress().toIpv4().str();
     string  filename= "pk/"+selfAddressStr+".pem";
     srand(420);
-    result = GeneratePrivateKey( CryptoPP::ASN1::secp160r1(), privateKey );
+    result = GeneratePrivateKey( CryptoPP::ASN1::secp256k1(), privateKey );
 
     result = GeneratePublicKey( privateKey, publicKey );
     /*
@@ -60,7 +60,7 @@ GpsrSecure::~GpsrSecure() {
 
 
 
-bool GpsrSecure::GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA1>::PrivateKey& key )
+bool GpsrSecure::GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA256>::PrivateKey& key )
 {
     AutoSeededRandomPool prng;
 
@@ -70,7 +70,7 @@ bool GpsrSecure::GeneratePrivateKey( const OID& oid, ECDSA<ECP, SHA1>::PrivateKe
     return key.Validate( prng, 3 );
 }
 
-bool GpsrSecure::GeneratePublicKey( const ECDSA<ECP, SHA1>::PrivateKey& privateKey, ECDSA<ECP, SHA1>::PublicKey& publicKey )
+bool GpsrSecure::GeneratePublicKey( const ECDSA<ECP, SHA256>::PrivateKey& privateKey, ECDSA<ECP, SHA256>::PublicKey& publicKey )
 {
     AutoSeededRandomPool prng;
 
@@ -83,14 +83,14 @@ bool GpsrSecure::GeneratePublicKey( const ECDSA<ECP, SHA1>::PrivateKey& privateK
     return publicKey.Validate( prng, 3 );
 }
 
-void GpsrSecure::PrintPrivateKey( const ECDSA<ECP, SHA1>::PrivateKey& key )
+void GpsrSecure::PrintPrivateKey( const ECDSA<ECP, SHA256>::PrivateKey& key )
 {
     cout << endl;
     cout << "Private Exponent:" << endl;
     cout << " " << key.GetPrivateExponent() << endl;
 }
 
-void GpsrSecure::PrintPublicKey( const ECDSA<ECP, SHA1>::PublicKey& key )
+void GpsrSecure::PrintPublicKey( const ECDSA<ECP, SHA256>::PublicKey& key )
 {
     cout << endl;
     cout << "Public Element:" << endl;
@@ -98,7 +98,7 @@ void GpsrSecure::PrintPublicKey( const ECDSA<ECP, SHA1>::PublicKey& key )
     cout << " Y: " << key.GetPublicElement().y << endl;
 }
 
-bool GpsrSecure::SignMessage( const ECDSA<ECP, SHA1>::PrivateKey& key, const string& message, string& signature )
+bool GpsrSecure::SignMessage( const ECDSA<ECP, SHA256>::PrivateKey& key, const string& message, string& signature )
 {
     AutoSeededRandomPool prng;
 
@@ -106,7 +106,7 @@ bool GpsrSecure::SignMessage( const ECDSA<ECP, SHA1>::PrivateKey& key, const str
 
     StringSource( message, true,
         new SignerFilter( prng,
-            ECDSA<ECP,SHA1>::Signer(key),
+            ECDSA<ECP,SHA256>::Signer(key),
             new StringSink( signature )
         ) // SignerFilter
     ); // StringSource
@@ -114,13 +114,13 @@ bool GpsrSecure::SignMessage( const ECDSA<ECP, SHA1>::PrivateKey& key, const str
     return !signature.empty();
 }
 
-bool GpsrSecure::VerifyMessage( const ECDSA<ECP, SHA1>::PublicKey& key, const string& message, const string& signature )
+bool GpsrSecure::VerifyMessage( const ECDSA<ECP, SHA256>::PublicKey& key, const string& message, const string& signature )
 {
     bool result = false;
 
     StringSource( signature+message, true,
         new SignatureVerificationFilter(
-            ECDSA<ECP,SHA1>::Verifier(key),
+            ECDSA<ECP,SHA256>::Verifier(key),
             new ArraySink( (byte*)&result, sizeof(result) )
         ) // SignatureVerificationFilter
     );
@@ -128,12 +128,12 @@ bool GpsrSecure::VerifyMessage( const ECDSA<ECP, SHA1>::PublicKey& key, const st
     return result;
 }
 
-void GpsrSecure::SavePublicKey( const string& filename, const ECDSA<ECP, SHA1>::PublicKey& key )
+void GpsrSecure::SavePublicKey( const string& filename, const ECDSA<ECP, SHA256>::PublicKey& key )
 {
     key.Save( FileSink( filename.c_str(), true /*binary*/ ).Ref() );
 }
 
-void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA1>::PublicKey& key )
+void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA256>::PublicKey& key )
 {
     key.Load( FileSource( filename.c_str(), true /*pump all*/ ).Ref() );
 }
@@ -158,7 +158,7 @@ const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
 
 void GpsrSecure::processBeacon(Packet *packet)
 {
-    ECDSA<ECP, SHA1>::PublicKey currentPublicKey;
+    ECDSA<ECP, SHA256>::PublicKey currentPublicKey;
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
     //cout << "this is the signature in process beacon: "<< beacon->getSignature() << endl;
     string  selfAddressStr = beacon->getAddress().toIpv4().str(); //getSelfAddress().toIpv4().str();
