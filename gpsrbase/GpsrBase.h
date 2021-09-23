@@ -146,8 +146,8 @@ class  GpsrBase : public RoutingProtocolBase, public cListener, public Netfilter
 
     // next hop
     L3Address findNextHop(const L3Address& destination, GpsrOption *gpsrOption);
-    L3Address findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
-    L3Address findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
+    virtual L3Address findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
+    virtual L3Address findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
 
     // routing
     virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);

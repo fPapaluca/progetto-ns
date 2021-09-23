@@ -46,7 +46,7 @@ void GpsrGrayholeSecure::sendAck(const Ptr<GpsrBeacon>& beacon, const L3Address&
     udpPacket->addTag<PacketProtocolTag>()->setProtocol(&Protocol::manet);
     udpPacket->addTag<DispatchProtocolReq>()->setProtocol(addressType->getNetworkProtocol());
     sendUdpPacket(udpPacket);
-    cout << "ACK inviato" << endl;
+    //cout << "ACK inviato" << endl;
 }
 
 void GpsrGrayholeSecure::processBeacon(Packet *packet)
@@ -58,7 +58,7 @@ void GpsrGrayholeSecure::processBeacon(Packet *packet)
             delete packet;
             return;
         }
-        cout << "----" << beacon->getSignature() << " ----" << endl;
+        deleteMessage(beacon->getAddress().str(), beacon->getSignature());
     }
     else{
         EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
@@ -79,6 +79,10 @@ GpsrGrayholeSecure::~GpsrGrayholeSecure() {
 
 INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
 {
+
+    check_message();
+    print_map2(mappa_num_non_inviati);
+
     const auto& networkHeader = getNetworkProtocolHeader(datagram);
     const L3Address& source = networkHeader->getSourceAddress();
     const L3Address& destination = networkHeader->getDestinationAddress();
@@ -93,10 +97,11 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
     }
     else {
         sendAck(createAck(datagram->str()),source);
-        cout << "xxxx" << datagram->str() << endl;
+        //cout << "xxxx" << datagram->str() << endl;
         if(strncmp(datagram->getName(),"ACK",3)!=0){
-            saveMessage(destination.str(), datagram->str());
-            deleteMessage(destination.str(), datagram->str());
+            if(nextHop.str() != destination.str()){
+                saveMessage(nextHop.str(), datagram->str());
+            }
         }
         EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
         gpsrOption->setSenderAddress(getSelfAddress());
@@ -114,20 +119,24 @@ void GpsrGrayholeSecure::saveMessage(string dest, string msg){
     }
     tuple<string, simtime_t> elem (msg,simTime());
     mappa_messaggi[dest].push_back(elem);
-    print_map(mappa_messaggi);
-    if( simTime() > 2){
-        cout << " Il tempo a Derangolandia e': " << simTime() <<endl;
-    }
+    //print_map(mappa_messaggi);
 }
 
 void GpsrGrayholeSecure::print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m)
 {
     for (auto const &pair: m) {
-        std::cout << "{" << pair.first << ": ";// << pair.second << "}\n";
+        std::cout << "msg{" << pair.first << ": ";// << pair.second << "}\n";
         for(auto const &t : pair.second) {
             std::cout << get<0>(t) << ", " << get<1>(t) <<";; ";
         }
         std::cout << "}\n";
+    }
+}
+
+void GpsrGrayholeSecure::print_map2(std::unordered_map<string,int> const &m)
+{
+    for (auto const &pair: m) {
+        std::cout << "num{" << pair.first << ": " << pair.second << "}\n";
     }
 }
 
@@ -139,23 +148,28 @@ void GpsrGrayholeSecure::deleteMessage(string dest, string msg) {
         // è presente tale destinataio neela mia mappa
 
         for ( list<tuple<string, simtime_t>>::iterator it = mappa_messaggi[dest].begin(); it != mappa_messaggi[dest].end(); it++) {
-            if(strcmp(get<0>(*it).c_str(),msg.c_str()) == 0){
+            if(strncmp(get<0>(*it).c_str(),msg.c_str(),32) == 0){
                 mappa_messaggi[dest].remove(*it);
             }
+            break;
         }
         //mappa_messaggi[dest].remove(msg);
-        print_map(mappa_messaggi);
+        //print_map(mappa_messaggi);
     }
 }
 
 void GpsrGrayholeSecure::check_message(){
     simtime_t  now = simTime(); // seconds
-    double timeout = 60; //
+    double timeout = 7; //
+
 
     for (auto const map_it: mappa_messaggi) {
-        for (list<tuple<string, simtime_t>>::iterator list_it = mappa_messaggi[map_it.first].begin(); list_it != mappa_messaggi[map_it.first].end(); list_it++) {
-            if( now - get<1>(*list_it) > timeout){
+        list<tuple<string,simtime_t>> list_copy = list<tuple<string,simtime_t>>(mappa_messaggi[map_it.first]);
+        for (list<tuple<string, simtime_t>>::iterator list_it = list_copy.begin(); list_it != list_copy.end(); list_it++) {
+            if( now - get<1>(*list_it) >= timeout){
+                cout << "timeout superato: " << now << " vs " << get<1>(*list_it) << endl;
                 mappa_messaggi[map_it.first].remove(*list_it);
+                deleteMessage(map_it.first,get<0>(*list_it));
                 if(mappa_num_non_inviati.count(map_it.first)==0){
                     mappa_num_non_inviati[map_it.first]=0;
                 }
@@ -163,6 +177,101 @@ void GpsrGrayholeSecure::check_message(){
             }
         }
     }
+}
+
+L3Address GpsrGrayholeSecure::findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
+{
+    EV_DEBUG << "Finding next hop using greedy routing: destination = " << destination << endl;
+    L3Address selfAddress = getSelfAddress();
+    Coord selfPosition = mobility->getCurrentPosition();
+    Coord destinationPosition = gpsrOption->getDestinationPosition();
+    double bestDistance = (destinationPosition - selfPosition).length();
+    L3Address bestNeighbor;
+    std::vector<L3Address> neighborAddresses = neighborPositionTable.getAddresses();
+    for (auto& neighborAddress: neighborAddresses) {
+        Coord neighborPosition = neighborPositionTable.getPosition(neighborAddress);
+        double neighborDistance = (destinationPosition - neighborPosition).length();
+        if (neighborDistance < bestDistance && trustable(neighborAddress)) {
+            bestDistance = neighborDistance;
+            bestNeighbor = neighborAddress;
+        }
+    }
+    if (bestNeighbor.isUnspecified()) {
+        EV_DEBUG << "Switching to perimeter routing: destination = " << destination << endl;
+        if (displayBubbles && hasGUI())
+            getContainingNode(host)->bubble("Switching to perimeter routing");
+        gpsrOption->setRoutingMode(GPSR_PERIMETER_ROUTING);
+        gpsrOption->setPerimeterRoutingStartPosition(selfPosition);
+        gpsrOption->setPerimeterRoutingForwardPosition(selfPosition);
+        gpsrOption->setCurrentFaceFirstSenderAddress(selfAddress);
+        gpsrOption->setCurrentFaceFirstReceiverAddress(L3Address());
+        return findPerimeterRoutingNextHop(destination, gpsrOption);
+    }
+    else
+        return bestNeighbor;
+}
+
+L3Address GpsrGrayholeSecure::findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption)
+{
+    EV_DEBUG << "Finding next hop using perimeter routing: destination = " << destination << endl;
+    L3Address selfAddress = getSelfAddress();
+    Coord selfPosition = mobility->getCurrentPosition();
+    Coord perimeterRoutingStartPosition = gpsrOption->getPerimeterRoutingStartPosition();
+    Coord destinationPosition = gpsrOption->getDestinationPosition();
+    double selfDistance = (destinationPosition - selfPosition).length();
+    double perimeterRoutingStartDistance = (destinationPosition - perimeterRoutingStartPosition).length();
+    if (selfDistance < perimeterRoutingStartDistance) {
+        EV_DEBUG << "Switching to greedy routing: destination = " << destination << endl;
+        if (displayBubbles && hasGUI())
+            getContainingNode(host)->bubble("Switching to greedy routing");
+        gpsrOption->setRoutingMode(GPSR_GREEDY_ROUTING);
+        gpsrOption->setPerimeterRoutingStartPosition(Coord());
+        gpsrOption->setPerimeterRoutingForwardPosition(Coord());
+        gpsrOption->setCurrentFaceFirstSenderAddress(L3Address());
+        gpsrOption->setCurrentFaceFirstReceiverAddress(L3Address());
+        return findGreedyRoutingNextHop(destination, gpsrOption);
+    }
+    else {
+        const L3Address& firstSenderAddress = gpsrOption->getCurrentFaceFirstSenderAddress();
+        const L3Address& firstReceiverAddress = gpsrOption->getCurrentFaceFirstReceiverAddress();
+        auto senderNeighborAddress = gpsrOption->getSenderAddress();
+        auto neighborAngle = senderNeighborAddress.isUnspecified() ? getVectorAngle(destinationPosition - mobility->getCurrentPosition()) : getNeighborAngle(senderNeighborAddress);
+        L3Address selectedNeighborAddress;
+        std::vector<L3Address> neighborAddresses = getPlanarNeighborsCounterClockwise(neighborAngle);
+        for (auto& neighborAddress : neighborAddresses) {
+            Coord neighborPosition = getNeighborPosition(neighborAddress);
+            Coord intersection = computeIntersectionInsideLineSegments(perimeterRoutingStartPosition, destinationPosition, selfPosition, neighborPosition);
+            if (std::isnan(intersection.x) && trustable(neighborAddress)) {
+                selectedNeighborAddress = neighborAddress;
+                break;
+            }
+            else {
+                EV_DEBUG << "Edge to next hop intersects: intersection = " << intersection << ", nextNeighbor = " << selectedNeighborAddress << ", firstSender = " << firstSenderAddress << ", firstReceiver = " << firstReceiverAddress << ", destination = " << destination << endl;
+                gpsrOption->setCurrentFaceFirstSenderAddress(selfAddress);
+                gpsrOption->setCurrentFaceFirstReceiverAddress(L3Address());
+                gpsrOption->setPerimeterRoutingForwardPosition(intersection);
+            }
+        }
+        if (selectedNeighborAddress.isUnspecified()) {
+            EV_DEBUG << "No suitable planar graph neighbor found in perimeter routing: firstSender = " << firstSenderAddress << ", firstReceiver = " << firstReceiverAddress << ", destination = " << destination << endl;
+            return L3Address();
+        }
+        else if (firstSenderAddress == selfAddress && firstReceiverAddress == selectedNeighborAddress) {
+            EV_DEBUG << "End of perimeter reached: firstSender = " << firstSenderAddress << ", firstReceiver = " << firstReceiverAddress << ", destination = " << destination << endl;
+            if (displayBubbles && hasGUI())
+                getContainingNode(host)->bubble("End of perimeter reached");
+            return L3Address();
+        }
+        else {
+            if (gpsrOption->getCurrentFaceFirstReceiverAddress().isUnspecified())
+                gpsrOption->setCurrentFaceFirstReceiverAddress(selectedNeighborAddress);
+            return selectedNeighborAddress;
+        }
+    }
+}
+
+bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
+    return mappa_num_non_inviati.count(neighbourAddress.str()) == 0 || mappa_num_non_inviati[neighbourAddress.str()] < 8;
 }
 
 
