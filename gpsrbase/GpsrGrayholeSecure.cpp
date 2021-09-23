@@ -96,6 +96,7 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
         cout << "xxxx" << datagram->str() << endl;
         if(strncmp(datagram->getName(),"ACK",3)!=0){
             saveMessage(destination.str(), datagram->str());
+            deleteMessage(destination.str(), datagram->str());
         }
         EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
         gpsrOption->setSenderAddress(getSelfAddress());
@@ -114,6 +115,9 @@ void GpsrGrayholeSecure::saveMessage(string dest, string msg){
     tuple<string, simtime_t> elem (msg,simTime());
     mappa_messaggi[dest].push_back(elem);
     print_map(mappa_messaggi);
+    if( simTime() > 2){
+        cout << " Il tempo a Derangolandia e': " << simTime() <<endl;
+    }
 }
 
 void GpsrGrayholeSecure::print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m)
@@ -126,3 +130,40 @@ void GpsrGrayholeSecure::print_map(std::unordered_map<string,list<tuple<string,s
         std::cout << "}\n";
     }
 }
+
+// ci serve per eliminare un messaggi quando arriva l'ack
+
+void GpsrGrayholeSecure::deleteMessage(string dest, string msg) {
+
+    if (mappa_messaggi.count(dest) != 0) {
+        // è presente tale destinataio neela mia mappa
+
+        for ( list<tuple<string, simtime_t>>::iterator it = mappa_messaggi[dest].begin(); it != mappa_messaggi[dest].end(); it++) {
+            if(strcmp(get<0>(*it).c_str(),msg.c_str()) == 0){
+                mappa_messaggi[dest].remove(*it);
+            }
+        }
+        //mappa_messaggi[dest].remove(msg);
+        print_map(mappa_messaggi);
+    }
+}
+
+void GpsrGrayholeSecure::check_message(){
+    simtime_t  now = simTime(); // seconds
+    double timeout = 60; //
+
+    for (auto const map_it: mappa_messaggi) {
+        for (list<tuple<string, simtime_t>>::iterator list_it = mappa_messaggi[map_it.first].begin(); list_it != mappa_messaggi[map_it.first].end(); list_it++) {
+            if( now - get<1>(*list_it) > timeout){
+                mappa_messaggi[map_it.first].remove(*list_it);
+                if(mappa_num_non_inviati.count(map_it.first)==0){
+                    mappa_num_non_inviati[map_it.first]=0;
+                }
+                mappa_num_non_inviati[map_it.first]=mappa_num_non_inviati[map_it.first]+1;
+            }
+        }
+    }
+}
+
+
+

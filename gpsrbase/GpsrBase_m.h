@@ -201,4 +201,3 @@ inline void doParsimUnpacking(omnetpp::cCommBuffer *b, GpsrOption& obj) {obj.par
 } // namespace inet
 
 #endif // ifndef __INET_GPSRBASE_M_H
-

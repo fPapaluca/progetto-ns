@@ -94,6 +94,8 @@ public:
     virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);
     virtual void saveMessage(string dest, string msg);
     virtual void print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m);
+    virtual void deleteMessage(string dest, string msg);
+    virtual void check_message();
 
 };
 

@@ -961,4 +961,3 @@ void *GpsrOptionDescriptor::getFieldStructValuePointer(void *object, int field, 
 }
 
 } // namespace inet
-
