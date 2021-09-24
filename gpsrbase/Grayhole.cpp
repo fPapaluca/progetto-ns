@@ -64,8 +64,9 @@ INetfilter::IHook::Result Grayhole::routeDatagram(Packet *datagram, GpsrOption *
     EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
     auto nextHop = findNextHop(destination, gpsrOption);
     datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
-    if (nextHop.isUnspecified() || true) {
-        cout << getSelfAddress() << endl;
+    double probability = ((double) rand() / (RAND_MAX));
+    double discard_rate = 0.50;
+    if (nextHop.isUnspecified() || probability < discard_rate) {
         EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
         if (displayBubbles && hasGUI())
             getContainingNode(host)->bubble("No next hop found, dropping packet");

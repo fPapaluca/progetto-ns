@@ -72,6 +72,7 @@
 
 #include <unordered_map>
 #include <tuple>
+#include <stdlib.h>
 
 
 
@@ -85,6 +86,8 @@ class GpsrGrayholeSecure: public GpsrBase {
 public:
     unordered_map<string,list<tuple<string,simtime_t>>> mappa_messaggi;
     unordered_map<string,int> mappa_num_non_inviati;
+    unordered_map<string,int> mappa_num_inviati;
+    unordered_map<string,simtime_t> mappa_simtime_t;
     GpsrGrayholeSecure();
     virtual ~GpsrGrayholeSecure();
     // handling beacons
@@ -95,12 +98,12 @@ public:
     virtual void saveMessage(string dest, string msg);
     virtual void print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m);
     virtual void print_map2(std::unordered_map<string,int> const &m);
-    virtual void deleteMessage(string dest, string msg);
+    virtual void deleteMessage(string dest, string msg, bool save);
     virtual void check_message();
     virtual L3Address findGreedyRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
     virtual L3Address findPerimeterRoutingNextHop(const L3Address& destination, GpsrOption *gpsrOption);
     virtual bool trustable(L3Address neighbourAddress);
-
+    //virtual bool trustable2(L3Address neighbourAddress);
 
 };
 

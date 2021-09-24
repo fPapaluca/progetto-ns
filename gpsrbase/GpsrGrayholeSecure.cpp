@@ -58,7 +58,7 @@ void GpsrGrayholeSecure::processBeacon(Packet *packet)
             delete packet;
             return;
         }
-        deleteMessage(beacon->getAddress().str(), beacon->getSignature());
+        deleteMessage(beacon->getAddress().str(), beacon->getSignature(),true);
     }
     else{
         EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
@@ -81,7 +81,7 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
 {
 
     check_message();
-    print_map2(mappa_num_non_inviati);
+    //print_map2(mappa_num_non_inviati);
 
     const auto& networkHeader = getNetworkProtocolHeader(datagram);
     const L3Address& source = networkHeader->getSourceAddress();
@@ -142,7 +142,7 @@ void GpsrGrayholeSecure::print_map2(std::unordered_map<string,int> const &m)
 
 // ci serve per eliminare un messaggi quando arriva l'ack
 
-void GpsrGrayholeSecure::deleteMessage(string dest, string msg) {
+void GpsrGrayholeSecure::deleteMessage(string dest, string msg, bool save) {
 
     if (mappa_messaggi.count(dest) != 0) {
         // è presente tale destinataio neela mia mappa
@@ -150,6 +150,12 @@ void GpsrGrayholeSecure::deleteMessage(string dest, string msg) {
         for ( list<tuple<string, simtime_t>>::iterator it = mappa_messaggi[dest].begin(); it != mappa_messaggi[dest].end(); it++) {
             if(strncmp(get<0>(*it).c_str(),msg.c_str(),32) == 0){
                 mappa_messaggi[dest].remove(*it);
+                if(save){
+                    if(mappa_num_inviati.count(dest)==0){
+                        mappa_num_inviati[dest]=0;
+                    }
+                    mappa_num_inviati[dest] = mappa_num_inviati[dest] + 1;
+                }
             }
             break;
         }
@@ -167,9 +173,9 @@ void GpsrGrayholeSecure::check_message(){
         list<tuple<string,simtime_t>> list_copy = list<tuple<string,simtime_t>>(mappa_messaggi[map_it.first]);
         for (list<tuple<string, simtime_t>>::iterator list_it = list_copy.begin(); list_it != list_copy.end(); list_it++) {
             if( now - get<1>(*list_it) >= timeout){
-                cout << "timeout superato: " << now << " vs " << get<1>(*list_it) << endl;
+                //cout << "timeout superato: " << now << " vs " << get<1>(*list_it) << endl;
                 mappa_messaggi[map_it.first].remove(*list_it);
-                deleteMessage(map_it.first,get<0>(*list_it));
+                deleteMessage(map_it.first,get<0>(*list_it), false);
                 if(mappa_num_non_inviati.count(map_it.first)==0){
                     mappa_num_non_inviati[map_it.first]=0;
                 }
@@ -271,8 +277,64 @@ L3Address GpsrGrayholeSecure::findPerimeterRoutingNextHop(const L3Address& desti
 }
 
 bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
-    return mappa_num_non_inviati.count(neighbourAddress.str()) == 0 || mappa_num_non_inviati[neighbourAddress.str()] < 8;
+    //return mappa_num_non_inviati.count(neighbourAddress.str()) == 0 || mappa_num_non_inviati[neighbourAddress.str()] < 8;
+    string neighbour = neighbourAddress.str();
+    if(mappa_num_non_inviati.count(neighbour) == 0){
+        mappa_num_non_inviati[neighbour] = 0;
+    }
+    if(mappa_num_inviati.count(neighbour) == 0){
+        mappa_num_inviati[neighbour] = 0;
+    }
+    float s_count = mappa_num_inviati[neighbour];
+    float f_count = mappa_num_non_inviati[neighbour];
+    float trustness = (s_count + 1) / (s_count + f_count + 1);
+    cout << this->getSelfAddress().str() << " --> "<< neighbour << ": " << trustness << endl;
+    float bound = 0.75;
+    if(trustness >= bound){
+        return true;
+    }
+    double probability = ((double) rand() / (RAND_MAX));
+    return probability < 0.3;
 }
 
+/*
+bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
+    string neighbour = neighbourAddress.str();
+    if(mappa_num_non_inviati.count(neighbour) == 0){
+        mappa_num_non_inviati[neighbour] = 0;
+    }
+    if(mappa_num_inviati.count(neighbour) == 0){
+        mappa_num_inviati[neighbour] = 0;
+    }
+    if(mappa_vecchia_trust.count(neighbour) == 0){
+        cout << "riga 1" << endl;
+        tuple<float, simtime_t> elem (1.0,simTime());
+        cout << "riga 2" << endl;
+        mappa_vecchia_trust[neighbour] = elem;
+        cout << "riga 3" << endl;
+    }
+    float s_count = mappa_num_inviati[neighbour];
+    float f_count = mappa_num_non_inviati[neighbour];
+    float trustness = (s_count + 1) / (s_count + f_count + 1);
+    float alpha = 0.5;
+    cout << "riga 4" << endl;
+    float new_trust = (1-alpha)*get<0>(mappa_vecchia_trust[neighbour]) + alpha*trustness;
+    cout << "riga 5" << endl;
+    simtime_t update_time = 14;
+    simtime_t now = simTime();
+    if( (now - get<1>(mappa_vecchia_trust[neighbour])) > update_time ){
+        cout << "riga 6" << endl;
+        tuple<float, simtime_t> elem (new_trust, now);
+        cout << "riga 7" << endl;
+        mappa_vecchia_trust[neighbour] = elem;
+        cout << "riga 8" << endl;
+        mappa_num_inviati[neighbour] = 0;
+        cout << "riga 9" << endl;
+        mappa_num_non_inviati[neighbour] = 0;
+        cout << "riga 10" << endl;
+    }
+    return new_trust > 0.75;
+}
+*/
 
 
