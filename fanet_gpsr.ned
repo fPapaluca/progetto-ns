@@ -112,7 +112,7 @@ network FanetGpsrGrayholeSecure
             @display("i=misc/drone;p=0,0");
         }
         
-        grayhole[numGrayholes]: GrayholeRouter {
+        grayhole[numGrayholes]: GrayholeSecureRouter {
             @display("i=misc/truck2;p=0,0");
         }
         

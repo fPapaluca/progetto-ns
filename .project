@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>inet4</project>
-		<project>osg-earth</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

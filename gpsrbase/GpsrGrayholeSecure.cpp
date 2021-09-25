@@ -87,12 +87,15 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
     const L3Address& source = networkHeader->getSourceAddress();
     const L3Address& destination = networkHeader->getDestinationAddress();
     EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
+    cout << "Source: " << source << " | Destination: " << getSelfAddress() << "| Packet name: "<< datagram->getName() << endl;
     auto nextHop = findNextHop(destination, gpsrOption);
     datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
     if (nextHop.isUnspecified()) {
         EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
+
         if (displayBubbles && hasGUI())
             getContainingNode(host)->bubble("No next hop found, dropping packet");
+        cout << "Non trovo de Rango " << getSelfAddress().str() << endl;
         return DROP;
     }
     else {
@@ -166,7 +169,7 @@ void GpsrGrayholeSecure::deleteMessage(string dest, string msg, bool save) {
 
 void GpsrGrayholeSecure::check_message(){
     simtime_t  now = simTime(); // seconds
-    double timeout = 7; //
+    double timeout = 25; //
 
 
     for (auto const map_it: mappa_messaggi) {
@@ -288,13 +291,16 @@ bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
     float s_count = mappa_num_inviati[neighbour];
     float f_count = mappa_num_non_inviati[neighbour];
     float trustness = (s_count + 1) / (s_count + f_count + 1);
-    cout << this->getSelfAddress().str() << " --> "<< neighbour << ": " << trustness << endl;
-    float bound = 0.75;
+    if(trustness != 1){
+        cout << this->getSelfAddress().str() << " --> "<< neighbour << ": " << trustness << endl;
+    }
+    float bound = 0.65;
     if(trustness >= bound){
         return true;
     }
     double probability = ((double) rand() / (RAND_MAX));
-    return probability < 0.3;
+    //return probability < 0.3;
+    return true;
 }
 
 /*
