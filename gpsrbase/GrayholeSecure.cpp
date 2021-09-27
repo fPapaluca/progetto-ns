@@ -57,53 +57,43 @@ GrayholeSecure::~GrayholeSecure() {
 }
 
 
-const Ptr<GpsrBeacon> GrayholeSecure::createAck(string name) ////////////////////////////////////////////////////////////////////////////
-{
-    const auto& beacon = makeShared<GpsrBeacon>();
-    beacon->setAddress(getSelfAddress());
-    beacon->setPosition(mobility->getCurrentPosition());
-    beacon->setSignature(name.c_str());
-    beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + name.length()));
-    return beacon;
-}
-
-void GrayholeSecure::sendAck(const Ptr<GpsrBeacon>& beacon, const L3Address& address)
-{
-    EV_INFO << "Sending beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
-    Packet *udpPacket = new Packet("ACK");
-    udpPacket->insertAtBack(beacon);
-    auto udpHeader = makeShared<UdpHeader>();
-    udpHeader->setSourcePort(GPSR_UDP_PORT);
-    udpHeader->setDestinationPort(GPSR_UDP_PORT);
-    udpHeader->setCrcMode(CRC_DISABLED);
-    udpPacket->insertAtFront(udpHeader);
-    auto addresses = udpPacket->addTag<L3AddressReq>();
-    addresses->setSrcAddress(getSelfAddress());
-    addresses->setDestAddress(address);
-    udpPacket->addTag<HopLimitReq>()->setHopLimit(255);
-    udpPacket->addTag<PacketProtocolTag>()->setProtocol(&Protocol::manet);
-    udpPacket->addTag<DispatchProtocolReq>()->setProtocol(addressType->getNetworkProtocol());
-    sendUdpPacket(udpPacket);
-    //cout << "ACK inviato" << endl;
-}
-
-void GrayholeSecure::processBeacon(Packet *packet)
-{
-    const auto& beacon = packet->peekAtFront<GpsrBeacon>();
-    //cout << packet->getName() << endl;
-    if(strncmp(packet->getName(),"ACK",3)==0){
-        delete packet;
-        return;
-    }
-    else{
-        EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
-        neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
-    }
-    delete packet;
-}
-
-
 INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
+{
+    check_message();
+    string all_string = datagram->getName();
+    string datagram_name = getUdpName(all_string);
+    string previous_hop = getPreviousHop(all_string);
+    datagram->setName((datagram_name + "+" + getSelfAddress().str()).c_str());
+    const auto& networkHeader = getNetworkProtocolHeader(datagram);
+    const L3Address& source = networkHeader->getSourceAddress();
+    const L3Address& destination = networkHeader->getDestinationAddress();
+    EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
+    auto nextHop = findNextHop(destination, gpsrOption);
+    datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
+    double probability = ((double) rand() / (RAND_MAX));
+    double discard_rate = 0.60;
+    if (nextHop.isUnspecified() || probability < discard_rate) {
+        cout << "scartato" << endl;
+        EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
+        if (displayBubbles && hasGUI())
+            getContainingNode(host)->bubble("No next hop found, dropping packet");
+        return DROP;
+    }
+    else {
+        //cout << "Source: " << previous_hop << " | Destination: " << getSelfAddress() << "| Packet name: "<< datagram->getName() << endl;
+        if(previous_hop != datagram_name){
+            PromiscuousMode::getInstance().mappa_host[previous_hop]->deleteMessage(getSelfAddress().str(), datagram_name, true);
+        }
+        EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
+        gpsrOption->setSenderAddress(getSelfAddress());
+        auto interfaceEntry = CHK(interfaceTable->findInterfaceByName(outputInterface));
+        datagram->addTagIfAbsent<InterfaceReq>()->setInterfaceId(interfaceEntry->getInterfaceId());
+        return ACCEPT;
+    }
+}
+
+
+/*INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
 {
     const auto& networkHeader = getNetworkProtocolHeader(datagram);
     const L3Address& source = networkHeader->getSourceAddress();
@@ -127,4 +117,4 @@ INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOp
         datagram->addTagIfAbsent<InterfaceReq>()->setInterfaceId(interfaceEntry->getInterfaceId());
         return ACCEPT;
     }
-}
+}*/

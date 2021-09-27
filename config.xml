@@ -2,7 +2,7 @@
     <repeat>
         <set speed="uniform(0,20)"/>
         <turn angle="uniform(-30,30)"/>
-        <forward t="6"/>
+        <forward t="3"/>
         <wait t="20"/>
     </repeat>
 </movement>

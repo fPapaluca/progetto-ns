@@ -16,7 +16,8 @@
 #ifndef GPSRBASE_GRAYHOLESECURE_H_
 #define GPSRBASE_GRAYHOLESECURE_H_
 
-#include "GpsrBase.h"
+#include "GpsrGrayholeSecure.h"
+#include "PromiscuousMode.h"
 #include <iostream>
 #include <string>
 #include "../gpsrbase/GpsrBase_m.h"
@@ -40,15 +41,13 @@ using namespace inet;
 using namespace CryptoPP;
 
 
-class GrayholeSecure: public GpsrBase {
+class GrayholeSecure: public GpsrGrayholeSecure {
 public:
     GrayholeSecure();
     virtual ~GrayholeSecure();
 protected:
-    virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption);
-    virtual void sendAck(const Ptr<GpsrBeacon>& beacon, const L3Address& address);
-    virtual void processBeacon(Packet *packet);
-    virtual const Ptr<GpsrBeacon> createAck(string name);
+    virtual Result routeDatagram(Packet *datagram, GpsrOption *gpsrOption) override;
+    virtual bool trustable(L3Address neighbourAddress) override {return true;}
 };
 
 #endif /* GPSRBASE_GRAYHOLESECURE_H_ */
