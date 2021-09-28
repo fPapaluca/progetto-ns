@@ -175,7 +175,7 @@ void GpsrGrayholeSecure::deleteMessage(string dest, string msg, bool save) {
                 //cout << msg.c_str() << endl;
                 mappa_messaggi[dest].remove(*it);
                 if(save){
-                    cout << simTime() - get<1>(*it) << endl;
+                   // cout << simTime() - get<1>(*it) << endl;
                     if(mappa_num_inviati.count(dest)==0){
                         mappa_num_inviati[dest]=0;
                     }

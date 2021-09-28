@@ -67,10 +67,10 @@ network FanetGpsrSecure
     parameters:
         int numHosts;
         int numSybils;
-        //@figure[rcvdPkText](type=indicatorText; pos=380,20; anchor=w; font=,18; textFormat="packets received: %g"; initialValue=0);
-        //@statistic[packetReceived](source=host[20].app[0].packetReceived; record=figure(count); targetFigure=rcvdPkText);
-        //@figure[sndPkText](type=indicatorText; pos=380,40; anchor=w; font=,18; textFormat="packets sent: %g"; initialValue=0);
-        //@statistic[packetSent](source=host[0].app[0].packetSent; record=figure(count); targetFigure=sndPkText);
+        @figure[rcvdPkText](type=indicatorText; pos=380,20; anchor=w; font=,18; textFormat="packets received: %g"; initialValue=0);
+        @statistic[packetReceived](source=host[20].app[0].packetReceived; record=figure(count); targetFigure=rcvdPkText);
+        @figure[sndPkText](type=indicatorText; pos=380,40; anchor=w; font=,18; textFormat="packets sent: %g"; initialValue=0);
+        @statistic[packetSent](source=host[0].app[0].packetSent; record=figure(count); targetFigure=sndPkText);
         
         submodules:
         host[numHosts]: GpsrSecureRouter {
