@@ -14,8 +14,10 @@
 // 
 
 #include "GpsrSecure.h"
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 Define_Module(GpsrSecure);
 
 void GpsrSecure::initialize(int stage)
@@ -140,10 +142,12 @@ void GpsrSecure::LoadPublicKey( const string& filename, ECDSA<ECP, SHA256>::Publ
 
 const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
 {
+    auto start = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     bool result;
     const auto& beacon = makeShared<GpsrBeacon>();
     beacon->setAddress(getSelfAddress());
     beacon->setPosition(mobility->getCurrentPosition());
+    auto start_signature = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     string signature;
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
     //cout << "this is the message: " << message << endl ;
@@ -151,30 +155,35 @@ const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
     //cout << "this is the signature in create beacon: "+ signature << endl ;
     //cout << "signature length " << signature.length() <<endl;
     beacon->setSignature(signature);
+    cout << "Creazione_firma: "<< duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start_signature<< endl;
     //cout << "beacon->getSignature() length " << signature.length() <<endl;
     beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
+    cout << "Creazione: "<< duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start<< endl;
     return beacon;
 }
 
 void GpsrSecure::processBeacon(Packet *packet)
 {
+    auto start = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     ECDSA<ECP, SHA256>::PublicKey currentPublicKey;
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
     //cout << "this is the signature in process beacon: "<< beacon->getSignature() << endl;
+    auto start_signature = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     string  selfAddressStr = beacon->getAddress().toIpv4().str(); //getSelfAddress().toIpv4().str();
     //cout << "filename: " << selfAddressStr << endl;
     string  filename= "pk/"+selfAddressStr+".pem";
     LoadPublicKey(filename, currentPublicKey);
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
     if(VerifyMessage(currentPublicKey,message,beacon->getSignature())){
+        cout << "Process_signature: " << duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start_signature << endl;
         //cout << "iammu belli" << endl ;
         EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
         neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
     }
     else{
-        cout << "sgamato schema schemata" << endl;
+        //cout << "sgamato schema schemata" << endl;
     }
-
+    cout << "Process: " << duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start << endl;
     delete packet;
 }
 

@@ -328,6 +328,43 @@ bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
     return probability < 0.3;
 }
 
+void GpsrGrayholeSecure::finish(){
+    int trust = 25;
+    list<string> buoni;
+    list<string> malevoli;
+    for (int i = 0; i < trust; i++) {
+        buoni.push_front("10.0.0." + to_string(i + 1));
+    }
+    for (int i = trust; i < 50; i++) {
+        malevoli.push_front("10.0.0." + to_string(i + 1));
+    }
+    int matrix[2][2] = { { 0, 0 }, { 0, 0 } };
+    for (auto const &pair : mappa_num_inviati) {
+        auto neighbour = pair.first;
+        float s_count = mappa_num_inviati[neighbour];
+        float f_count = mappa_num_non_inviati[neighbour];
+        float trustness = (s_count + 1) / (s_count + f_count + 1);
+        int x = 0;
+        int y = 0;
+        if (trustness < 0.7) {
+            y = 1;
+        }
+        if ((std::find(malevoli.begin(), malevoli.end(), neighbour)
+                != malevoli.end())) {
+            x = 1;
+        }
+        matrix[x][y] += 1;
+    }
+    cout << getSelfAddress().str() << " - tp " << matrix[0][0] << " - fn "
+            << matrix[0][1] << " - fp " << matrix[1][0] << " - tn "
+            << matrix[1][1] << endl;
+    /* predetti -> buoni malevoli y
+     * buoni tp fn
+     * x malevoli fp tn
+     *
+     * */
+}
+
 /*
 bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
     string neighbour = neighbourAddress.str();

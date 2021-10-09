@@ -104,6 +104,7 @@ public:
     virtual string getPreviousHop(string all_string);
     //virtual bool trustable2(L3Address neighbourAddress);
     virtual void initialize(int stage) override;
+    virtual void finish() override;
 
 };
 
