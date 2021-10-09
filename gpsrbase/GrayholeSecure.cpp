@@ -71,7 +71,7 @@ INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOp
     auto nextHop = findNextHop(destination, gpsrOption);
     datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
     double probability = ((double) rand() / (RAND_MAX));
-    double discard_rate = 0.60;
+    double discard_rate = 0.80;
     if (nextHop.isUnspecified() || probability < discard_rate) {
         //-cout << "scartato" << endl;
         EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
