@@ -71,16 +71,14 @@ INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOp
     auto nextHop = findNextHop(destination, gpsrOption);
     datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
     double probability = ((double) rand() / (RAND_MAX));
-    double discard_rate = 0.80;
+    double discard_rate = 0.60;
     if (nextHop.isUnspecified() || probability < discard_rate) {
-        //-cout << "scartato" << endl;
         EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
         if (displayBubbles && hasGUI())
             getContainingNode(host)->bubble("No next hop found, dropping packet");
         return DROP;
     }
     else {
-        //cout << "Source: " << previous_hop << " | Destination: " << getSelfAddress() << "| Packet name: "<< datagram->getName() << endl;
         if(previous_hop != datagram_name){
             PromiscuousMode::getInstance().mappa_host[previous_hop]->deleteMessage(getSelfAddress().str(), datagram_name, true);
         }
@@ -91,30 +89,3 @@ INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOp
         return ACCEPT;
     }
 }
-
-
-/*INetfilter::IHook::Result GrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
-{
-    const auto& networkHeader = getNetworkProtocolHeader(datagram);
-    const L3Address& source = networkHeader->getSourceAddress();
-    const L3Address& destination = networkHeader->getDestinationAddress();
-    EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
-    auto nextHop = findNextHop(destination, gpsrOption);
-    datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
-    double probability = ((double) rand() / (RAND_MAX));
-    double discard_rate = 0.60;
-    if (nextHop.isUnspecified() || probability < discard_rate) {
-        EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
-        if (displayBubbles && hasGUI())
-            getContainingNode(host)->bubble("No next hop found, dropping packet");
-        return DROP;
-    }
-    else {
-        sendAck(createAck(datagram->str()),source);
-        EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
-        gpsrOption->setSenderAddress(getSelfAddress());
-        auto interfaceEntry = CHK(interfaceTable->findInterfaceByName(outputInterface));
-        datagram->addTagIfAbsent<InterfaceReq>()->setInterfaceId(interfaceEntry->getInterfaceId());
-        return ACCEPT;
-    }
-}*/

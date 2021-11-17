@@ -39,14 +39,6 @@ void GpsrSecure::InitializeSec(){
     result = GeneratePrivateKey( CryptoPP::ASN1::secp256k1(), privateKey );
 
     result = GeneratePublicKey( privateKey, publicKey );
-    /*
-    string message = "Yoda said, Subaru Baracca. Don't try this at home.";
-    string signature;
-
-    result = SignMessage( privateKey, message, signature );
-
-    result = VerifyMessage( publicKey, message, signature );
-    */
     SavePublicKey( filename, publicKey );
 }
 
@@ -150,15 +142,9 @@ const Ptr<GpsrBeacon> GpsrSecure::createBeacon()
     auto start_signature = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     string signature;
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
-    //cout << "this is the message: " << message << endl ;
     result = SignMessage( privateKey, message, signature );
-    //cout << "this is the signature in create beacon: "+ signature << endl ;
-    //cout << "signature length " << signature.length() <<endl;
     beacon->setSignature(signature);
-    cout << "Creazione_firma: "<< duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start_signature<< endl;
-    //cout << "beacon->getSignature() length " << signature.length() <<endl;
     beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
-    cout << "Creazione: "<< duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start<< endl;
     return beacon;
 }
 
@@ -167,75 +153,21 @@ void GpsrSecure::processBeacon(Packet *packet)
     auto start = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
     ECDSA<ECP, SHA256>::PublicKey currentPublicKey;
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
-    //cout << "this is the signature in process beacon: "<< beacon->getSignature() << endl;
     auto start_signature = duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count();
-    string  selfAddressStr = beacon->getAddress().toIpv4().str(); //getSelfAddress().toIpv4().str();
-    //cout << "filename: " << selfAddressStr << endl;
+    string  selfAddressStr = beacon->getAddress().toIpv4().str();
     string  filename= "pk/"+selfAddressStr+".pem";
     LoadPublicKey(filename, currentPublicKey);
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
     if(VerifyMessage(currentPublicKey,message,beacon->getSignature())){
         cout << "Process_signature: " << duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start_signature << endl;
-        //cout << "iammu belli" << endl ;
         EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
         neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
     }
     else{
-        //cout << "sgamato schema schemata" << endl;
+        //controlla beacon invalido
     }
     cout << "Process: " << duration_cast<nanoseconds>(system_clock::now().time_since_epoch()).count() - start << endl;
     delete packet;
 }
-
-
-/*
-Sybil::Sybil() {
-    // TODO Auto-generated constructor stub
-    srand(420);
-
-    result = GeneratePrivateKey( CryptoPP::ASN1::secp160r1(), privateKey );
-
-    result = GeneratePublicKey( privateKey, publicKey );
-
-    string message = "Yoda said, Subaru Baracca. Don't try this at home.";
-    string signature;
-
-    result = SignMessage( privateKey, message, signature );
-
-    result2 = VerifyMessage( publicKey, message, signature );
-
-    cout << result2 << endl;
-
-
-
-
-
-}
-
-Sybil::~Sybil() {
-    // TODO Auto-generated destructor stub
-}
-
-void Sybil::processBeaconTimer() {
-    EV_DEBUG << "Processing beacon timer" << endl;
-    const char*  selfAddressStr = getSelfAddress().toIpv4().str().c_str();
-    const L3Address selfAddress = getSelfAddress();
-    if (!selfAddress.isUnspecified()) {
-        sendBeacon(createBeaconSybil(("host["+to_string(rand() % 30)+"]").c_str()));
-        storeSelfPositionInGlobalRegistry();
-    }
-    scheduleBeaconTimer();
-    schedulePurgeNeighborsTimer();
-}
-
-const Ptr<GpsrBeacon> Sybil::createBeaconSybil(const char* addressStr)
-{
-    const auto& beacon = makeShared<GpsrBeacon>();
-    beacon->setAddress(resolver.resolve(addressStr));
-    beacon->setPosition(mobility->getCurrentPosition());
-    beacon->setChunkLength(B(resolver.resolve(addressStr).getAddressType()->getAddressByteLength() + positionByteLength));
-    return beacon;
-}
-*/
 
 

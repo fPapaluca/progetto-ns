@@ -33,7 +33,7 @@ void Sybil::processBeaconTimer() {
     const char*  selfAddressStr = getSelfAddress().toIpv4().str().c_str();
     const L3Address selfAddress = getSelfAddress();
     if (!selfAddress.isUnspecified()) {
-        sendBeacon(createBeaconSybil(("host["+to_string(rand() % 30)+"]").c_str()));
+        sendBeacon(createBeaconSybil(("host["+to_string(rand() % 20)+"]").c_str()));
         storeSelfPositionInGlobalRegistry();
     }
     scheduleBeaconTimer();

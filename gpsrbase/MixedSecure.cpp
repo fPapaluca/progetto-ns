@@ -31,14 +31,6 @@ void MixedSecure::InitializeSec(){
     result = GeneratePrivateKey( CryptoPP::ASN1::secp256k1(), privateKey );
 
     result = GeneratePublicKey( privateKey, publicKey );
-    /*
-    string message = "Yoda said, Subaru Baracca. Don't try this at home.";
-    string signature;
-
-    result = SignMessage( privateKey, message, signature );
-
-    result = VerifyMessage( publicKey, message, signature );
-    */
     SavePublicKey( filename, publicKey );
 }
 
@@ -140,12 +132,8 @@ const Ptr<GpsrBeacon> MixedSecure::createBeacon()
     beacon->setPosition(mobility->getCurrentPosition());
     string signature;
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
-    //cout << "this is the message: " << message << endl ;
     result = SignMessage( privateKey, message, signature );
-    //cout << "this is the signature in create beacon: "+ signature << endl ;
-    //cout << "signature length " << signature.length() <<endl;
     beacon->setSignature(signature);
-    //cout << "beacon->getSignature() length " << signature.length() <<endl;
     beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
     return beacon;
 }
@@ -154,19 +142,16 @@ void MixedSecure::processBeacon(Packet *packet)
 {
     ECDSA<ECP, SHA256>::PublicKey currentPublicKey;
     const auto& beacon = packet->peekAtFront<GpsrBeacon>();
-    //cout << "this is the signature in process beacon: "<< beacon->getSignature() << endl;
-    string  selfAddressStr = beacon->getAddress().toIpv4().str(); //getSelfAddress().toIpv4().str();
-    //cout << "filename: " << selfAddressStr << endl;
+    string  selfAddressStr = beacon->getAddress().toIpv4().str();
     string  filename= "pk/"+selfAddressStr+".pem";
     LoadPublicKey(filename, currentPublicKey);
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
     if(VerifyMessage(currentPublicKey,message,beacon->getSignature())){
-        //cout << "iammu belli" << endl ;
         EV_INFO << "Processing beacon: address = " << beacon->getAddress() << ", position = " << beacon->getPosition() << endl;
         neighborPositionTable.setPosition(beacon->getAddress(), beacon->getPosition());
     }
     else{
-        cout << "sgamato schema schemata" << endl;
+        //Processing beacon con firma invalida
     }
 
     delete packet;

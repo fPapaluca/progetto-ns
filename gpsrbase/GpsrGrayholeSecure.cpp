@@ -31,7 +31,7 @@ void GpsrGrayholeSecure::initialize(int stage)
 }
 
 GpsrGrayholeSecure::GpsrGrayholeSecure() {
-    //PromiscuousMode::getInstance().registerHost(this);
+
 }
 
 GpsrGrayholeSecure::~GpsrGrayholeSecure() {
@@ -70,7 +70,6 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
         return DROP;
     }
     else {
-        //cout << "Source: " << previous_hop << " | Destination: " << getSelfAddress() << "| Packet name: "<< datagram->getName() << endl;
         if(nextHop != destination && nextHop != getSelfAddress()){
             saveMessage(nextHop.str(), datagram_name);
         }
@@ -85,54 +84,6 @@ INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, Gp
     }
 }
 
-/*
-INetfilter::IHook::Result GpsrGrayholeSecure::routeDatagram(Packet *datagram, GpsrOption *gpsrOption)
-{
-    cout << PromiscuousMode::getInstance().mappa_host["10.0.0.21"]->getSelfAddress().str() << endl;
-    check_message();
-    string all_string = datagram->getName();
-    string datagram_name = getUdpName(all_string);
-    string previous_hop = getPreviousHop(all_string);
-    cout << "previous hop " << previous_hop << endl;
-    datagram->setName((datagram_name + "+" + getSelfAddress().str()).c_str());
-    //print_map2(mappa_num_non_inviati);
-    //string dataname = datagram->getName();
-    //cout << dataname << endl;
-    //datagram->setName((dataname + "+").c_str());
-    const auto& networkHeader = getNetworkProtocolHeader(datagram);
-    const L3Address& source = networkHeader->getSourceAddress();
-    const L3Address& destination = networkHeader->getDestinationAddress();
-    EV_INFO << "Finding next hop: source = " << source << ", destination = " << destination << endl;
-    auto nextHop = findNextHop(destination, gpsrOption);
-    datagram->addTagIfAbsent<NextHopAddressReq>()->setNextHopAddress(nextHop);
-    if (nextHop.isUnspecified()) {
-        EV_WARN << "No next hop found, dropping packet: source = " << source << ", destination = " << destination << endl;
-
-        if (displayBubbles && hasGUI())
-            getContainingNode(host)->bubble("No next hop found, dropping packet");
-        return DROP;
-    }
-    else {
-        if(!source.isUnspecified() && datagram_name != previous_hop){
-            sendAck(createAck(datagram_name),L3Address(previous_hop.c_str()));
-        }
-        cout << "Source: " << source << " | Destination: " << getSelfAddress() << "| Packet name: "<< datagram->getName() << endl;
-        //cout << "xxxx" << datagram->str() << endl;
-        if(strncmp(datagram->getName(),"ACK",3)!=0){
-            //cout << "Source:" << source << endl;
-            if(nextHop.str() != destination.str()){
-                saveMessage(nextHop.str(), datagram_name);
-            }
-        }
-        EV_INFO << "Next hop found: source = " << source << ", destination = " << destination << ", nextHop: " << nextHop << endl;
-        gpsrOption->setSenderAddress(getSelfAddress());
-        auto interfaceEntry = CHK(interfaceTable->findInterfaceByName(outputInterface));
-        datagram->addTagIfAbsent<InterfaceReq>()->setInterfaceId(interfaceEntry->getInterfaceId());
-        return ACCEPT;
-    }
-}
-*/
-
 void GpsrGrayholeSecure::saveMessage(string dest, string msg){
 
     if(mappa_messaggi.count(dest)==0){
@@ -141,13 +92,12 @@ void GpsrGrayholeSecure::saveMessage(string dest, string msg){
     }
     tuple<string, simtime_t> elem (msg,simTime());
     mappa_messaggi[dest].push_back(elem);
-    //print_map(mappa_messaggi);
 }
 
 void GpsrGrayholeSecure::print_map(std::unordered_map<string,list<tuple<string,simtime_t>>> const &m)
 {
     for (auto const &pair: m) {
-        std::cout << "msg{" << pair.first << ": ";// << pair.second << "}\n";
+        std::cout << "msg{" << pair.first << ": ";
         for(auto const &t : pair.second) {
             std::cout << get<0>(t) << ", " << get<1>(t) <<";; ";
         }
@@ -167,15 +117,11 @@ void GpsrGrayholeSecure::print_map2(std::unordered_map<string,int> const &m)
 void GpsrGrayholeSecure::deleteMessage(string dest, string msg, bool save) {
 
     if (mappa_messaggi.count(dest) != 0) {
-        // è presente tale destinataio neela mia mappa
-        //cout << "entriamo in deletemessage" << endl;
+        // è presente tale destinataio nella mia mappa
         for ( list<tuple<string, simtime_t>>::iterator it = mappa_messaggi[dest].begin(); it != mappa_messaggi[dest].end(); it++) {
             if(strncmp(get<0>(*it).c_str(),msg.c_str(),32) == 0){
-                //cout << get<0>(*it).c_str() << endl;
-                //cout << msg.c_str() << endl;
                 mappa_messaggi[dest].remove(*it);
                 if(save){
-                   // cout << simTime() - get<1>(*it) << endl;
                     if(mappa_num_inviati.count(dest)==0){
                         mappa_num_inviati[dest]=0;
                     }
@@ -184,29 +130,24 @@ void GpsrGrayholeSecure::deleteMessage(string dest, string msg, bool save) {
             }
             break;
         }
-        //mappa_messaggi[dest].remove(msg);
-        //print_map(mappa_messaggi);
     }
 }
 
 void GpsrGrayholeSecure::check_message(){
     simtime_t  now = simTime(); // seconds
-    double timeout = 3; //
+    double timeout = 3;
 
 
     for (auto const map_it: mappa_messaggi) {
         list<tuple<string,simtime_t>> list_copy = list<tuple<string,simtime_t>>(mappa_messaggi[map_it.first]);
         for (list<tuple<string, simtime_t>>::iterator list_it = list_copy.begin(); list_it != list_copy.end(); list_it++) {
             if( now - get<1>(*list_it) >= timeout){
-                //cout << "timeout superato: " << now << " vs " << get<1>(*list_it) << endl;
-                //cout << mappa_num_inviati[map_it.first] << " " << mappa_num_non_inviati[map_it.first] << endl;
                 mappa_messaggi[map_it.first].remove(*list_it);
                 deleteMessage(map_it.first,get<0>(*list_it), false);
                 if(mappa_num_non_inviati.count(map_it.first)==0){
                     mappa_num_non_inviati[map_it.first]=0;
                 }
                 mappa_num_non_inviati[map_it.first]=mappa_num_non_inviati[map_it.first]+1;
-                //cout << mappa_num_inviati[map_it.first] << " " << mappa_num_non_inviati[map_it.first] << endl;
             }
         }
     }
@@ -306,7 +247,6 @@ L3Address GpsrGrayholeSecure::findPerimeterRoutingNextHop(const L3Address& desti
 }
 
 bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
-    //return mappa_num_non_inviati.count(neighbourAddress.str()) == 0 || mappa_num_non_inviati[neighbourAddress.str()] < 8;
     string neighbour = neighbourAddress.str();
     if(mappa_num_non_inviati.count(neighbour) == 0){
         mappa_num_non_inviati[neighbour] = 0;
@@ -317,9 +257,6 @@ bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
     float s_count = mappa_num_inviati[neighbour];
     float f_count = mappa_num_non_inviati[neighbour];
     float trustness = (s_count + 1) / (s_count + f_count + 1);
-    if(getSelfAddress().str() != "10.0.0.1"){
-        //cout << this->getSelfAddress().str() << " --> "<< neighbour << ": " << trustness << endl;
-    }
     float bound = 0.7;
     if(trustness >= bound){
         return true;
@@ -329,6 +266,7 @@ bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
 }
 
 void GpsrGrayholeSecure::finish(){
+    //stampa metriche aggiuntive
     int trust = 25;
     list<string> buoni;
     list<string> malevoli;
@@ -355,8 +293,8 @@ void GpsrGrayholeSecure::finish(){
         }
         matrix[x][y] += 1;
     }
-    cout << getSelfAddress().str() << " - tp " << matrix[0][0] << " - fn "
-            << matrix[0][1] << " - fp " << matrix[1][0] << " - tn "
+    cout << getSelfAddress().str() << " - tb " << matrix[0][0] << " - fm "
+            << matrix[0][1] << " - fb " << matrix[1][0] << " - tm "
             << matrix[1][1] << endl;
     /* predetti -> buoni malevoli y
      * buoni tp fn
@@ -365,44 +303,5 @@ void GpsrGrayholeSecure::finish(){
      * */
 }
 
-/*
-bool GpsrGrayholeSecure::trustable(L3Address neighbourAddress){
-    string neighbour = neighbourAddress.str();
-    if(mappa_num_non_inviati.count(neighbour) == 0){
-        mappa_num_non_inviati[neighbour] = 0;
-    }
-    if(mappa_num_inviati.count(neighbour) == 0){
-        mappa_num_inviati[neighbour] = 0;
-    }
-    if(mappa_vecchia_trust.count(neighbour) == 0){
-        cout << "riga 1" << endl;
-        tuple<float, simtime_t> elem (1.0,simTime());
-        cout << "riga 2" << endl;
-        mappa_vecchia_trust[neighbour] = elem;
-        cout << "riga 3" << endl;
-    }
-    float s_count = mappa_num_inviati[neighbour];
-    float f_count = mappa_num_non_inviati[neighbour];
-    float trustness = (s_count + 1) / (s_count + f_count + 1);
-    float alpha = 0.5;
-    cout << "riga 4" << endl;
-    float new_trust = (1-alpha)*get<0>(mappa_vecchia_trust[neighbour]) + alpha*trustness;
-    cout << "riga 5" << endl;
-    simtime_t update_time = 14;
-    simtime_t now = simTime();
-    if( (now - get<1>(mappa_vecchia_trust[neighbour])) > update_time ){
-        cout << "riga 6" << endl;
-        tuple<float, simtime_t> elem (new_trust, now);
-        cout << "riga 7" << endl;
-        mappa_vecchia_trust[neighbour] = elem;
-        cout << "riga 8" << endl;
-        mappa_num_inviati[neighbour] = 0;
-        cout << "riga 9" << endl;
-        mappa_num_non_inviati[neighbour] = 0;
-        cout << "riga 10" << endl;
-    }
-    return new_trust > 0.75;
-}
-*/
 
 

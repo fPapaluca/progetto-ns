@@ -37,12 +37,8 @@ const Ptr<GpsrBeacon> SybilSecure::createBeaconSybil(const char* addressStr)
     beacon->setPosition(mobility->getCurrentPosition());
     string signature;
     string message = beacon->getAddress().str() + " " + beacon ->getPosition().str();
-    //cout << "this is the message: " << message << endl ;
     SignMessage( privateKey, message, signature );
-    //cout << "this is the signature in create beacon: "+ signature << endl ;
-    //cout << "signature length " << signature.length() <<endl;
     beacon->setSignature(signature);
-    //cout << "beacon->getSignature() length " << signature.length() <<endl;
     beacon->setChunkLength(B(getSelfAddress().getAddressType()->getAddressByteLength() + positionByteLength + signature.length()));
     return beacon;
 }
